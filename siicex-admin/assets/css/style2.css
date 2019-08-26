@@ -33,7 +33,7 @@ a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: #fff !important;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -63,7 +63,7 @@ a:focus {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
-.wrapper {
+.wrapper-home {
     display: flex;
     width: 100%;
 }
@@ -85,7 +85,7 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 11px;
+    padding: 12px;
     background: #fff;
 }
 
@@ -172,7 +172,6 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #43434b;
 }
@@ -187,17 +186,6 @@ ul.CTAs a {
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
 }
 
 /*options for sidebar's footer*/
@@ -251,6 +239,7 @@ a.article:hover {
     position: absolute;
     top: 0;
     right: 0;
+    background: #e9ebef;
 }
 
 #content.active {
@@ -291,29 +280,6 @@ a.article:hover {
 /* ---------------------------------------------------
     SIICEX-Admin
 ----------------------------------------------------- */
-/* Botones */
-.btn-info.focus, .btn-info:focus {
-    box-shadow: 0 0 0 0.2rem rgba(23,162,184,.5);
-}
-.btn-info:hover {
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b;
-}
-.btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-
-
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
-    background-color: #8064A2;
-    border-color: #8064A2;
-}
 
 /*Botón - toggle - colapse sidebar*/
 .btn__toggle,
@@ -341,89 +307,3 @@ Plomo claro: #575862
 Blanco Humo: #e9ebef
 Plomo claro menu: #9fafb7;
 */
-
-/* Chat */
-.media-body {
-    overflow: hidden;
-  }
-.chat-activity-list .chat-element {
-    border-bottom: 1px solid #e7eaec;
-  }
-  .chat-element:first-child {
-    margin-top: 0;
-  }
-  .chat-element {
-    padding-bottom: 15px;
-  }
-  .chat-element,
-  .chat-element .media {
-    margin-top: 15px;
-  }
-  .chat-element,
-  .media-body {
-    overflow: hidden;
-  }
-  .media-body {
-    display: block;
-  }
-  .chat-element > .pull-left {
-    margin-right: 10px;
-  }
-  .chat-element img.img-circle,
-  .dropdown-messages-box img.img-circle {
-    width: 38px;
-    height: 38px;
-  }
-  .chat-element .well {
-    border: 1px solid #e7eaec;
-    box-shadow: none;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 10px 20px;
-    font-size: 11px;
-    line-height: 16px;
-  }
-  .chat-element .actions {
-    margin-top: 10px;
-  }
-  .chat-element .photos {
-    margin: 10px 0;
-  }
-  .right.chat-element > .pull-right {
-    margin-left: 10px;
-  }
-  .chat-photo {
-    max-height: 180px;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-  .chat {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .chat li {
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px dotted #B3A9A9;
-  }
-  .chat li.left .chat-body {
-    margin-left: 60px;
-  }
-  .chat li.right .chat-body {
-    margin-right: 60px;
-  }
-  .chat li .chat-body p {
-    margin: 0;
-    color: #777777;
-  }
-  .panel .slidedown .glyphicon,
-  .chat .glyphicon {
-    margin-right: 5px;
-  }
-  .chat-panel .panel-body {
-    height: 350px;
-    overflow-y: scroll;
-  }
