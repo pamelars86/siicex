@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SIICEX - ADMINISTRADOR DEL CMS </title>
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="fontawesome-free-5.10.2-web/js/solid.js"></script>
+    <script defer src="fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper-home">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header text-center">
+                <h3>SIICEX</h3>
+                <small class="sidebar-header-subtitle">ADMINISTRADOR DEL CMS</small>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="sidebar__option">
+                    <a href="#opcionSeguridad" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Seguridad</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionSeguridad">
+                        <li class="sidebar__suboption">
+                            <a href="#">Perfiles</a>
+                        </li>
+                        <li class="sidebar__suboption">
+                            <a href="#">Usuarios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar__option">
+                    <a href="#opcionPaginas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Páginas</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionPaginas">
+                    </ul>
+                </li>
+                <li class="sidebar__option">
+                    <a href="#opcionBloques" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Bloques</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionBloques">
+                    </ul>
+                </li>
+                <li class="sidebar__option">
+                    <a href="#opcionPlataforma" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Plataforma</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionPlataforma">
+                    </ul>
+                </li>
+                <li class="sidebar__option">
+                    <a href="#opcionMensajes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Mensajes</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionMensajes">
+                    </ul>
+                </li>
+                <li class="sidebar__option">
+                    <a href="#opcionProductos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Productos</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionProductos">
+                    </ul>
+                </li>
+                <li class="sidebar__option">
+                    <a href="#opcionRecursos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Recursos</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionRecursos">
+                        <li class="sidebar__suboption">
+                            <a href="#">Estudios de mercado</a>
+                        </li>
+                        <li class="sidebar__suboption">
+                            <a href="#">Noticias</a>
+                        </li>
+                        <li class="sidebar__suboption">
+                            <a href="#">Documentación</a>
+                        </li>
+                        <li class="sidebar__suboption">
+                            <a href="#">Notas de prensa</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar__option">
+                    <a href="#opcionBoletines" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-circle"></i><span class="sidebar__option-name">Boletines</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="opcionBoletines">
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                    <li>
+                        <img src="img/promperu-footer-minext.jpg" class="sidebar__footer-logo">
+                    </li>
+                </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="menu__options container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light btn__toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="menu__all-info-user nav navbar-nav ml-auto">
+                                <li class="nav-item dropdown no-arrow">
+                                    <div class="menu__user">
+                                        <a href="#" id="userDropdown" role="button" class="text-center">
+                                            <img class="menu__user-img rounded-circle" src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+                                        </a>
+                                        <div class="menu__user-info">
+                                            <a class="user">Miguel Quiroz</a>
+                                            <div class="email">miguel@promperu.pe</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="login.html" class="menu__salir">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content-option">
+                <div class="row wrapper page-heading">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb__path">
+                                <i class="fas fa-circle breadcrumb__circle-icon"></i>
+                                <a href="index.html">RECURSOS</a>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li class="breadcrumb__path">
+                                <a>LISTADO</a>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li class="active breadcrumb__btn-section">
+                                <button class="btn btn-w-m btn-default">CREAR RECURSO</button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row recursos__search section__margin-bottom">
+                    <div class="col-sm-8">
+                        <div class="ibox-content">
+                                <div class="search-form">
+                                    <form action="index.html" method="get">
+                                        <div class="input-group">
+                                            <i class="recursos__search-icon fas fa-search"></i>
+                                            <input type="text" placeholder="NOMBRE DEL RECURSO" name="search" class="recursos__search-form-control form-control input-lg">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-primary btn-primary__submit" type="submit">BUSCAR</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row section__margin-bottom">
+                    <div class="col-sm-3">
+                        <select class="form-control m-b recursos__filter-form-control" name="account">
+                            <option>SELECCIONE EL TIPO</option>
+                            <option>Estudios de mercado</option>
+                            <option>Noticias</option>
+                            <option>Documentación</option>
+                            <option>Dnoticias de prensa</option>
+                        </select>
+                    </div>
+                </div>-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="recursos__wrapper-table">
+                            <table id="recursos__table" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-bordered-radius--left">CÓDIGO</th>
+                                            <th>TÍTULO DEL RECURSO</th>
+                                            <th>TIPO</th>
+                                            <th>ESTADO</th>
+                                            <th class="table-bordered-radius--right text-center">ACCIÓN</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>Perfil producto - Mercado 2019: Granada en la Unión Europea</td>
+                                            <td>Estudio de Mercado</td>
+                                            <td>Activo</td>
+                                            <td class="recursos__table-action-option"><i class="fas fa-ellipsis-h"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Infografía: Aceite de Oliva en Portugal</td>
+                                            <td>Estudio de Mercado</td>
+                                            <td>Activo</td>
+                                            <td class="recursos__table-action-option"><i class="fas fa-ellipsis-h"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>003</td>
+                                            <td>Tendencias de Consumo de Alimentos en Asia, Medio Oriente y África</td>
+                                            <td>Noticia</td>
+                                            <td>Activo</td>
+                                            <td class="recursos__table-action-option"><i class="fas fa-ellipsis-h"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>004</td>
+                                            <td>Aversión al riesgo por tensión comercial podría seguir golpeando mercados</td>
+                                            <td>Noticia</td>
+                                            <td>Activo</td>
+                                            <td class="recursos__table-action-option"><i class="fas fa-ellipsis-h"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>005</td>
+                                            <td>Perú: el 80% de nuestras exportaciones dependen de las materias primas</td>
+                                            <td>Noticia</td>
+                                            <td>Activo</td>
+                                            <td class="recursos__table-action-option"><i class="fas fa-ellipsis-h"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>006</td>
+                                            <td>Perfil producto - Mercado 2019: Granada en la Unión Europea</td>
+                                            <td>Estudio de Mercado</td>
+                                            <td>Activo</td>
+                                            <td class="recursos__table-action-option"><i class="fas fa-ellipsis-h"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>007</td>
+                                            <td>Tendencias de Consumo de Alimentos en Asia, Medio Oriente y África</td>
+                                            <td>Noticia</td>
+                                            <td>Activo</td>
+                                            <td class="recursos__table-action-option"><i class="fas fa-ellipsis-h"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
