@@ -1,0 +1,40 @@
+/*
+COLORES
+
+Del manual
+-----------
+Rojo: R213 G43 B30 --> #d52b1e
+Verde: R122 G184 B0 --> #7ab800
+Lila: R125 G0 B99
+Marrón: R110 G50 B25
+Azul: R0 G121 B193
+Amarillo: R253 G200 B47
+
+De los mockups
+-------------
+Plomo oscuro:#43434b
+Plomo claro: #eff0f4
+*/
+
+@font-face {
+    font-family: BreePeru;
+    src: url('../fonts/BreePeru_Regular.otf');
+}
+
+@font-face {
+    font-family: DINPro;
+    src: url('../fonts/DINPro-Regular_13937.ttf');
+}
+
+body {
+    font-family: DINPro, sans-serif;
+    background: #eff0f4;
+}
+
+p {
+    font-family: DINPro, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
