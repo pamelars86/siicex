@@ -18,78 +18,83 @@
   </head>
 
   <body>
-    <nav class="fixed-top navbar navbar-expand navbar-light">
-      <div class="container navbar__all-options">
-        <div class="navbar-brand">
-          <ul id="boletin__header-title">
-            <li class="boletin__logo">
-              <a href="#">
-                <img src="img/logo.png" />
-              </a>
-            </li>
-            <li class="boletin__category boletin__category--web">
-              <span class="boletin__category--pl"
-                ><strong>Boletín de inteligencia</strong></span
-              >
-            </li>
-          </ul>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarsExample02"
-          aria-controls="navbarsExample02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-          <form class="boletin__search-form form-inline my-2 my-md-0  ml-auto">
-            <div class="input-group">
-              <input
-                class="boletin__search form-control py-2"
-                type="search"
-                placeholder="Buscar en este boletín"
-              />
-              <span class=" input-group-append">
-                <div
-                  class="boletin__search--btn input-group-text bg-transparent"
-                >
-                  <i class="fa fa-search"></i>
-                </div>
-              </span>
+      <nav class="fixed-top navbar navbar-expand navbar-light">
+          <div class="container navbar__all-options">
+            <div class="navbar-brand">
+              <ul id="boletin__header-title">
+                <li class="boletin__logo">
+                  <a href="#">
+                    <img src="img/logo.png" />
+                  </a>
+                </li>
+                <li class="boletin__category boletin__category--web">
+                  <span class="boletin__category--pl"
+                    ><strong>Boletín de inteligencia</strong></span
+                  >
+                </li>
+              </ul>
             </div>
-          </form>
-
-          
-          <ul class="menu__all-info-user nav navbar-nav">
-            <li class="nav-item dropdown no-arrow">
-              <div class="menu__user">
-                <a
-                  href="#"
-                  id="userDropdown"
-                  role="button"
-                  class="menu__notifications text-center"
-                >
-                  <img
-                    class="menu__user-img rounded-circle"
-                    src="https://semantic-ui.com/images/avatar/small/elliot.jpg"
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarsOptions"
+              aria-controls="navbarsOptions"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarsOptions">
+              <form class="boletin__search-form form-inline my-2 my-md-0  ml-auto">
+                <div class="input-group">
+                  <input
+                    class="boletin__search form-control py-2"
+                    type="search"
+                    placeholder="Buscar en este boletín"
                   />
-                  <span class="menu__user-counter">8</span>
-                </a>
-                <div class="menu__user-info">
-                  <a class="user">Hola, Omar</a>
-                  <div class="email">omar@promperu.pe</div>
+                  <span class=" input-group-append">
+                    <div
+                      class="boletin__search--btn input-group-text bg-transparent"
+                    >
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </span>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+              </form>
+              <div class="searchbar--mobile d-flex justify-content-center h-100">
+                  <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="">
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+              
+              <ul class="menu__all-info-user nav navbar-nav">
+                <li class="nav-item dropdown no-arrow">
+                  <div class="menu__user">
+                    <a
+                      href="#"
+                      id="userDropdown"
+                      role="button"
+                      class="menu__notifications text-center"
+                    >
+                      <img
+                        class="menu__user-img rounded-circle"
+                        src="https://semantic-ui.com/images/avatar/small/elliot.jpg"
+                      />
+                      <span class="menu__user-counter">8</span>
+                    </a>
+                    <div class="menu__user-info">
+                      <a class="user">Hola, Omar</a>
+                      <div class="email">omar@promperu.pe</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
     <div class="container page-body">
       <div class="main">

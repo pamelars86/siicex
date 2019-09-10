@@ -33,14 +33,15 @@ Celeste plomo: #f3f5fc
 .searchbar{
   margin-bottom: auto;
   margin-top: auto;
-  height: 60px;
-  background-color: #353b48;
-  border-radius: 30px;
-  padding: 10px;
+  height: 50px;
+  background-color: #f3f5fc;
+  border-radius: 49px;
+  padding: 5px;
+  border: solid 1px #dde2ed !important;
   }
 
   .search_input{
-  color: white;
+  color: #d52b1e;
   border: 0;
   outline: 0;
   background: none;
@@ -51,14 +52,14 @@ Celeste plomo: #f3f5fc
   }
 
   .searchbar:hover > .search_input{
-  padding: 0 10px;
-  width: 450px;
-  caret-color:red;
+  padding: 0 5px;
+  /*width: auto;*/
+  caret-color:e74c3c;
   transition: width 0.4s linear;
   }
 
   .searchbar:hover > .search_icon{
-  background: white;
+  background: f3f5fc;
   color: #e74c3c;
   }
 
@@ -70,7 +71,7 @@ Celeste plomo: #f3f5fc
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color:white;
+  color:#d52b1e;
   }
 
 
@@ -234,9 +235,15 @@ button.boletin__search--btn.btn.active {
 }
 
 @media only screen and (min-width: 997px) {
-  .boletin__category--mobile{
-    display: none;
+  .boletin__category--mobile,
+  .searchbar--mobile{
+    display: none !important;
   }
+
+  .attach-file__close--mobile{
+    display: none !important;
+  }
+  
 }
 
 
@@ -250,7 +257,7 @@ button.boletin__search--btn.btn.active {
     display: none !important;
   }
 
-  .boletin__category--mobile{
+  .boletin__category--mobile, .searchbar--mobile{
     display: inline;
   }
 
@@ -261,11 +268,22 @@ button.boletin__search--btn.btn.active {
   .menu__all-info-user{
     margin-left: auto!important;
   }
+
+  .boletin__logo{
+    margin-right: 5px;
+  }
+
+  .attach-file__close--web{
+    display: none !important;
+  }
 }
 
 /* ---------------------------------------------------
    SECTION LAYOUT
 ----------------------------------------------------- */
+.a {
+  color: #595c65;
+}
 
 .boletin__section {
   max-width: 1110px;
@@ -513,7 +531,7 @@ button.boletin__search--btn.btn.active {
    NEW OPPORTUNITIES STYLE
 ----------------------------------------------------- */
 .new-opportunity__row {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .new-opportunity__item {
@@ -923,6 +941,7 @@ blockquote cite:before {
   border: solid 1px #ffffff;
   width: 100%;
   min-height: 49px;
+  margin-bottom: 10px;
 }
 
 .btn-share--url {
@@ -965,8 +984,15 @@ blockquote cite:before {
     width: 100%;
 }
 
+
+
 .attach-file__options {
     padding: 15px 25px;
+    position: relative;
+}
+
+.attach-file__item{
+  margin-bottom: 10px;
 }
 
 .attach-file__name {
@@ -1045,11 +1071,21 @@ blockquote cite:before {
   border: none !important;
   border-bottom: 1px solid #d0d3d9 !important;
 }
+
+@media only screen and (max-width: 768px) {
+  .share-url__input {
+    margin: 8px 0px;
+  }
+}
 /* ---------------------------------------------------
    EVENTS STYLE Ex. Calendario
 ----------------------------------------------------- */
 .events-row {
   margin-bottom: 25px;
+}
+
+.events-row .card {
+  margin-bottom: 10px;
 }
 
 .events__todos {
@@ -1114,3 +1150,28 @@ blockquote cite:before {
   text-align: right;
 }
 
+.share-options__arrow::before {
+  top: 0;
+  border-width: 0 .5rem .5rem .5rem;
+  border-bottom-color: rgba(0,0,0,.25);
+}
+.share-options__arrow::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+
+
+.popover-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  opacity: 1;
+  z-index: 1;
+}
+.popover-close .material-icons {
+  font-size: 16px;
+  font-weight: bold;
+}
