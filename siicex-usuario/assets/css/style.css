@@ -1,8 +1,11 @@
-@import "https://fonts.googleapis.com/css?family=Sarala&display=swap";
+/*
+ PROMPERU 2019
+ Clases usadas para estilos genéricos
+ */
 
 @font-face {
-    font-family: DINPro;
-    src: url('../ttf/DINPro-Regular_13937.ttf');
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 /*Colores Código
@@ -45,18 +48,18 @@ Plomo claro menu: #9fafb7;
   color: #fff;
 }
 .btn-primary {
-  background-color: #d13520;
-  border-color: #d13520;
-  color: #FFFFFF;
+  background-color: #d13520 !important;
+  border-color: #d13520 !important;
+  color: #FFFFFF !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  background-color: #e26251;
-  border-color: #e26251;
-  color: #FFFFFF;
+  background-color: #e26251 !important;
+  border-color: #e26251 !important;
+  color: #FFFFFF !important;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -83,8 +86,9 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary__submit{
-  font-weight: bold;
-  padding: 10px 50px;
+  font-weight: bold !important;
+  font-size:18px !important;
+  padding: 10px 50px !important;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -448,7 +452,7 @@ button.dim:active:before {
 .label {
   background-color: #d1dade;
   color: #5e5e5e;
-  font-family: DINPro, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 10px;
   font-weight: 600;
   padding: 3px 8px;
@@ -457,7 +461,7 @@ button.dim:active:before {
 .badge {
   background-color: #d1dade;
   color: #5e5e5e;
-  font-family: DINPro, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 11px;
   font-weight: 600;
   padding-bottom: 4px;
@@ -1178,7 +1182,6 @@ table.dataTable thead .sorting:after {
 .single-line {
   background-color: #FFFFFF;
   background-image: none;
-  border: 1px solid #e5e6e7;
   border-radius: 1px;
   color: inherit;
   display: block;
@@ -2214,14 +2217,14 @@ a.forum-item-title:hover {
 }
 
 body {
-  font-family: DINPro, sans-serif;
+  font-family: Roboto, sans-serif;
   background: #fafafa;
   font-size: 14px;
   color: #676a6c;
   overflow-x: hidden;
 }
 p {
-  font-family: DINPro, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
@@ -2229,9 +2232,6 @@ p {
 }
 
 
-body.boxed-layout {
-  background: url('patterns/shattered.png');
-}
 body.boxed-layout #wrapper {
   background-color: #2f4050;
   max-width: 1200px;
@@ -2318,9 +2318,7 @@ video {
 .modal-dialog {
   z-index: 1200;
 }
-.modal-body {
-  padding: 20px 30px 30px 30px;
-}
+
 .inmodal .modal-body {
   background: #f8fafb;
 }
@@ -2754,6 +2752,10 @@ table.table-mail tr td {
   right: 0;
 }
 /* BACKGROUNDS */
+
+.dark-bg {
+  background-color: #323238;
+}
 .gray-bg {
   background-color: #f3f3f4;
 }
@@ -4113,383 +4115,7 @@ body.rtls.top-navigation .footer.fixed {
 .default-skin:hover {
   background: #199d82;
 }
-.blue-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-1.png") repeat scroll 0 0;
-}
-.blue-skin:hover {
-  background: #0d8ddb;
-}
-.yellow-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-3.png") repeat scroll 0 100%;
-}
-.yellow-skin:hover {
-  background: #ce8735;
-}
-.ultra-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-2.png") repeat scroll 0 0;
-}
-.ultra-skin:hover {
-  background: #1a2d40;
-}
-/*
- *
- *   SKIN 1 - INSPINIA - Responsive Admin Theme
- *   NAME - Blue light
- *
-*/
-.skin-1 .minimalize-styl-2 {
-  margin: 14px 5px 5px 30px;
-}
-.skin-1 .navbar-top-links li:last-child {
-  margin-right: 30px;
-}
-.skin-1.fixed-nav .minimalize-styl-2 {
-  margin: 14px 5px 5px 15px;
-}
-.skin-1 .spin-icon {
-  background: #0e9aef !important;
-}
-.skin-1 .nav-header {
-  background: #0e9aef;
-  background: url('patterns/header-profile-skin-1.png');
-}
-.skin-1.mini-navbar .nav-second-level {
-  background: #3e495f;
-}
-.skin-1 .breadcrumb {
-  background: transparent;
-}
-.skin-1 .page-heading {
-  border: none;
-}
-.skin-1 .nav > li.active {
-  background: #3a4459;
-}
-.skin-1 .nav > li > a {
-  color: #9ea6b9;
-}
-.skin-1 .nav > li.active > a {
-  color: #fff;
-}
-.skin-1 .navbar-minimalize {
-  background: #0e9aef;
-  border-color: #0e9aef;
-}
-body.skin-1 {
-  background: #3e495f;
-}
-.skin-1 .navbar-static-top {
-  background: #ffffff;
-}
-.skin-1 .dashboard-header {
-  background: transparent;
-  border-bottom: none !important;
-  border-top: none;
-  padding: 20px 30px 10px 30px;
-}
-.fixed-nav.skin-1 .navbar-fixed-top {
-  background: #fff;
-}
-.skin-1 .wrapper-content {
-  padding: 30px 15px;
-}
-.skin-1 #page-wrapper {
-  background: #f4f6fa;
-}
-.skin-1 .ibox-title,
-.skin-1 .ibox-content {
-  border-width: 1px;
-}
-.skin-1 .ibox-content:last-child {
-  border-style: solid solid solid solid;
-}
-.skin-1 .nav > li.active {
-  border: none;
-}
-.skin-1 .nav-header {
-  padding: 35px 25px 25px 25px;
-}
-.skin-1 .nav-header a.dropdown-toggle {
-  color: #fff;
-  margin-top: 10px;
-}
-.skin-1 .nav-header a.dropdown-toggle .text-muted {
-  color: #fff;
-  opacity: 0.8;
-}
-.skin-1 .profile-element {
-  text-align: center;
-}
-.skin-1 .img-circle {
-  border-radius: 5px;
-}
-.skin-1 .navbar-default .nav > li > a:hover,
-.skin-1 .navbar-default .nav > li > a:focus {
-  background: #3a4459;
-  color: #fff;
-}
-.skin-1 .nav.nav-tabs > li.active > a {
-  color: #555;
-}
-.skin-1 .nav.nav-tabs > li.active {
-  background: transparent;
-}
-/*
- *
- *   SKIN 2 - INSPINIA - Responsive Admin Theme
- *   NAME - Inspinia Ultra
- *
-*/
-body.skin-2 {
-  color: #565758 !important;
-}
-.skin-2 .minimalize-styl-2 {
-  margin: 14px 5px 5px 25px;
-}
-.skin-2 .navbar-top-links li:last-child {
-  margin-right: 25px;
-}
-.skin-2 .spin-icon {
-  background: #23c6c8 !important;
-}
-.skin-2 .nav-header {
-  background: #23c6c8;
-  background: url('patterns/header-profile-skin-2.png');
-}
-.skin-2.mini-navbar .nav-second-level {
-  background: #ededed;
-}
-.skin-2 .breadcrumb {
-  background: transparent;
-}
-.skin-2.fixed-nav .minimalize-styl-2 {
-  margin: 14px 5px 5px 15px;
-}
-.skin-2 .page-heading {
-  border: none;
-  background: rgba(255, 255, 255, 0.7);
-}
-.skin-2 .nav > li.active {
-  background: #e0e0e0;
-}
-.skin-2 .logo-element {
-  padding: 17px 0;
-}
-.skin-2 .nav > li > a,
-.skin-2 .welcome-message {
-  color: #edf6ff;
-}
-.skin-2 #top-search::-moz-placeholder {
-  color: #edf6ff;
-  opacity: 0.5;
-}
-.skin-2 #side-menu > li > a,
-.skin-2 .nav.nav-second-level > li > a {
-  color: #586b7d;
-}
-.skin-2 .nav > li.active > a {
-  color: #213a53;
-}
-.skin-2.mini-navbar .nav-header {
-  background: #213a53;
-}
-.skin-2 .navbar-minimalize {
-  background: #23c6c8;
-  border-color: #23c6c8;
-}
-.skin-2 .border-bottom {
-  border-bottom: none !important;
-}
-.skin-2 #top-search {
-  color: #fff;
-}
-body.skin-2 #wrapper {
-  background-color: #ededed;
-}
-.skin-2 .navbar-static-top {
-  background: #213a53;
-}
-.fixed-nav.skin-2 .navbar-fixed-top {
-  background: #213a53;
-  border-bottom: none !important;
-}
-.skin-2 .nav-header {
-  padding: 30px 25px 30px 25px;
-}
-.skin-2 .dashboard-header {
-  background: rgba(255, 255, 255, 0.4);
-  border-bottom: none !important;
-  border-top: none;
-  padding: 20px 30px 20px 30px;
-}
-.skin-2 .wrapper-content {
-  padding: 30px 15px;
-}
-.skin-2 .dashoard-1 .wrapper-content {
-  padding: 0px 30px 25px 30px;
-}
-.skin-2 .ibox-title {
-  background: rgba(255, 255, 255, 0.7);
-  border: none;
-  margin-bottom: 1px;
-}
-.skin-2 .ibox-content {
-  background: rgba(255, 255, 255, 0.4);
-  border: none !important;
-}
-.skin-2 #page-wrapper {
-  background: #f6f6f6;
-  background: -webkit-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%);
-  background: -o-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%);
-  background: radial-gradient(ellipse at center, #f6f6f6 20%, #d5d5d5 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f6f6f6, endColorstr=#d5d5d5)";
-}
-.skin-2 .ibox-title,
-.skin-2 .ibox-content {
-  border-width: 1px;
-}
-.skin-2 .ibox-content:last-child {
-  border-style: solid solid solid solid;
-}
-.skin-2 .nav > li.active {
-  border: none;
-}
-.skin-2 .nav-header a.dropdown-toggle {
-  color: #edf6ff;
-  margin-top: 10px;
-}
-.skin-2 .nav-header a.dropdown-toggle .text-muted {
-  color: #edf6ff;
-  opacity: 0.8;
-}
-.skin-2 .img-circle {
-  border-radius: 10px;
-}
-.skin-2 .nav.navbar-top-links > li > a:hover,
-.skin-2 .nav.navbar-top-links > li > a:focus {
-  background: #1a2d41;
-}
-.skin-2 .navbar-default .nav > li > a:hover,
-.skin-2 .navbar-default .nav > li > a:focus {
-  background: #e0e0e0;
-  color: #213a53;
-}
-.skin-2 .nav.nav-tabs > li.active > a {
-  color: #555;
-}
-.skin-2 .nav.nav-tabs > li.active {
-  background: transparent;
-}
-/*
- *
- *   SKIN 3 - INSPINIA - Responsive Admin Theme
- *   NAME - Yellow/purple
- *
-*/
-.skin-3 .minimalize-styl-2 {
-  margin: 14px 5px 5px 30px;
-}
-.skin-3 .navbar-top-links li:last-child {
-  margin-right: 30px;
-}
-.skin-3.fixed-nav .minimalize-styl-2 {
-  margin: 14px 5px 5px 15px;
-}
-.skin-3 .spin-icon {
-  background: #ecba52 !important;
-}
-body.boxed-layout.skin-3 #wrapper {
-  background: #3e2c42;
-}
-.skin-3 .nav-header {
-  background: #ecba52;
-  background: url('patterns/header-profile-skin-3.png');
-}
-.skin-3.mini-navbar .nav-second-level {
-  background: #3e2c42;
-}
-.skin-3 .breadcrumb {
-  background: transparent;
-}
-.skin-3 .page-heading {
-  border: none;
-}
-.skin-3 .nav > li.active {
-  background: #38283c;
-}
-.fixed-nav.skin-3 .navbar-fixed-top {
-  background: #fff;
-}
-.skin-3 .nav > li > a {
-  color: #948b96;
-}
-.skin-3 .nav > li.active > a {
-  color: #fff;
-}
-.skin-3 .navbar-minimalize {
-  background: #ecba52;
-  border-color: #ecba52;
-}
-body.skin-3 {
-  background: #3e2c42;
-}
-.skin-3 .navbar-static-top {
-  background: #ffffff;
-}
-.skin-3 .dashboard-header {
-  background: transparent;
-  border-bottom: none !important;
-  border-top: none;
-  padding: 20px 30px 10px 30px;
-}
-.skin-3 .wrapper-content {
-  padding: 30px 15px;
-}
-.skin-3 #page-wrapper {
-  background: #f4f6fa;
-}
-.skin-3 .ibox-title,
-.skin-3 .ibox-content {
-  border-width: 1px;
-}
-.skin-3 .ibox-content:last-child {
-  border-style: solid solid solid solid;
-}
-.skin-3 .nav > li.active {
-  border: none;
-}
-.skin-3 .nav-header {
-  padding: 35px 25px 25px 25px;
-}
-.skin-3 .nav-header a.dropdown-toggle {
-  color: #fff;
-  margin-top: 10px;
-}
-.skin-3 .nav-header a.dropdown-toggle .text-muted {
-  color: #fff;
-  opacity: 0.8;
-}
-.skin-3 .profile-element {
-  text-align: center;
-}
-.skin-3 .img-circle {
-  border-radius: 5px;
-}
-.skin-3 .navbar-default .nav > li > a:hover,
-.skin-3 .navbar-default .nav > li > a:focus {
-  background: #38283c;
-  color: #fff;
-}
-.skin-3 .nav.nav-tabs > li.active > a {
-  color: #555;
-}
-.skin-3 .nav.nav-tabs > li.active {
-  background: transparent;
-}
+
 @media (min-width: 768px) {
   #page-wrapper {
     position: inherit;
@@ -4586,48 +4212,6 @@ body.skin-3 {
   }
 }
 
-
-/*LOGIN - page*/
-.login-layout{
-  padding-top: 50px;
-}
-.login__container{
-  max-width: 550px;
-  margin-top:100px;
-}
-
-.login__wrapper-form{
-  padding: 35px;
-  background: white;
-  box-shadow: 0 4px 8px 0 rgba(183, 181, 181, 0.2);
-  border-radius: 5px;
-}
-
-.login__header{
-  margin-bottom: 40px;
-}
-
-.login__footer{
-  margin-top: 40px;
-}
-
-.login__footer-text{
-  color: #43434b !important;
-  font-weight: bold;
-}
-
-
-
-.login__form-control{
-    border: 0px;
-    border-bottom: 1px solid #595864 !important;
-    border-radius: 1px;
-    padding: 6px 0px;
-    margin-bottom: 40px;
-    font-size:18px;
-  }
-
-
   /*ÍCONOS*/
 
   .icon::before {
@@ -4660,7 +4244,7 @@ body.skin-3 {
 }
 
 .recursos__filter-form-control{
-  border: 0px;
+  border: 0px !important;
   border-bottom: 1px solid #595864 !important;
   font-size: 18px;
   background: transparent;
@@ -4700,3 +4284,45 @@ Plomo claro: #575862
 Blanco Humo: #e9ebef
 Plomo claro menu: #9fafb7;
 */
+
+
+/* ---------------------------------------------------
+    PÁGINA DE LOGIN
+----------------------------------------------------- */
+.login-layout{
+  padding-top: 50px;
+}
+.login__container{
+  max-width: 550px;
+  margin-top:100px;
+}
+
+.login__wrapper-form{
+  padding: 35px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(183, 181, 181, 0.2);
+  border-radius: 5px;
+}
+
+.login__header{
+  margin-bottom: 40px;
+}
+
+.login__footer{
+  margin-top: 40px;
+}
+
+.login__footer-text{
+  color: #43434b !important;
+  font-weight: bold;
+}
+
+
+.login__form-control{
+      border: 0px !important;
+    border-bottom: 1px solid #595864 !important;
+    border-radius: 1px;
+    padding: 6px 0px;
+    margin-bottom: 40px;
+    font-size:18px;
+  }

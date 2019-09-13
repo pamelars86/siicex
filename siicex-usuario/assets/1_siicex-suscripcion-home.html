@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Dashboard</title>
+  
+  
+
+<!--CSS -->
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+<link href="css/sb-admin-2.css" rel="stylesheet">
+
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="css/siicex-usuario.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+<!-- Font Awesome JS -->
+<script defer src="fontawesome-free-5.10.2-web/js/all.js"></script>
+<script defer src="fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
+   
+
+</head>
+
+<body id="page-top" class="Site">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper" class="Site-content">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+            <img src="img/logo.png">
+        </div>
+      </a>
+
+      <li class="sidebar__option">
+        <a href="#opcionSeguridad" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Seguridad</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionSeguridad">
+            <li class="sidebar__suboption">
+                <a href="#">Perfiles</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Usuarios</a>
+            </li>
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionPaginas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Páginas</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionPaginas">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionBloques" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Bloques</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionBloques">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionPlataforma" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Plataforma</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionPlataforma">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionMensajes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Mensajes</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionMensajes">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionProductos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Productos</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionProductos">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionRecursos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Recursos</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionRecursos">
+            <li class="sidebar__suboption">
+                <a href="#">Estudios de mercado</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Noticias</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Documentación</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Notas de prensa</a>
+            </li>
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionBoletines" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Boletines</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionBoletines">
+        </ul>
+    </li>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav id="menutop" class="fixed-top navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="main-search form-control bg-light border-0 small" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none top-bar__search-xs">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="main-search form-control bg-light border-0 small" placeholder="Buscar ..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - User Information -->
+            <li class="menu__user nav-item dropdown no-arrow menu__all-info-user">
+              <a class="menu__notifications nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img class="img-profile rounded-circle" src="img/avatar.jpeg">
+                  <span class="menu__user-counter">8</span>
+                  <div class="menu__user-info">
+                    <a class="user">Miguel Quiroz</a>
+                    <div class="email">miguel@promperu.pe</div>
+                  </div>
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Mi perfil
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Salir
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="body-container container-fluid">
+        </div>
+        <!-- End of Main Content -->
+
+     
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+</div>
+ <!-- Footer -->
+
+       <!--INI FOOTER -->
+       <div class="sticky-footer footer__container dark-bg">
+        <div class="row">
+            <div class="col-sm-8">
+            <p class="footer__address">
+                Calle 21 N° 713 Urb. El Palomar - San Isidro - Lima - Perú
+            </p>
+            <p class="footer__address">
+                Av. Jorge Basadre 610 - San Isidro - Lima - Perú
+            </p>
+            <p class="footer__address">
+                Teléfonos: (511) 6167300 - 6167400 | sae@promperu.gob.pe -
+                sae1@promperu.gob.pe
+            </p>
+            </div>
+            <div class="col-sm-4 footer__logo">
+            <img src="img/logo-promperu-footer.png" />
+            </div>
+        </div>
+</div>
+<!--FIN FOOTER -->
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+
+</body>
+
+</html>

@@ -16,6 +16,14 @@ De los mockups
 Celeste plomo: #f3f5fc
 */
 
+
+/*
+TYPE 1
+*/
+/* -------------------------------------------------------------------------------------------------
+                                          BOLETINES - Main
+------------------------------------------------------------------------------------------------- */
+
 @font-face {
   font-family: BreePeru;
   src: url("../fonts/BreePeru_Regular.otf");
@@ -131,6 +139,49 @@ Celeste plomo: #f3f5fc
   .menu__user-info {
     display: none !important;
   }
+}
+
+/*
+WITHOUT BULLETS
+*/
+
+.ul-without-bullets{
+  padding:0px;
+}
+
+.ul-without-bullets li{
+  list-style: none;
+}
+
+/*
+BULLETS ROJO 
+*/
+
+.bullets-red {
+  padding-left: 15px;
+  margin: 0px;
+}
+.bullet-item__text {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  color: #555d61;
+  font-family: DINex;
+  margin-bottom: 10px;
+}
+
+.bullet-item__text::before {
+  color: #d52b1e;
+  content: "\2022";
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  top: -5px;
+  left: -19px;
+}
+
+.header-title--col{
+    padding-left: 0px;
 }
 /* ---------------------------------------------------
     MENU BRAND & USER HEADER STYLE
@@ -281,9 +332,37 @@ button.boletin__search--btn.btn.active {
 /* ---------------------------------------------------
    SECTION LAYOUT
 ----------------------------------------------------- */
+
+/*Genéricos para boletín*/
 .a {
   color: #595c65;
 }
+
+.color-red{
+  color: #d13520;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #c8c8c8 !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #c8c8c8 !important;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #c8c8c8 !important;
+}
+
+textarea:-ms-input-placeholder {
+  color: #c8c8c8 !important;
+}
+
+textarea::placeholder {
+  color: #c8c8c8 !important;
+}
+
+/*layout para secciones del boletín*/
 
 .boletin__section {
   max-width: 1110px;
@@ -339,7 +418,8 @@ button.boletin__search--btn.btn.active {
 }
 
 /*Subtítulo Ex. "Otros sectores de interés"*/
-.boletin__subtitle-name {
+.boletin__subtitle-name,
+.boletin-details__bibliography-title {
   color: #3c3c3c;
   display: inline-block;
   list-style: none;
@@ -609,7 +689,7 @@ button.boletin__search--btn.btn.active {
 }
 .last-news-sector__secundaryv2-item {
   padding: 15px;
-  background: #000000bf;
+  background: #595b64;
   border-radius: 4px;
 }
 
@@ -1175,3 +1255,260 @@ blockquote cite:before {
   font-size: 16px;
   font-weight: bold;
 }
+
+
+/*
+TYPE 2
+*/
+/* -------------------------------------------------------------------------------------------------
+                                          BOLETINES - Single item
+------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------
+   RESUME STYLE
+   Ex. Balanza comercial del Perú acumuló superávit de US$4.924M entre enero y octubre.
+----------------------------------------------------- */
+
+.boletin-resume,
+.boletin-resume p{
+  color: #595c65;
+}
+
+.boletin-resume__row{
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+
+
+.boletin-resume__title{
+  font-family: DINEx;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.boletin-resume__subtitle{
+  font-size: 13px !important;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  border-left: solid 1px #d0021b;
+  padding-left: 15px;
+}
+
+.boletin-resume__author{
+  color: #d0021b !important;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.boletin-resume__date{
+  font-weight: bold;
+  line-height: 1.79;
+}
+
+.boletin-resume__info{
+  font-family: DINEx;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: 0px;
+  color: #595c65;
+}
+
+.boletin-resume__topics{
+  font-family: DINEx;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: 0px;
+}
+
+/* ---------------------------------------------------
+   DETAILS STYLE
+----------------------------------------------------- */
+
+.boletin-details__photo-description{
+  font-size: 12px;
+  line-height: normal !important;
+  color:#879195;
+}
+.boletin-details__photo-description--main{
+  background: #f6f7f9;
+  padding: 15px 30px;
+  margin-bottom: 0px;
+}
+
+.boletin-details__statements {
+  padding: 20px 30px;
+  background: #fff;
+}
+
+.boletin-details__title-statement{
+  font-family: DINEx;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #4c4c4c;
+  padding-top: 5px;
+}
+
+.boletin-details__img{
+  width:100%
+}
+
+.boletin-details__statements p{
+  line-height: 25px;
+  letter-spacing: normal;
+  color: #879195;
+}
+
+.boletin-details__highlight{
+  color: #d0021b;
+  font-weight: bold;
+}
+
+.boletin-details__quote{
+  font-family: DINEx;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0px;
+  color: #4c4c4c;
+  margin:0px;
+}
+
+.boletin-details__bibliography{
+  background: #eef2fb;
+  padding: 20px 30px;
+}
+
+.bibliography__reference{
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: #879195;
+  padding-left: 5px;
+}
+
+
+/* ---------------------------------------------------
+   BOLETIN SINGLE ITEM -- COLUMN RIGHT -- STARS
+----------------------------------------------------- */
+
+.boletin__rating {
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.boletin__rating{
+  background: #fff;
+}
+
+.boletin__rating-title{
+  font-weight: bold;
+  color: #555d61;
+}
+
+.boletin__all-stars{
+
+}
+
+.boletin__star{
+  color: #d0d0d0;
+  font-size: 28px;
+  margin: 2px;
+}
+
+.boletin__star--checked{
+  color: #ffdd4a;
+}
+
+/* ---------------------------------------------------
+   BOLETIN SINGLE ITEM -- COMMENTS
+----------------------------------------------------- */
+.boletin-comment{
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 28px;
+  margin-bottom: 10px;
+}
+
+.boletin-comment__author-name{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d0021b;
+}
+
+.boletin-comment__author-sector{
+  font-family: Roboto;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+
+.boletin-comment__date--col{
+  text-align:right;
+}
+
+.boletin-comment__heading {
+  margin-bottom: 10px;
+}
+
+.boletin-comment__footer-options{
+  display: inline-flex;
+  margin-bottom:0px;
+}
+
+.boletin-comment__footer-options li{
+  padding-right: 10px;
+}
+
+.boletin-comment__reply {
+  border-radius: 5px;
+  background-color: #eef2fb;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.post-comment__reply-close {
+  text-align: right;
+  font-weight: bold;
+  color: #879195;
+  margin: 15px 0px 8px;
+}
+
+.post-comment__reply-text {
+  color: #d53621 !important;
+  font-weight: bold;
+}
+
+
+
+.boletin-coment__new-comment{
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px 28px;
+}
+
+.boletin-coment__new-comment--reply{
+  border: solid 1px #cacaca;
+}
+
+
+.new-comment__text{
+  border:0px !important;
+  font-size: 14px;
+  line-height: 1.79;
+  color: #879195 !important;
+}
+

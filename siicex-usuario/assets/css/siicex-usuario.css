@@ -1,0 +1,793 @@
+/*
+ PROMPERU 2019
+ Clases usadas para estilos específicos
+ 
+ */
+
+
+@font-face {
+    font-family: DINex;
+    src: url("../fonts/D-DINExp.otf");
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  }
+
+  .Site {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.Site-content {
+    flex: 1 1;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+    margin-bottom:0px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.active .navbar {
+    width: 100%;
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.font-21{
+    font-size: 21px;
+
+}
+
+.font-14{
+    font-size: 14px
+}
+
+/*
+BULLETS ROJO 
+*/
+#header-title {
+    padding: 0px;
+    margin: 0px;
+  }
+
+
+  #header-title li, {
+    display: inline;
+  }
+ 
+  .header-title__subtitle-name{
+    color: #3c3c3c;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    color: #555d61;
+    font-family: DINex;
+  }
+
+  .bullets-red {
+    padding-left: 15px;
+    margin: 0px;
+  }
+  .bullet-item__text {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    color: #555d61;
+    font-family: DINex;
+    line-height: 2.14;
+  }
+  
+  .header-title__subtitle-name--pl,
+  .bullet-item__text--pl {
+    padding-left: 15px;
+  }
+  
+  .header-title__subtitle-name::before,
+  .bullet-item__text::before {
+    color: #d52b1e;
+    content: "\2022";
+    display: inline-block;
+    font-size: 25px;
+    position: absolute;
+    top: -10px;
+  }
+
+  .header-title--col{
+      padding-left: 0px;
+  }
+
+
+/*options for "sidebar's options"*/
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#accordionSidebar {
+    top: 0;
+    bottom: 0;
+    z-index: 1040;
+    position: fixed;
+}
+
+@media (min-width: 768px){ 
+    .sidebar.toggled {
+        width: 220px !important;
+    }
+
+    #menutop, .footer__container{
+        margin-left: 220px
+    }
+}
+
+@media (max-width: 768px){
+    #accordionSidebar .toggled{
+        margin-left: 220px;
+        margin-right: -220px;
+    }
+
+    #accordionSidebar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px){
+    .sidebar-toggled #menutop,
+    .sidebar-toggled .body-container,
+    .sidebar-toggled .footer__container{
+        margin-left: 220px ;
+    }
+
+    .sidebar-toggled #accordionSidebar {
+        left: 0 !important;
+        width: 220px !important;
+    }
+
+    #accordionSidebar{
+        left: -220px;
+    }
+
+    .top-bar__search-xs{
+        padding-top: 25px;
+    }
+
+}
+
+.sidebar {
+    width: 220px !important;
+}
+
+.sidebar {
+    z-index: 999;
+    background: #595965;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.sidebar__option a:hover{
+    font-weight: bold;
+}
+a .sidebar__option-name{
+    vertical-align: middle;
+    font-size: 14px;
+}
+a .sidebar__option-name:hover{
+    color: #fff !important;
+}
+
+.sidebar__option a .fa-circle{
+    font-size: 8px;
+    margin-right: 5px;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sidebar__option a .fa-circle:hover{
+    font-size: 8px !important;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+/*options for "sidebar's suboptions"*/
+.sidebar__suboption a:hover {
+    color: #fff;
+    background: #595864;
+}
+
+#accordionSidebar .dropdown-toggle::after {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+#accordionSidebar {
+    padding: 0px;
+}
+
+#accordionSidebar p {
+    color: #fff;
+    padding: 10px;
+}
+
+#accordionSidebar li a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: block;
+    position: relative;
+}
+
+#accordionSidebar  ul a {
+    padding-left: 30px !important;
+    background: #43434b;
+}
+
+#accordionSidebar  ul a::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.sidebar-brand {
+    min-height: 4.375rem;
+    background: white;
+}
+
+#wrapper #content-wrapper {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#wrapper #content-wrapper #content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+footer.sticky-footer {
+    padding: 2rem 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+/* ---------------------------------------------------
+    MENU HEADER STYLE
+----------------------------------------------------- */
+
+.menu__all-info-user{
+    background: #f3f5fc;
+    height: 4.375rem;
+    padding: 10px;
+}
+
+
+.menu__user {
+   display:inline-flex;
+}
+
+.menu__user-img{
+    margin: 0px;
+    width: 45px;
+    height: 45px;
+}
+
+.menu__notifications {
+    position: relative;
+  }
+  .menu__user-counter {
+    line-height: 12px;
+    padding: 4px 7px;
+    position: absolute;
+    left: -3px;
+    bottom: -5px;
+    border-radius: 50px;
+    background: #d13520;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+.menu__user-info{
+    margin: 0px 5px;
+}
+
+.menu__user-info .user{
+    font-size: 16px;
+    font-weight: bold;
+    color:#595864;
+}
+
+.menu__user-info .email{
+    word-wrap: break-word;
+}
+
+.menu__salir .fa-sign-out-alt{
+    font-size: 25px !important;
+    color:#9fafb7;
+    top: 10px;
+    position: relative;
+}
+
+#userDropdown {
+    padding: 0px;
+}
+
+.main-search{
+    padding: 20px !important;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+
+#wrapper #content-wrapper {
+    background-color: #dfe2e9;
+}
+
+.content-option{
+    margin: 110px 80px 80px 300px;
+}
+
+
+@media (max-width: 768px) {
+    .content-option {
+        margin: 110px 20px 20px;
+    }
+}
+
+
+/* ---------------------------------------------------
+    SIICEX-Admin
+----------------------------------------------------- */
+
+/*Botón - toggle - colapse sidebar*/
+.btn__toggle,
+.btn__toggle:hover,
+.btn__toggle:active,
+.btn__toggle:visited,
+.btn__toggle:focus{
+    color: #43434b !important;
+    background-color: transparent !important;
+    border-color: transparent!important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.btn__toggle .fa-bars{
+    font-size: 20px;
+}
+
+
+/*Colores Código
+Rojo: #d13520
+Plomo oscuro:#43434b
+Plomo claro: #575862
+Blanco Humo: #e9ebef
+Plomo claro menu: #9fafb7;
+*/
+
+
+/* ---------------------------------------------------
+    BLOQUE DE SUSCRIPCIÓN
+----------------------------------------------------- */
+
+
+.subscription-section{
+    background-color: #595c65;
+    border-left: 8px solid #d0021b;
+    border-radius: 4px;
+}
+
+.subscription-section__subscription-text{
+    padding: 25px;
+}
+
+.subscription-text__title{
+    font-family: DINex;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.subscription-text__description{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.subscription-section__subscription-option{
+    background-image: url("../img/rectangle.png");
+    text-align: center;
+    padding: 25px;
+}
+.subscription-option__call{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+
+/* ---------------------------------------------------
+    BLOQUE DE FILTROS DE BOLETINES
+----------------------------------------------------- */
+
+.boletin__filters{
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  padding: 15px 10px;
+}
+
+
+.text-filter__form-control{
+    border: 0px;
+    border-bottom: 2px solid #dfe2e9 !important;
+    border-radius: 1px;
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #555d61;
+  }
+
+  .dropdown__form-control{
+    border: 0px;
+    border-radius: 1px;
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #555d61;
+  }
+
+  .select_box{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .select_box select{
+    border: 0;
+    position: relative;
+    z-index: 99;
+    background: none;
+
+    border: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance:none;
+  }
+
+  .select-arrow {
+    color: #d52b1e;
+    right:0px;
+    top: 10px;
+    width:30px;
+    position:absolute;
+    display:block;
+    z-index: 10;
+    margin: 0 0 0 0;
+    pointer-events:none;
+}
+
+
+
+  /* ---------------------------------------------------
+    BLOQUE DE BOLETINES
+----------------------------------------------------- */
+.boletines-download{
+    text-align: right;
+}
+
+.boletines-download__text-zip{
+    background-color: #efeff4;
+    padding: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #879195;
+    border-radius: 5px;
+}
+
+
+.boletines-download__icon{
+    background-color: #dcdfed;
+    border-radius: 50px;
+    color: #595c65;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.boletines__year--row{
+    border-top: 1px solid #d5d5d5;
+    padding-top: 15px;
+}
+
+.boletines__year{
+  font-family: DINEx;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #555d61;
+}
+
+
+/* ---------------------------------------------------
+    BLOQUE DE BOLETINES -- FILA DE BOLETÍN
+----------------------------------------------------- */
+
+.boletin-all {
+    margin-bottom: 15px;
+}
+
+.boletin-item__date{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+}
+.boletin-item{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.boletin-item__option-icon{
+    color: #595c65;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.boletin-item__btn-collapse{
+    color: #d52b1e;
+}
+
+.boletin-item__main-option{
+    background-color: #dcdfed;
+    border-radius: 50px;
+    color: #595c65;
+    padding: 8px 10px;
+    font-size: 18px;
+}
+
+/* ---------------------------------------------------
+    BLOQUE DE BOLETINES -- FILA DE BOLETÍN -- Detalles del boletín / collapse
+----------------------------------------------------- */
+
+.contenido-boletin{
+    box-shadow: 2px 0px 11px 0 rgba(0,0,0,.15);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contenido-boletin__title{
+    font-family: DINEx;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #555d61;
+    padding: 15px;
+}
+
+.contenido-boletin__details{
+    padding-bottom: 15px;
+}
+
+.bg-white{
+    background: #fff;
+}
+
+/* ---------------------------------------------------
+   FOOTER STYLE
+----------------------------------------------------- */
+.footer__address {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #a1a7b5;
+    font-family: Roboto;
+    margin-bottom: 0px;
+  }
+
+  .footer__container {
+    padding: 25px;
+  }
+  
+  .footer__logo,
+.copyright__logo {
+  text-align: right;
+}
+
+
+
+/* ---------------------------------------------------
+   MODAL DE SUSCRIPCIÓN
+----------------------------------------------------- */
+
+
+@media (min-width: 576px){
+    .modal-subscription {
+        max-width: 650px;
+    }
+}
+.modal-header {
+    padding: 5px 15px;
+    border: 0px;
+}
+
+.modal-subscription__body {
+    padding: 4px 45px 0px;
+  }
+
+  .modal-subscription__body-success {
+    padding: 45px;
+  }
+
+.modal-subscription__icon-success{
+    color: #7eba41;
+    font-size:30px;
+    text-align: center;
+}
+
+.modal-subscription__type{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+}
+.modal-input{
+    border: 0px;
+    border-bottom: 1px solid #979797 !important;
+    border-radius: 1px;
+    padding: 0px !important;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #555d61;
+}
+
+.modal-subscription--col{
+ padding: 20px 15px;
+}
+.modal-footer{
+      text-align: center;
+      display: block;
+      border-top: 0px;
+      padding-bottom: 30px;
+  }
+.modal-subscription__title{
+    font-family: DINEx;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #555d61;
+}
+
+.modal-subscription__info{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #7a7a7a;
+    padding:25px 0px 30px;
+}
+
+.sector__tags{
+    line-height: 30px;
+}
+
+.sector__tag{
+    border-radius: 3px;
+    padding: 5px 8px;
+    white-space: nowrap;
+}
+.sector__tag--green{
+    background: #7eba41;
+    color: #fff;
+
+
+}
+
+.sector__tag--gray{
+    background: #d0d3d9;
+    color: #595c65;
+
+}

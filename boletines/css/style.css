@@ -1,3 +1,10 @@
+/*
+PROMPERU 
+2019
+
+Archivo de css genéricos
+*/
+
 @import "https://fonts.googleapis.com/css?family=Sarala&display=swap";
 
 @font-face {
@@ -28,7 +35,7 @@ Plomo claro menu: #9fafb7;
   min-width: 120px;
 }
 .btn-primary.btn-outline {
-  color: #d13520;
+  color: #462925;
 }
 .btn-success.btn-outline {
   color: #1c84c6;
@@ -88,10 +95,36 @@ fieldset[disabled] .btn-primary.active {
   border-color: #e26251;
 }
 
-.btn-primary__submit {
-  font-weight: bold;
-  padding: 10px 50px;
+.btn-primary__submit{
+  font-weight: bold !important;
+  font-size:18px !important;
 }
+
+.btn-primary__submit.disabled,
+.btn-primary__submit.disabled:hover,
+.btn-primary__submit.disabled:focus,
+.btn-primary__submit.disabled:active,
+.btn-primary__submit.disabled.active,
+.btn-primary__submit[disabled],
+.btn-primary__submit[disabled]:hover,
+.btn-primary__submit[disabled]:focus,
+.btn-primary__submit[disabled]:active,
+.btn-primary__submit.active[disabled],
+fieldset[disabled] .btn-primary__submit,
+fieldset[disabled] .btn-primary__submit:hover,
+fieldset[disabled] .btn-primary__submit:focus,
+fieldset[disabled] .btn-primary__submit:active,
+fieldset[disabled] .btn-primary__submit.active {
+  background-color: #b6b6b6 !important;
+  border-color: #b6b6b6 !important;
+  color:#595c65 !important;
+}
+
+.btn-primary__submit.disabled, .btn-primary__submit:disabled{
+  opacity: 1;
+}
+
+
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -530,110 +563,12 @@ button.dim:active:before {
   background-color: #2a2e36;
   color: #8b91a0;
 }
-/* TOOGLE SWICH */
-.onoffswitch {
-  position: relative;
-  width: 64px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+
+/*TITLES*/
+.h1, h1 {
+  font-size: 2.2rem;
 }
-.onoffswitch-checkbox {
-  display: none;
-}
-.onoffswitch-label {
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  border: 2px solid #d13520;
-  border-radius: 2px;
-}
-.onoffswitch-inner {
-  width: 200%;
-  margin-left: -100%;
-  -moz-transition: margin 0.3s ease-in 0s;
-  -webkit-transition: margin 0.3s ease-in 0s;
-  -o-transition: margin 0.3s ease-in 0s;
-  transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before,
-.onoffswitch-inner:after {
-  float: left;
-  width: 50%;
-  height: 20px;
-  padding: 0;
-  line-height: 20px;
-  font-size: 12px;
-  color: white;
-  font-family: Trebuchet, Arial, sans-serif;
-  font-weight: bold;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-  content: "ON";
-  padding-left: 10px;
-  background-color: #d13520;
-  color: #ffffff;
-}
-.onoffswitch-inner:after {
-  content: "OFF";
-  padding-right: 10px;
-  background-color: #ffffff;
-  color: #999999;
-  text-align: right;
-}
-.onoffswitch-switch {
-  width: 20px;
-  margin: 0px;
-  background: #ffffff;
-  border: 2px solid #d13520;
-  border-radius: 2px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 44px;
-  -moz-transition: all 0.3s ease-in 0s;
-  -webkit-transition: all 0.3s ease-in 0s;
-  -o-transition: all 0.3s ease-in 0s;
-  transition: all 0.3s ease-in 0s;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-  margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0px;
-}
-/* CHOSEN PLUGIN */
-.chosen-container-single .chosen-single {
-  background: #ffffff;
-  box-shadow: none;
-  -moz-box-sizing: border-box;
-  background-color: #ffffff;
-  border: 1px solid #cbd5dd;
-  border-radius: 2px;
-  cursor: text;
-  height: auto !important;
-  margin: 0;
-  min-height: 30px;
-  overflow: hidden;
-  padding: 4px 12px;
-  position: relative;
-  width: 100%;
-}
-.chosen-container-multi .chosen-choices li.search-choice {
-  background: #f1f1f1;
-  border: 1px solid #ededed;
-  border-radius: 2px;
-  box-shadow: none;
-  color: #333333;
-  cursor: default;
-  line-height: 13px;
-  margin: 3px 0 3px 5px;
-  padding: 3px 20px 3px 5px;
-  position: relative;
-}
+
 /* PAGINATIN */
 .pagination > .active > a,
 .pagination > .active > span,
@@ -2305,9 +2240,6 @@ p {
   color: #999;
 }
 
-body.boxed-layout {
-  background: url("patterns/shattered.png");
-}
 body.boxed-layout #wrapper {
   background-color: #2f4050;
   max-width: 1200px;
@@ -2831,6 +2763,9 @@ table.table-mail tr td {
   right: 0;
 }
 /* BACKGROUNDS promperu*/
+.gray-bg-full-light {
+  background-color: #f3f5fc;
+}
 
 .gray-bg-light {
   background-color: #eff0f4;
@@ -3905,40 +3840,6 @@ dd.project-people {
 }
 .setings-item a {
   color: #fff;
-}
-.default-skin,
-.blue-skin,
-.ultra-skin,
-.yellow-skin {
-  text-align: center;
-}
-.default-skin {
-  font-weight: 600;
-  background: #d13520;
-}
-.default-skin:hover {
-  background: #199d82;
-}
-.blue-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-1.png") repeat scroll 0 0;
-}
-.blue-skin:hover {
-  background: #0d8ddb;
-}
-.yellow-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-3.png") repeat scroll 0 100%;
-}
-.yellow-skin:hover {
-  background: #ce8735;
-}
-.ultra-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-2.png") repeat scroll 0 0;
-}
-.ultra-skin:hover {
-  background: #1a2d40;
 }
 
 /*ÍCONOS*/

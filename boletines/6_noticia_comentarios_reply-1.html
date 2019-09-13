@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PromPerú | Boletín</title>
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/promperu_styles.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Font Awesome JS -->
+    <script defer src="fontawesome-free-5.10.2-web/js/all.js"></script>
+    <script defer src="fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
+  </head>
+
+  <body>
+    <nav class="fixed-top navbar navbar-expand navbar-light">
+      <div class="container navbar__all-options">
+        <div class="navbar-brand">
+          <ul id="boletin__header-title">
+            <li class="boletin__logo">
+              <a href="#">
+                <img src="img/logo.png" />
+              </a>
+            </li>
+            <li class="boletin__category boletin__category--web">
+              <span class="boletin__category--pl"
+                ><strong>Boletín de inteligencia</strong></span
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsOptions"
+          aria-controls="navbarsOptions"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsOptions">
+          <form class="boletin__search-form form-inline my-2 my-md-0  ml-auto">
+            <div class="input-group">
+              <input
+                class="boletin__search form-control py-2"
+                type="search"
+                placeholder="Buscar en este boletín"
+              />
+              <span class=" input-group-append">
+                <div
+                  class="boletin__search--btn input-group-text bg-transparent"
+                >
+                  <i class="fa fa-search"></i>
+                </div>
+              </span>
+            </div>
+          </form>
+          <div class="searchbar--mobile d-flex justify-content-center h-100">
+              <div class="searchbar">
+                <input class="search_input" type="text" name="" placeholder="">
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+          
+          <ul class="menu__all-info-user nav navbar-nav">
+            <li class="nav-item dropdown no-arrow">
+              <div class="menu__user">
+                <a
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  class="menu__notifications text-center"
+                >
+                  <img
+                    class="menu__user-img rounded-circle"
+                    src="https://semantic-ui.com/images/avatar/small/elliot.jpg"
+                  />
+                  <span class="menu__user-counter">8</span>
+                </a>
+                <div class="menu__user-info">
+                  <a class="user">Hola, Omar</a>
+                  <div class="email">omar@promperu.pe</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container page-body">
+      <div class="main">
+        <div class="l_section gray-bg-light">
+          <div class="boletin__section">
+            <div class="row boletin__subheader">
+              <div class="col-sm-12">
+                <i class="boletin__subheader--arrow fas fa-chevron-left"></i>
+                <span>BOLETÍN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l_section gray-bg-semilight boletin__category--mobile">
+          <div class="boletin__section">
+            <div class="row boletin__subheader">
+              <div class="col-sm-12">
+                <ul id="boletin__header-title">
+                  <li class="boletin__category">
+                    <span class="boletin__category--pl"
+                      ><strong>Boletín de inteligencia</strong></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- INI: RESUMEN DEL BOLETÍN-->
+        <div class="boletin-resume gray-bg-full-light">
+          <div class="boletin__section">
+            <div class="row boletin-resume__row">
+              <div class="col-sm-12">
+                <h1 class="boletin-resume__title">Balanza comercial del Perú acumuló superávit de US$4.924M entre enero y octubre.</h1>
+              </div>
+              <div class="col-sm-12">
+                <div class="boletin-resume__subtitle">
+                  <p class="boletin-resume__author">FEDERICO RIVAS MOLINA  | El País, Barcelona</p>
+                  <p class="boletin-resume__date">Buenos Aires / Santiago de Chile - 20 DIC 2018 - 16:16 CET</p>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <p class="boletin-resume__info">
+                  Some of the people that are playing, and that have few rounds to play in the tournament 
+                  don’t count the drinks they have during their games and at the very end of the day they don’t have power to continue 
+                  till the last game, which is a pity to loose such a big opportunity, so, don’t drink a lot and be prepare
+                </p>
+              </div>
+              <div class="col-sm-6">
+                  <ul class="bullets-red boletin-resume__topics">
+                      <li class="bullet-item__text">
+                          <span>Agroexportaciones habrian crecido 18% en enero y febrero, segun Minafri
+                          </span>
+                      </li>
+                      <li class="bullet-item__text">
+                          <span>Mincetur: lluvias no afectan niveles de agroexportacion peruana.
+                          </span>
+                      </li>
+                      <li class="bullet-item__text">
+                          <span>Agroexportaciones crecieron 20% en enero al registrar US$783 millones.
+                          </span>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-sm-6">
+                  <ul class="bullets-red boletin-resume__topics">
+                      <li class="bullet-item__text">
+                          <span>Agroexportaciones habrian crecido 18% en enero y febrero, segun Minafri
+                          </span>
+                      </li>
+                      <li class="bullet-item__text">
+                          <span>Mincetur: lluvias no afectan niveles de agroexportacion peruana.
+                          </span>
+                      </li>
+                      <li class="bullet-item__text">
+                          <span>Agroexportaciones crecieron 20% en enero al registrar US$783 millones.
+                          </span>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIN: RESUMEN DEL BOLETÍN-->
+
+
+        <!--INI: DETALLES DEL BOLETIN -->
+        <div class="boletin-details gray-bg">
+          <div class="boletin__section">
+            <div class="row boletin__section__row">
+              <div class="col-sm-9">
+                <!--- main image -->
+                <div>
+                  <div><img class="boletin-details__img" src="img/boletin-main-picture.png"></div>
+                  <p class="boletin-details__photo-description boletin-details__photo-description--main">
+                    Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games
+                  </p>
+                </div>
+
+                <!--- boletin body info-->
+                <div class="boletin-details__statements">
+                  <p>Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices 
+                    of what to do in a live tournament games, 
+                    here is the best place to learn them.
+                  </p>
+
+                  <h3 class="boletin-details__title-statement">Try not to get drunk</h3>
+                  <p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end of the day they don’t have power to continue till the last game, which is a pity to loose such a big opportunity, so, don’t drink a lot and be prepare 
+                    <span class="boletin-details__highlight">for the last round</span>, also come up with all your senses in order. If you drink, do it measurable and just to loose 
+                    the nerves before the games but also have some other drinks like soda, water, coffee and others to hydrate your self. 2) Is it important where I sit? Yes it is, in a tournament try not to sit next to the dealer, take a place in where you will feel that you are in front of the dealer to have the feeling that he is giving you a game. Also in a place where you will feel comfortable with your self and you will have a perspective of the other players.
+                  </p>
+
+                  <div>
+                    <img class="boletin-details__img m-b" src="img/boletin-img-body1.jpg">
+                    <p class="boletin-details__photo-description">
+                      Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games
+                    </p>
+                  </div>
+                  
+                  <h3 class="boletin-details__title-statement">Make your self comfortable while playing</h3>
+                  <p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end of the day they don’t have power to continue till the last game, which is a pity to loose such a big opportunity, so, don’t drink a lot and be prepare 
+                    <span class="boletin-details__highlight">for the last round</span>, also come up with all your senses in order. If you drink, do it measurable and just to loose 
+                    the nerves before the games but also have some other drinks like soda, water, coffee and others to hydrate your self. 2
+                  </p>
+
+                  <h3 class="boletin-details__title-statement">Also your words and mimic are important during the game</h3>
+                  <p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end of the day they don’t have power to continue till the last game, which is a pity to loose such a big opportunity, so, don’t drink a lot and be prepare 
+                      <span class="boletin-details__highlight">for the last round</span>, also come up with all your senses in order. If you drink, do it measurable and just to loose 
+                      the nerves before the games but also have some other drinks like soda, water, coffee and others to hydrate your self. 2 
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <div>
+                          <img class="boletin-details__img m-b" src="img/boletin-img-body2.jpg">
+                          <p class="boletin-details__photo-description">
+                            Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games
+                          </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <p>
+                        When ever you are playing don’t show your cards to the other player in the way you talk or look, is important that they will have other impression, for example in your hand Is good you can try on making faces or saying words that show that your hand is not good, then people will think you have a bad game and you will surprise them at the end. 
+                      </p>
+                    </div>
+                  </div>
+
+                  <h3 class="boletin-details__title-statement">Make your self comfortable while playing</h3>
+                  <p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end.
+                  </p>
+
+
+                  <blockquote class="boletin-details__quote">
+                      Don’t show the other players with your position what you cards are telling you. Make sure to seat back and relax, don’t adopt positions that will make you move too much or feel uncomfortable during the time of the game. 
+                  </blockquote>
+
+                  <p>Some of the people that are playing, and that have few rounds to play in the tournament don’t count the drinks they have during their games and at the very end.
+                    </p>
+                </div>
+
+               <!--- boletin bibliography-->
+                <div class="boletin-details__bibliography">
+                  <p class="boletin-details__bibliography-title">BIBLIOGRAFÍA</p>
+                  <ul class="ul-without-bullets">
+                    <li>
+                      <span><i class="color-red fas fa-arrow-right"></i></span>
+                      <span class="bibliography__reference">5 Reasons To Purchase Desktop Computers - <em>medium</em></span>
+                    </li>
+                    <li>
+                      <span><i class="color-red fas fa-arrow-right"></i></span>
+                      <span class="bibliography__reference">5 Reasons To Purchase Desktop Computers - <em>medium</em></span>
+                    </li>
+                    <li>
+                      <span><i class="color-red fas fa-arrow-right"></i></span>
+                      <span class="bibliography__reference">5 Reasons To Purchase Desktop Computers - <em>medium</em></span>
+                    </li>
+                    <li>
+                      <span><i class="color-red fas fa-arrow-right"></i></span>
+                      <span class="bibliography__reference">5 Reasons To Purchase Desktop Computers - <em>medium</em></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="row">
+                  <div class="last-news-sector__secundary col-sm-12">
+                    <div class="last-news-sector__secundary-item">
+                      <p class="last-news__category">TENDENCIAS</p>
+                      <p class="last-news-sector__secundary-item-title">
+                        PERSPECTIVAS AMÉRICA LATINA - Comentarios y proyecciones
+                        sobre la economía de la región
+                      </p>
+                      <p class="last-news-sector__secundary-item-extract">
+                        Las economías de la región buscan sacudirse en el
+                        segundo…
+                      </p>
+                      <p class="last-news-sector__more-info">
+                        <span class="last-news-sector__more-info-arrow">
+                          <i class="fas fa-chevron-right"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="last-news-sector__secundary col-sm-12">
+                    <div class="last-news-sector__secundaryv2-item">
+                      <p class="last-news__category">TENDENCIAS</p>
+                      <p class="last-news-sector__secundary-item-title">
+                        PERSPECTIVAS AMÉRICA LATINA - Comentarios y proyecciones
+                        sobre la economía de la región
+                      </p>
+                      <p class="last-news-sector__secundary-item-extract">
+                        Las economías de la región buscan sacudirse en el
+                        segundo…
+                      </p>
+                      <p class="last-news-sector__more-info">
+                        <span class="last-news-sector__more-info-arrow">
+                          <i class="fas fa-chevron-right"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="last-news-sector__secundary col-sm-12">
+                    <div class="last-news-sector__secundary-item">
+                      <p class="last-news__category">TENDENCIAS</p>
+                      <p class="last-news-sector__secundary-item-title">
+                        PERSPECTIVAS AMÉRICA LATINA - Comentarios y proyecciones
+                        sobre la economía de la región
+                      </p>
+                      <p class="last-news-sector__secundary-item-extract">
+                        Las economías de la región buscan sacudirse en el
+                        segundo…
+                      </p>
+                      <p class="last-news-sector__more-info">
+                        <span class="last-news-sector__more-info-arrow">
+                          <i class="fas fa-chevron-right"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="last-news-sector__secundary col-sm-12">
+                    <div class="last-news-sector__secundary-item">
+                      <p class="last-news__category">TENDENCIAS</p>
+                      <p class="last-news-sector__secundary-item-title">
+                        PERSPECTIVAS AMÉRICA LATINA - Comentarios y proyecciones
+                        sobre la economía de la región
+                      </p>
+                      <p class="last-news-sector__secundary-item-extract">
+                        Las economías de la región buscan sacudirse en el
+                        segundo…
+                      </p>
+                      <p class="last-news-sector__more-info">
+                        <span class="last-news-sector__more-info-arrow">
+                          <i class="fas fa-chevron-right"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="boletin__rating">
+                      <p class="boletin__rating-title">VALORA ESTA NOTICIA</p>
+                      <span class="fas fa-star boletin__star boletin__star--checked"></span>
+                      <span class="fas fa-star boletin__star boletin__star--checked"></span>
+                      <span class="fas fa-star boletin__star boletin__star--checked"></span>
+                      <span class="fas fa-star boletin__star"></span>
+                      <span class="fas fa-star boletin__star"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--FIN: DETALLES DEL BOLETIN -->
+
+        
+
+        <div class="gray-bg-semi-dark">
+          <div class="boletin__section">
+            <ul id="boletin__header-title">
+              <li class="boletin__subtitle-name">
+                <span class="boletin__subtitle-name--pl">COMENTARIOS</span>
+              </li>
+            </ul>
+
+            <!-- INI: 1er COMENTARIO -->
+            <div class="boletin-comment panel panel-default">
+              <!-- datos del comentario -->
+              <section class="boletin-comment__heading">
+                <div class="row">
+                  <div class="col-md-8">
+                      <span class="boletin-comment__author-name">José Galvez</span>
+                      <span class="boletin-comment__author-sector"> | Agricola Familia</span> 
+                  </div>
+                  <div class="col-md-4 boletin-comment__date--col">
+                      <span class="boletin-comment__date">Mie 06/08/19 - 9:30</span>
+                  </div>
+                </div>             
+              </section>
+              
+              <!-- texto del comentario y sus respuestas-->
+              <div class="boletin-comment__body">
+                <section>
+                  <p>Standards Map es una herramienta en línea que permite la realización de análisis y comparaciones de normas privadas. Standards Map tiene por objeto aumentar las oportunidades de producción y comercio sostenibles. En el mercado competitivo actual, cada vez es más importante comprender las normas privadas y 
+                      adherirse a ellas, y esta herramienta le ayudará a comprender mejor cómo puede optimizar estas ventajas para el desarrollo.</p>
+                 </section>
+                 <section class="boletin-comment__footer">
+                     <div>
+                        <ul class="boletin-comment__footer-options list-unstyled m-b">
+                          <li><span>16</span> <i class="far fa-thumbs-up"></i> </li>
+                          <li><span>20</span> <i class="fas fa-share-alt"></i> </li>
+                        </ul>
+                      </div>
+                      <div class="boletin-comment_replies">
+                         <!-- lista de sub-comentarios--->
+                          <!-- ini: 1er reply -->
+                          <div class="boletin-comment__reply">
+                             <div class="boletin-comment__heading">
+                                <div class="row">
+                                      <div class="col-md-8">
+                                          <span class="boletin-comment__author-name">José Galvez</span>
+                                          <span class="boletin-comment__author-sector"> | Agricola Familia</span> 
+                                      </div>
+                                      <div class="col-md-4 boletin-comment__date--col">
+                                          <span class="boletin-comment__date">
+                                              Mie 06/08/19 - 9:30
+                                          </span>
+                                      </div>
+                                  </div> 
+                              </div> 
+                              <div>
+                                  <p>
+                                      Standards Map es una herramienta en línea que permite la realización de análisis y comparaciones de normas privadas. Standards Map tiene por objeto aumentar las oportunidades de producción y comercio sostenibles. En el mercado competitivo actual, cada vez es más importante comprender las normas privadas y 
+                                      adherirse a ellas, y esta herramienta le ayudará a comprender mejor cómo puede optimizar 
+                                      estas ventajas para el desarrollo.
+                                  </p>
+                                </div>
+                            <div>
+                              <ul class="boletin-comment__footer-options list-unstyled">
+                                <li><span>16</span> <i class="far fa-thumbs-up"></i> </li>
+                                <li><span>20</span> <i class="fas fa-share-alt"></i> </li>
+                              </ul>
+                            </div>
+                          </div>
+                        <!-- fin: 1er reply -->
+
+                      </div>
+                  </section>
+              </div>
+              <!-- Responder al comentario  - FORMULARIO DE COMENTARIO-->
+              <div>
+                  <section class="post-comment__reply">
+                      <div class="post-comment__reply-close">
+                        Cerrar <i class="fas fa-times-circle"></i>
+                      </div>
+                      <div class="boletin-coment__new-comment boletin-coment__new-comment--reply">
+                        <div class="row align-items-center">
+                            <div class="col-sm-10">
+                                <textarea class="form-control new-comment__text" id="newComment" rows="3" placeholder="ESCRIBE TU COMENTARIO">
+                                </textarea>
+                            </div>
+                    
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary btn-primary__submit btn-lg btn-block" disabled>
+                                ENVIAR
+                                </button>  
+                                </div>
+                            </div>
+                      </div>
+                  </section>
+               </div> 
+            </div>
+            <!--FIN: 1er COMENTARIO -->
+
+            <!-- INI: 2do COMENTARIO - sin replies -->
+            <div class="boletin-comment panel panel-default">
+                <!-- datos del comentario -->
+                <section class="boletin-comment__heading">
+                  <div class="row">
+                    <div class="col-md-8">
+                        <span class="boletin-comment__author-name">José Galvez</span>
+                        <span class="boletin-comment__author-sector"> | Agricola Familia</span> 
+                    </div>
+                    <div class="col-md-4 boletin-comment__date--col">
+                        <span class="boletin-comment__date">Mie 06/08/19 - 9:30</span>
+                    </div>
+                  </div>             
+                </section>
+                
+                <!-- texto del comentario sin replies-->
+                <div class="boletin-comment__body">
+                  <section>
+                    <p>Standards Map es una herramienta en línea que permite la realización de análisis y comparaciones de normas privadas. Standards Map tiene por objeto aumentar las oportunidades de producción y comercio sostenibles. En el mercado competitivo actual, cada vez es más importante comprender las normas privadas y 
+                        adherirse a ellas, y esta herramienta le ayudará a comprender mejor cómo puede optimizar estas ventajas para el desarrollo.</p>
+                   </section>
+                   <section class="boletin-comment__footer">
+                       <div>
+                          <ul class="boletin-comment__footer-options list-unstyled m-b">
+                            <li><span>16</span> <i class="far fa-thumbs-up"></i> </li>
+                            <li><span>20</span> <i class="fas fa-share-alt"></i> </li>
+                          </ul>
+                        </div>
+                    </section>
+                </div>
+                <!-- Responder al comentario-->
+                <div>
+                    <section class="post-comment__reply">
+                        <div>
+                            <a href="6_noticia_comentarios_reply.html">
+                              <span class="post-comment__reply-text">Responder</span>
+                              <span class="last-news-sector__more-info-arrow"><i class="fas fa-chevron-right"></i></span>
+                            </a>
+                        </div>
+                    </section>
+                 </div> 
+              </div>
+              <!--FIN: 2do COMENTARIO - sin replies -->
+
+            <!-- ENVIAR COMENTARIO-->
+            <div class="boletin-coment__new-comment">
+              <div class="row align-items-center">
+                <div class="col-sm-10">
+                  <textarea class="form-control new-comment__text" id="newComment" rows="3" placeholder="ESCRIBE TU COMENTARIO"></textarea>
+                </div>
+
+                <div class="col-sm-2">
+                  <button class="btn btn-primary btn-primary__submit btn-lg btn-block" disabled>
+                    ENVIAR
+                  </button>  
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--INI FOOTER -->
+    <div class="footer-email  dark-bg">
+      <div class="boletin__section ">
+        <div class="row">
+          <div class="col-sm-8">
+            <p class="footer__address">
+              Calle 21 N° 713 Urb. El Palomar - San Isidro - Lima - Perú
+            </p>
+            <p class="footer__address">
+              Av. Jorge Basadre 610 - San Isidro - Lima - Perú
+            </p>
+            <p class="footer__address">
+              Teléfonos: (511) 6167300 - 6167400 | sae@promperu.gob.pe -
+              sae1@promperu.gob.pe
+            </p>
+          </div>
+          <div class="col-sm-4 footer__logo">
+            <img src="img/logo-promperu-footer.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="boletin__section ">
+        <div class="row">
+          <div class="col-sm-8">
+            Administración | Términos de Uso | Copyright 2008 SIICEX | Óptima
+            Vizualización
+          </div>
+          <div class="col-sm-4 copyright__logo">
+            <img src="img/logo-mincetur.png" />
+          </div>
+        </div>
+      </div>
+      <!--FIN FOOTER -->
+    </div>
+
+    <!-- Mainly scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script>
+  </body>
+</html>

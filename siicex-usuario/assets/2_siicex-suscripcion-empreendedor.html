@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Dashboard</title>
+  
+  
+
+<!--CSS -->
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+<link href="css/sb-admin-2.css" rel="stylesheet">
+
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="css/siicex-usuario.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+<!-- Font Awesome JS -->
+<script defer src="fontawesome-free-5.10.2-web/js/all.js"></script>
+<script defer src="fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
+   
+
+</head>
+
+<body id="page-top" class="Site">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper" class="Site-content">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+            <img src="img/logo.png">
+        </div>
+      </a>
+
+      <li class="sidebar__option">
+        <a href="#opcionSeguridad" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Seguridad</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionSeguridad">
+            <li class="sidebar__suboption">
+                <a href="#">Perfiles</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Usuarios</a>
+            </li>
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionPaginas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Páginas</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionPaginas">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionBloques" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Bloques</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionBloques">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionPlataforma" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Plataforma</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionPlataforma">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionMensajes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Mensajes</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionMensajes">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionProductos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Productos</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionProductos">
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionRecursos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Recursos</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionRecursos">
+            <li class="sidebar__suboption">
+                <a href="#">Estudios de mercado</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Noticias</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Documentación</a>
+            </li>
+            <li class="sidebar__suboption">
+                <a href="#">Notas de prensa</a>
+            </li>
+        </ul>
+    </li>
+    <li class="sidebar__option">
+        <a href="#opcionBoletines" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-circle"></i><span class="sidebar__option-name">Boletines</span>
+        </a>
+        <ul class="collapse list-unstyled" id="opcionBoletines">
+        </ul>
+    </li>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav id="menutop" class="fixed-top navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="main-search form-control bg-light border-0 small" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none top-bar__search-xs">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="main-search form-control bg-light border-0 small" placeholder="Buscar ..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - User Information -->
+            <li class="menu__user nav-item dropdown no-arrow menu__all-info-user">
+              <a class="menu__notifications nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img class="img-profile rounded-circle" src="img/avatar.jpeg">
+                  <span class="menu__user-counter">8</span>
+                  <div class="menu__user-info">
+                    <a class="user">Miguel Quiroz</a>
+                    <div class="email">miguel@promperu.pe</div>
+                  </div>
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Mi perfil
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Salir
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="body-container container-fluid">
+                <div class="content-option">
+                        <div class="row subscription-section section__margin-bottom">
+                            <div class="col-sm-8 subscription-section__subscription-text">
+                                <p class="subscription-text__title">
+                                    Entérate de todas las novedades del mundo de la exportación
+                                </p>
+                                <p class="subscription-text__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum urna a purus blandit, a dignissim odio tristique. Aliquam vitae egestas felis, vel hendrerit leo. Vivamus nec velit ac diam finibus.
+                               </p>
+                            </div>
+                            <div class="col-sm-4 subscription-section__subscription-option">
+                                <p class="subscription-option__call">Suscribete y recíbela cada mes en tu email.</p>
+                               <button class="btn btn-primary btn-primary__submit" type="submit"  data-toggle="modal" data-target="#subcriptionExportador">Suscribirme</button>
+                            </div>
+                        </div>
+            
+            
+                        <div class="row boletin__filters section__margin-bottom">
+                            <div class="col-sm-3 select_box">
+                               <span class="select-arrow fas fa-sort-amount-down"></span>
+                               <select class="form-control dropdown__form-control" >
+                                   <option>SELECCIONE EL SECTOR</option>
+                                   <option>AGRO</option>
+                               </select>
+                            </div>
+                            <div class="col-sm-3 select_box">
+                                <span class="select-arrow fas fa-sort-amount-down"></span>
+                                <select class="form-control dropdown__form-control" >
+                                    <option>LÍNEA DE PRODUCTO</option>
+                                </select>
+                            </div>
+            
+                            <div class="col-sm-1 select_box">
+                                <span class="select-arrow fa fa-chevron-down"></span>
+                                <select class="form-control text-filter__form-control" >
+                                        <option>MES</option>
+                                        <option>Enero</option>
+                                        <option>Febrero</option>
+                                </select>
+                            </div>
+            
+                            <div class="col-sm-1 select_box">
+                                <span class="select-arrow fa fa-chevron-down"></span>
+                                <select class="form-control text-filter__form-control">
+                                    <option>AÑO</option>
+                                    <option>2019</option>
+                                    <option>2018</option>
+                                </select>
+                            </div>
+            
+                            <div class="col-sm-4">
+                                 <input type="text" class="form-control text-filter__form-control" placeholder="PALABRA ASOCIADA O CONCRETA">
+                            </div>
+                        </div>
+            
+            
+                        <div class="row">
+                            <div class="col-sm-12 m-b-sm header-title--col">
+                                    <ul id="header-title">
+                                        <li class="header-title__subtitle-name font-21">
+                                            <span class="header-title__subtitle-name--pl">TODOS LOS BOLETINES DE AGRONEGOCIOS
+                                            </span>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-sm-12 boletines-download">
+                                <p class="boletines-download__text">
+                                    <span class="boletines-download__text-zip">Descargar todos (zip)
+                                        <span class="boletines-download__icon"><i class="fas fa-cloud-download-alt"></i></span>
+                                    </span> 
+                                </p>
+                            </div>
+                        </div>
+            
+                         <!-- INI: GRUPO DE BOLETINES POR AÑO -->
+                         <div class="boletines__peryear m-b-lg">
+                                <div class="row m-b-sm">
+                                    <div class="col-sm-12">
+                                        <p class="boletines__year">Último</p>
+                                    </div>
+                                </div>
+            
+                                <!-- INI fila de boletin-->
+                                <div class="boletin-all">
+                                        <div class="row boletin-item align-items-center">
+                                            <div class="col-sm-3">
+                                            <p class="boletin-item__date">
+                                                Lunes 22, Agosto 2018
+                                            </p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                            <p class="boletin-item__name">1.- Boletín de Inteligencia de Mercados - No. 390 </p>
+                                            <p class="boletin-item__options">
+                                                    <span class="boletin-item__option-icon"><i class="fas fa-eye"></i></span> 22  |
+                                                    <span class="boletin-item__option-icon"><i class="fas fa-cloud-download-alt"></i></span> 22
+                                            </p>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="row">
+                                                    <div class="col-4"><span class="boletin-item__main-option"><i class="fas fa-envelope"></i></span></div>
+                                                    <div class="col-4"><span class="boletin-item__main-option"><i class="fas fa-cloud-download-alt"></i></span></div>
+                                                    <div class="col-4">
+                                                    <button class="btn boletin-item__btn-collapse" type="button" data-toggle="collapse" data-target="#contenidoBoletin" aria-expanded="false" aria-controls="contenidoBoletin">
+                                                            <i class="fas fa-chevron-down"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>  
+                                  </div>
+                                  <!-- FIN fila de boletin-->
+            
+            
+                                </div>
+                              <!-- FIN: GRUPO DE BOLETINES POR AÑO -->
+            
+                        <!-- INI: GRUPO DE BOLETINES POR AÑO -->
+                        <div class="boletines__peryear m-b-lg">
+                            <div class="row m-b-sm boletines__year--row">
+                                <div class="col-sm-12">
+                                    <p class="boletines__year">2017</p>
+                                </div>
+                            </div>
+            
+                            <!-- INI fila de boletin-->
+                            <div class="boletin-all">
+                                <div class="row boletin-item align-items-center">
+                                    <div class="col-sm-3">
+                                    <p class="boletin-item__date">
+                                        Lunes 22, Agosto 2018
+                                    </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                    <p class="boletin-item__name">1.- Boletín de Inteligencia de Mercados - No. 390 </p>
+                                    <p class="boletin-item__options">
+                                            <span class="boletin-item__option-icon"><i class="fas fa-eye"></i></span> 22  |
+                                            <span class="boletin-item__option-icon"><i class="fas fa-cloud-download-alt"></i></span> 22
+                                    </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="row">
+                                            <div class="col-4"><span class="boletin-item__main-option"><i class="fas fa-envelope"></i></span></div>
+                                            <div class="col-4"><span class="boletin-item__main-option"><i class="fas fa-cloud-download-alt"></i></span></div>
+                                            <div class="col-4">
+                                            <button class="btn boletin-item__btn-collapse" type="button" data-toggle="collapse" data-target="#contenidoBoletin" aria-expanded="false" aria-controls="contenidoBoletin">
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>  
+                                <div class="row bg-white contenido-boletin" >
+                                    <div class="col-sm-12">
+                                        <div class="collapse" id="contenidoBoletin">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p class="contenido-boletin__title">Contenidos del boletin HTML</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row contenido-boletin__details">
+                                                <div class="col-sm-4">
+                                                        <ul class="bullets-red">
+                                                            <li class="bullet-item__text font-14">
+                                                                <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                </span>
+                                                            </li>
+                                                            <li class="bullet-item__text font-14">
+                                                                <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                </span>
+                                                            </li>
+                                                            <li class="bullet-item__text font-14">
+                                                                <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                </span>
+                                                            </li>
+                                                            <li class="bullet-item__text font-14">
+                                                                <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                </span>
+                                                            </li>
+                                                            <li class="bullet-item__text font-14">
+                                                                <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                </span>
+                                                            </li>
+                                                            <li class="bullet-item__text font-14">
+                                                                <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                            <ul class="bullets-red">
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                            <ul class="bullets-red">
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="bullet-item__text font-14">
+                                                                        <span class="bullet-item__text--pl">Lorem ipsum dolor sit amet
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                    </div>
+                                                </div>
+                                                
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN fila de boletin-->
+            
+                                <!-- INI fila de boletin-->
+                            <div class="boletin-all">
+                                    <div class="row boletin-item align-items-center">
+                                        <div class="col-sm-3">
+                                        <p class="boletin-item__date">
+                                            Lunes 22, Agosto 2018
+                                        </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                        <p class="boletin-item__name">1.- Boletín de Inteligencia de Mercados - No. 390 </p>
+                                        <p class="boletin-item__options">
+                                                <span class="boletin-item__option-icon"><i class="fas fa-eye"></i></span> 22  |
+                                                <span class="boletin-item__option-icon"><i class="fas fa-cloud-download-alt"></i></span> 22
+                                        </p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="row">
+                                                <div class="col-4"><span class="boletin-item__main-option"><i class="fas fa-envelope"></i></span></div>
+                                                <div class="col-4"><span class="boletin-item__main-option"><i class="fas fa-cloud-download-alt"></i></span></div>
+                                                <div class="col-4">
+                                                <button class="btn boletin-item__btn-collapse" type="button" data-toggle="collapse" data-target="#contenidoBoletin" aria-expanded="false" aria-controls="contenidoBoletin">
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>  
+                              </div>
+                              <!-- FIN fila de boletin-->
+            
+            
+                            </div>
+                          <!-- FIN: GRUPO DE BOLETINES POR AÑO -->
+            
+                       </div>
+        </div>
+        <!-- End of Main Content -->
+
+     
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+</div>
+ <!-- Footer -->
+
+       <!--INI FOOTER -->
+       <div class="sticky-footer footer__container dark-bg">
+        <div class="row">
+            <div class="col-sm-8">
+            <p class="footer__address">
+                Calle 21 N° 713 Urb. El Palomar - San Isidro - Lima - Perú
+            </p>
+            <p class="footer__address">
+                Av. Jorge Basadre 610 - San Isidro - Lima - Perú
+            </p>
+            <p class="footer__address">
+                Teléfonos: (511) 6167300 - 6167400 | sae@promperu.gob.pe -
+                sae1@promperu.gob.pe
+            </p>
+            </div>
+            <div class="col-sm-4 footer__logo">
+            <img src="img/logo-promperu-footer.png" />
+            </div>
+        </div>
+</div>
+<!--FIN FOOTER -->
+ <!-- Modal EMPRENDEDOR-->
+ <div class="modal fade" id="subcriptionExportador" tabindex="-1" role="dialog" aria-labelledby="subcriptionExportadorTitle" aria-hidden="true">
+    <div class="modal-subscription modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body modal-subscription__body">
+                <p class="modal-subscription__title">SUSCRIPCIÓN<p>
+                 <p class="modal-subscription__info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum urna a purus blandit, a dignissim odio tristique. Aliquam vitae egestas felis, vel hendrerit leo. Vivamus nec velit ac diam finibus.
+                 </p>
+                <div class="row">
+                    <div class="col-sm-4 modal-subscription--col">
+                            <input type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                            <label class="form-check-label modal-subscription__type" for="gridRadios1">
+                             Soy Exportador
+                            </label>
+                        </div>
+                     
+                    <div class="col-sm-4  modal-subscription--col">      
+                            <input type="radio" name="gridRadios" id="gridRadios1" value="option2" checked>
+                            <label class="form-check-label modal-subscription__type" for="gridRadios1">
+                              Soy Emprendedor
+                            </label>
+                        </div>
+                    <div class="col-sm-12">
+                        <div class="row">
+
+                    <div class="col-sm-4  modal-subscription--col">
+                        <div class="select_box">
+                            <span class="select-arrow fa fa-chevron-down"></span>
+                            <select class="form-control text-filter__form-control" >
+                                <option>DNI/RUC</option>
+                                <option>DNI</option>
+                                <option>RUC</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="col-sm-8  modal-subscription--col">
+                            <input type="text" class="form-control modal-input" placeholder="NÚMERO DE DOCUMENTO">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  modal-subscription--col">
+                            <input type="text" class="form-control modal-input" placeholder="NOMBRES Y APELLIDOS">
+                    </div>
+                    <div class="col-sm-6  modal-subscription--col">
+                            <input type="text" class="form-control modal-input" placeholder="APELLIDO PATERNO">
+                    </div>
+                    <div class="col-sm-6  modal-subscription--col">
+                            <input type="text" class="form-control modal-input" placeholder="APELLIDO MATERNO">
+                    </div>
+
+                    <div class="col-sm-12 modal-subscription--col">
+                            <input type="text" class="form-control modal-input" placeholder="CONTRASEÑA">
+                    </div>
+                    <div class="col-sm-12 modal-subscription--col">
+                        <p>SECTOR</p>
+                        <div class="sector__tags">
+                            <span class="sector__tag sector__tag--green">Champú de palta <i class="fas fa-plus"></i></span>
+                            <span class="sector__tag sector__tag--gray">Mercados grandes <i class="fas fa-plus"></i></span>
+                            <span class="sector__tag sector__tag--gray">Oportunidades en emiratos Árabe<i class="fas fa-plus"></i></span>
+                            <span class="sector__tag sector__tag--gray">Champú de palta <i class="fas fa-plus"></i></span>
+                            <span class="sector__tag sector__tag--gray">Oportunidades en emiratos Árabe<i class="fas fa-plus"></i></span>
+                            <span class="sector__tag sector__tag--gray">Mercados grandes <i class="fas fa-plus"></i></span>
+
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-primary__submit">ENVIAR</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+
+</body>
+
+</html>
