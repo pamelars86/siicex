@@ -125,6 +125,48 @@ fieldset[disabled] .btn-primary__submit.active {
 }
 
 
+.btn-primary__submit--nocomments {
+  background-color: #7ab800;
+  border-color: #7ab800;
+  color: #ffffff;
+  font-weight: bold;
+}
+.btn-primary__submit--nocomments:hover,
+.btn-primary__submit--nocomments:focus,
+.btn-primary__submit--nocomments:active,
+.btn-primary__submit--nocomments.active,
+.open .dropdown-toggle.btn-primary__submit--nocomments {
+  background-color: #7ab800;
+  border-color: #7ab800;
+  color: #ffffff;
+}
+
+.btn-primary__submit--nocomments.disabled,
+.btn-primary__submit--nocomments.disabled:hover,
+.btn-primary__submit--nocomments.disabled:focus,
+.btn-primary__submit--nocomments.disabled:active,
+.btn-primary__submit--nocomments.disabled.active,
+.btn-primary__submit--nocomments[disabled],
+.btn-primary__submit--nocomments[disabled]:hover,
+.btn-primary__submit--nocommentst[disabled]:focus,
+.btn-primary__submit--nocomments[disabled]:active,
+.btn-primary__submit--nocomments.active[disabled],
+fieldset[disabled] .btn-primary__submit--nocomments,
+fieldset[disabled] .btn-primary__submit--nocomments:hover,
+fieldset[disabled] .btn-primary__submit--nocomments:focus,
+fieldset[disabled] .btn-primary__submit--nocomments:active,
+fieldset[disabled] .btn-primary__submit--nocomments.active {
+  background-color: #7ab800 !important;
+  border-color: #7ab800 !important;
+  color:#fff !important;
+}
+
+.btn-primary__submit--nocomments.disabled, .btn-primary__submit--nocomments:disabled{
+  opacity: 1;
+}
+
+
+
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,

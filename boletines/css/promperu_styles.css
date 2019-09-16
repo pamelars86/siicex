@@ -92,10 +92,13 @@ TYPE 1
   padding: 0px;
   margin: 0px;
 }
+
+
 #boletin__header-title li {
   display: inline;
 }
 
+/*EX. "BOLETIN DE INTELIGENCIA*/
 .boletin__category {
   color: #555d61;
   display: inline-block;
@@ -122,7 +125,11 @@ TYPE 1
   display: inline-block;
   font-size: 25px;
   position: absolute;
-  top: -10px;
+  top: -20px;
+}
+
+.boletin__category--mobile li.boletin__category::before {
+  top: -9px;
 }
 
 .navbar__options {
@@ -130,9 +137,16 @@ TYPE 1
 }
 
 .navbar-brand {
-  margin-left: 1rem;
-  margin-right: 0px;
-
+  text-align: center;
+  background: linear-gradient(0deg , transparent,#fff ) 220px 0 no-repeat, linear-gradient(131deg , #f3f5fc 75%, transparent 0%) left no-repeat;
+  background-size: 100%, 100%, 100%, 100%;
+  width: 200px;
+  height: 79px;
+  line-height: 60px;
+  padding-left: 15px;
+  color: white;
+  margin: 0px;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1267,6 +1281,11 @@ TYPE 2
    RESUME STYLE
    Ex. Balanza comercial del Perú acumuló superávit de US$4.924M entre enero y octubre.
 ----------------------------------------------------- */
+.boletin-item__title{
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
 
 .boletin-resume,
 .boletin-resume p{
@@ -1443,6 +1462,8 @@ TYPE 2
   margin-bottom: 10px;
 }
 
+
+
 .boletin-comment__author-name{
   font-family: Roboto;
   font-size: 14px;
@@ -1468,6 +1489,7 @@ TYPE 2
   display: inline-flex;
   margin-bottom:0px;
 }
+
 
 .boletin-comment__footer-options li{
   padding-right: 10px;
@@ -1512,3 +1534,29 @@ TYPE 2
   color: #879195 !important;
 }
 
+/* ---------------------------------------------------
+   BOLETIN SINGLE ITEM -- WITHOUT COMMENTS
+----------------------------------------------------- */
+
+.boletin-resume__title-resume {
+  font-family: DINEx;
+}
+
+.boletin-comment__footer-options--nocomments {
+  padding: 8px 6px 8px 9px;
+  background: #d0d3d9;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.boletin-comment__body--nocomment {
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.boletin-comment--nocomment{
+  background-color: transparent;
+  padding: 5px 0px;
+}
