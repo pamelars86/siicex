@@ -145,24 +145,24 @@
             <ul class="nav nav-fill">
               <li class="nav-item boletin__nav-item">
                 <a
-                  class="nav-link active boletin__nav-link boletin__nav-link--active"
-                  href="#"
+                  class="nav-link active boletin__nav-link boletin__nav-link--active scroll"
+                  href="#oportunidades"
                   >NUEVAS OPORTUNIDADES</a
                 >
               </li>
               <li class="nav-item boletin__nav-item">
-                <a class="nav-link boletin__nav-link" href="#">NOTICIAS</a>
+                <a class="nav-link boletin__nav-link scroll" href="#noticias">NOTICIAS</a>
               </li>
               <li class="nav-item boletin__nav-item">
-                <a class="nav-link boletin__nav-link" href="#"
+                <a class="nav-link boletin__nav-link scroll" href="#mercado"
                   >ANÁLISIS DE MERCADO</a
                 >
               </li>
               <li class="nav-item boletin__nav-item">
-                <a class="nav-link boletin__nav-link" href="#">CALENDARIO</a>
+                <a class="nav-link boletin__nav-link scroll" href="#calendario">CALENDARIO</a>
               </li>
               <li class="nav-item boletin__nav-item">
-                <a class="nav-link boletin__nav-link" href="#">PARTICIPA</a>
+                <a class="nav-link boletin__nav-link scroll" href="#participa">PARTICIPA</a>
               </li>
             </ul>
           </div>
@@ -262,7 +262,7 @@
           </div>
         </div>
 
-        <div class="new-opportunities gray-bg-semi-dark">
+        <div class="new-opportunities gray-bg-semi-dark" id="oportunidades">
           <div class="boletin__section">
             <div class="row boletin__title-row">
               <div class="col-sm-12  boletin__title-name-section">
@@ -338,7 +338,7 @@
         </div>
 
         <!--INI: NOTICIAS AGRO -->
-        <div class="last-news-sector gray-bg">
+        <div class="last-news-sector gray-bg" id="noticias">
           <div class="boletin__section">
             <div class="row">
               <div class="col-sm-12">
@@ -558,7 +558,7 @@
         <!--FIN: NOTICIAS AGRO -->
 
         <!--INI: ANÁLISIS DE MERCADO -->
-        <div class="last-courses gray-bg">
+        <div class="last-courses gray-bg" id="mercado" >
           <div class="boletin__section">
             <div class="row boletin__title-row">
               <div class="col-sm-12  boletin__title-name-section">
@@ -1079,6 +1079,7 @@
                           <td>285</td>
                           <td>36%</td>
                           <td>245.999,00</td>
+
                         </tr>
                       </tbody>
                     </table>
@@ -1090,7 +1091,7 @@
         </div>
         <!--FIN: ANÁLISIS DE MERCADO -->
 
-        <div class="events gray-bg-semi-dark">
+        <div class="events gray-bg-semi-dark" id="calendario">
           <div class="boletin__section">
             <ul id="boletin__header-title">
               <li class="boletin__subtitle-name ">
@@ -1200,7 +1201,7 @@
           </div>
         </div>
 
-        <div class="share-info gray-bg-dark">
+        <div class="share-info gray-bg-dark" id="participa">
           <div class="boletin__section">
             <div class="row share-info__options">
               <div class="col-sm-6">
@@ -1413,10 +1414,10 @@
 
     <!-- Mainly scripts -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      ntegrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -1429,6 +1430,23 @@
     $(function () {
   $('[data-toggle="popover"]').popover()
 })
+    </script>
+
+
+<script>
+    $(document).ready(function(){
+   let scroll_link = $('.scroll');
+  
+    //smooth scrolling -----------------------
+    scroll_link.click(function(e){
+        e.preventDefault();
+        let url = $('body').find($(this).attr('href')).offset().top;
+        $('html, body').animate({
+          scrollTop : url -70
+        },300);
+        return false;	
+     });
+  });
     </script>
   </body>
 </html>
