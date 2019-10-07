@@ -1425,28 +1425,13 @@
     ></script>
 
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/promperu_scripts.js"></script>
+
 
     <script>
     $(function () {
-  $('[data-toggle="popover"]').popover()
-})
-    </script>
-
-
-<script>
-    $(document).ready(function(){
-   let scroll_link = $('.scroll');
-  
-    //smooth scrolling -----------------------
-    scroll_link.click(function(e){
-        e.preventDefault();
-        let url = $('body').find($(this).attr('href')).offset().top;
-        $('html, body').animate({
-          scrollTop : url -70
-        },300);
-        return false;	
-     });
-  });
+      $('[data-toggle="popover"]').popover()
+    })
     </script>
   </body>
 </html>

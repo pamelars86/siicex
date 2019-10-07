@@ -138,6 +138,7 @@ BULLETS ROJO
     bottom: 0;
     z-index: 1040;
     position: fixed;
+    padding: 0px;
 }
 
 @media (min-width: 768px){ 
@@ -163,6 +164,19 @@ BULLETS ROJO
 }
 
 
+
+.sidebar-brand-icon {
+    text-align: center;
+    background: linear-gradient(0deg , transparent,#fff ) 220px 0 no-repeat, linear-gradient(131deg , #f3f5fc 75%, #fff 0%) left no-repeat;
+    background-size: 100%, 100%, 100%, 100%;
+    width: 100%;
+    line-height: 60px;
+    padding: 10px;
+    color: white;
+    margin: 0px;
+    position: relative;
+    height: 85px;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -192,24 +206,50 @@ BULLETS ROJO
 
 .sidebar {
     width: 220px !important;
-}
-
-.sidebar {
     z-index: 999;
     background: #595965;
     color: #fff;
     transition: all 0.3s;
 }
 
+.sidebar__option{
+ padding: 0px 10px;
+}
+
 .sidebar__option a:hover{
     font-weight: bold;
 }
-a .sidebar__option-name{
+
+.sidebar__option-icon--red{
+    color: #d52b1e;
+}
+
+.sidebar__option-name{
     vertical-align: middle;
     font-size: 14px;
 }
-a .sidebar__option-name:hover{
+.sidebar__option-name:hover{
     color: #fff !important;
+}
+
+
+.sidebar__option--toggle {
+	position: relative;
+}
+
+.sidebar__option--toggle:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	margin-left: -20px;
+    margin-bottom: -20px;
+    z-index: 9999;
 }
 
 .sidebar__option a .fa-circle{
@@ -226,12 +266,58 @@ a .sidebar__option-name:hover{
     margin-top: 0px;
 }
 
-/*options for "sidebar's suboptions"*/
-.sidebar__suboption a:hover {
-    color: #fff;
-    background: #595864;
+.sidebar__option-withsub--first{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
+.sidebar__option-withsub--last.collapsed{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*options for "sidebar's suboptions"*/
+/*ul de subopciones*/
+.sidebar__option-list-suboptions {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #43434b;
+}
+
+.sidebar__option-list-suboptions--last{
+    box-shadow: 0 15px 24px -10px rgba(5, 9, 25, 0.34);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+  .sidebar__suboption--a{
+    padding:5px !important;
+  }
+  .sidebar__suboption-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #a0a0a0;
+  }
+
+  .sidebar__suboption-text--active{
+    color: #fff;
+  }
+
+  .sidebar__suboption-text:hover {
+    color: #fff;
+  }
+  
+  .sidebar__suboption-icon {
+    background: #fff;
+    color: #d52b1e;
+    border-radius: 50px;
+    font-size: 8px;
+    padding: 2px 2px 3px 4px;
+    margin-right: 7px;
+    vertical-align: middle;
+  }
+
+/*hide toggle icon*/
 #accordionSidebar .dropdown-toggle::after {
     display: none;
     position: absolute;
@@ -240,26 +326,28 @@ a .sidebar__option-name:hover{
     transform: translateY(-50%);
 }
 
-
-#accordionSidebar {
-    padding: 0px;
-}
-
 #accordionSidebar p {
     color: #fff;
     padding: 10px;
 }
 
 #accordionSidebar li a {
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1.1em;
     display: block;
     position: relative;
 }
 
-#accordionSidebar  ul a {
-    padding-left: 30px !important;
+
+/*opcion sin mostrar subopciones*/
+#accordionSidebar .dropdown-toggle{
+    background: #37373c;
+}
+
+#accordionSidebar ul a {
+    padding-left: 22px !important;
     background: #43434b;
+    width: 100%;
 }
 
 #accordionSidebar  ul a::after {
@@ -273,6 +361,7 @@ a .sidebar__option-name:hover{
 .sidebar-brand {
     min-height: 4.375rem;
     background: white;
+    margin-bottom: 30px; /* distancia entre logo y opciones sidebar*/
 }
 
 #wrapper #content-wrapper {
@@ -297,8 +386,8 @@ footer.sticky-footer {
 
 .menu__all-info-user{
     background: #f3f5fc;
-    height: 4.375rem;
-    padding: 10px;
+    height: 85px;
+    padding: 20px 30px;
 }
 
 
@@ -331,6 +420,11 @@ footer.sticky-footer {
 .menu__user-info{
     margin: 0px 5px;
 }
+@media only screen and (max-width: 768px) {
+    .menu__user-info {
+      display: none !important;
+    }
+  }
 
 .menu__user-info .user{
     font-size: 16px;

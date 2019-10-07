@@ -9,9 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
-  
-  
+  <title>SIICEX</title>
 
 <!--CSS -->
 <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
@@ -38,89 +36,124 @@
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-            <img src="img/logo.png">
-        </div>
-      </a>
-
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon">
+              <img src="img/logo.png">
+          </div>
+        </a>
+  
+        <li class="sidebar__option">
+          <a href="#opcionSeguridad" data-toggle="collapse" aria-expanded="false" class="sidebar__option--toggle dropdown-toggle sidebar__option-withsub--first collapsed">
+              <i class="fas fa-circle sidebar__option-icon--red"></i><span class="sidebar__option-name">Inteligencia Comercial</span>
+          </a>
+          <ul class="sidebar__option-list-suboptions collapse list-unstyled" id="opcionSeguridad">
+              <li class="sidebar__suboption">
+                <a href="#" class="sidebar__suboption--a">
+                  <span class="sidebar__suboption-icon">
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                  <span class="sidebar__suboption-text">
+                    Mi producto
+                  </span>
+                </a>
+              </li>
+              <li class="sidebar__suboption">
+                  <a href="#" class="sidebar__suboption--a">
+                    <span class="sidebar__suboption-icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </span>
+                    <span class="sidebar__suboption-text">
+                      Sectores productivos
+                    </span>
+                  </a>
+              </li>
+          </ul>
+      </li>
       <li class="sidebar__option">
-        <a href="#opcionSeguridad" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Seguridad</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionSeguridad">
-            <li class="sidebar__suboption">
-                <a href="#">Perfiles</a>
-            </li>
-            <li class="sidebar__suboption">
-                <a href="#">Usuarios</a>
-            </li>
-        </ul>
-    </li>
-    <li class="sidebar__option">
-        <a href="#opcionPaginas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Páginas</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionPaginas">
-        </ul>
-    </li>
-    <li class="sidebar__option">
-        <a href="#opcionBloques" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Bloques</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionBloques">
-        </ul>
-    </li>
-    <li class="sidebar__option">
-        <a href="#opcionPlataforma" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Plataforma</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionPlataforma">
-        </ul>
-    </li>
-    <li class="sidebar__option">
-        <a href="#opcionMensajes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Mensajes</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionMensajes">
-        </ul>
-    </li>
-    <li class="sidebar__option">
-        <a href="#opcionProductos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Productos</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionProductos">
-        </ul>
-    </li>
-    <li class="sidebar__option">
-        <a href="#opcionRecursos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Recursos</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionRecursos">
-            <li class="sidebar__suboption">
-                <a href="#">Estudios de mercado</a>
-            </li>
-            <li class="sidebar__suboption">
-                <a href="#">Noticias</a>
-            </li>
-            <li class="sidebar__suboption">
-                <a href="#">Documentación</a>
-            </li>
-            <li class="sidebar__suboption">
-                <a href="#">Notas de prensa</a>
-            </li>
-        </ul>
-    </li>
-    <li class="sidebar__option">
-        <a href="#opcionBoletines" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="fas fa-circle"></i><span class="sidebar__option-name">Boletines</span>
-        </a>
-        <ul class="collapse list-unstyled" id="opcionBoletines">
-        </ul>
-    </li>
-    </ul>
-    <!-- End of Sidebar -->
+          <a href="#opcionPublicaciones" data-toggle="collapse" aria-expanded="false" class="sidebar__option--toggle dropdown-toggle sidebar__option-withsub--last collapsed">
+              <i class="fas fa-circle sidebar__option-icon--red"></i><span class="sidebar__option-name">Publicaciones</span>
+          </a>
+          <ul class="sidebar__option-list-suboptions sidebar__option-list-suboptions--last collapse list-unstyled " id="opcionPublicaciones">
+              <li class="sidebar__suboption">
+                  <a href="#" class="sidebar__suboption--a">
+                    <span class="sidebar__suboption-icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </span>
+                    <span class="sidebar__suboption-text">
+                      Estudios de mercado
+                    </span>
+                  </a>
+                </li>
+                <li class="sidebar__suboption">
+                    <a href="#" class="sidebar__suboption--a">
+                      <span class="sidebar__suboption-icon">
+                        <i class="fas fa-chevron-right"></i>
+                      </span>
+                      <span class="sidebar__suboption-text">
+                        Notas de prensa
+                      </span>
+                    </a>
+                </li>
+                <li class="sidebar__suboption">
+                    <a href="#" class="sidebar__suboption--a">
+                      <span class="sidebar__suboption-icon">
+                        <i class="fas fa-chevron-right"></i>
+                      </span>
+                      <span class="sidebar__suboption-text">
+                        Boletines
+                      </span>
+                    </a>
+                  </li>
+                  <li class="sidebar__suboption">
+                      <a href="#" class="sidebar__suboption--a">
+                        <span class="sidebar__suboption-icon">
+                          <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <span class="sidebar__suboption-text">
+                          Noticias
+                        </span>
+                      </a>
+                  </li>
+                  <li class="sidebar__suboption">
+                      <a href="#" class="sidebar__suboption--a">
+                        <span class="sidebar__suboption-icon">
+                          <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <span class="sidebar__suboption-text">
+                          Revista exportadora.pe
+                        </span>
+                      </a>
+                  </li>
+          </ul>
+      </li>
+      <li class="sidebar__option">
+          <a href="#">
+              <i class="fas fa-circle"></i><span class="sidebar__option-name">Herramientas de análisis</span>
+          </a>
+      </li>
+      <li class="sidebar__option">
+          <a href="#">
+              <i class="fas fa-circle"></i><span class="sidebar__option-name">¿Qué es SIICEX?</span>
+          </a>
+      </li>
+      <li class="sidebar__option">
+          <a href="#">
+              <i class="fas fa-circle"></i><span class="sidebar__option-name">Glosario</span>
+          </a>
+      </li>
+      <li class="sidebar__option">
+          <a href="#">
+              <i class="fas fa-circle"></i><span class="sidebar__option-name">Preguntas frecuentes</span>
+          </a>
+      </li>
+      <li class="sidebar__option">
+          <a href="#"">
+              <i class="fas fa-circle"></i><span class="sidebar__option-name">Contacto</span>
+          </a>
+      </li>
+      </ul>
+      <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -129,7 +162,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav id="menutop" class="fixed-top navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav id="menutop" class="fixed-top navbar navbar-expand navbar-light bg-white topbar mb-4 static-top">
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
