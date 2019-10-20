@@ -525,7 +525,11 @@ textarea::placeholder {
 .boletin__links-section {
   padding: 0px;
   border-radius: 5px 5px 0px 0px;
-  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  box-shadow: 2px 3px 12px 5px rgba(135, 145, 149, 0.19);
+}
+
+.boletin__links-section ul{
+  border-radius:5px;
 }
 
 .boletin__nav-link {
@@ -595,6 +599,21 @@ textarea::placeholder {
 
 .last-news__more-info {
   text-align: left;
+  position: relative;
+  padding-top: 3px;
+}
+
+.last-news__more-info:before {
+  position: absolute;
+  left: -70%;
+  right: 0;
+  top: -2px;
+  content: "";
+  width: 30%;
+  height: 1px;
+  background: #dfe2e9;
+  margin: 0 auto;
+  opacity: 0.7;
 }
 
 .last-news__more-info-date {
@@ -656,6 +675,10 @@ textarea::placeholder {
 
 .new-opportunity__more-info-link {
   padding-right: 2px;
+  color: #d52b1e;
+}
+
+.new-opportunity__more-info-link:hover{
   color: #d52b1e;
 }
 
@@ -852,7 +875,14 @@ blockquote cite:before {
 
 /* ---------------------------------------------------
    LAST COURSES STYLE
+   section: ANÁLISIS DE MERCADO
+
 ----------------------------------------------------- */
+
+.market__section{
+  padding-bottom: 50px;
+}
+
 .last-courses__title {
   margin-bottom: 15px;
 }
@@ -882,7 +912,7 @@ blockquote cite:before {
   border-radius: 5px;
   box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
   background-color: #ffffff;
-  padding: 10px;
+  padding: 9px 17px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -930,6 +960,10 @@ blockquote cite:before {
 .last-courses__estadisticas-title {
   margin-bottom: 15px !important;
 }
+
+.estadisticas__tabs{
+  background: transparent !important;
+}
 .estadisticas__tabs a {
   border: solid 1px #e7ebf4 !important;
   background-color: #f3f5fc;
@@ -972,12 +1006,20 @@ blockquote cite:before {
 
 .estadistica__filter-icon {
   color: #595c65 !important;
-  text-align: right;
+  text-align: center;
+  background: #eff0f4;
+  padding: 10px 4px !important;
+  margin: 2px;
+  border: 2px solid #dbe0ec;
 }
 
 .estadistica__filter-icon--active {
   color: #d13520 !important;
-  text-align: right;
+  background: #dbe0ec;
+}
+
+.estadistica__filter-icon--red{
+  color: #d13520 !important;
 }
 
 .estadistica__filter-icon:hover {
@@ -995,7 +1037,7 @@ blockquote cite:before {
    SHARE INFO STYLE
 ----------------------------------------------------- */
 .share-info__options {
-  padding: 25px 0px 0px;
+  padding: 25px 0px 25px 0px;
 }
 
 .share-info__question {
@@ -1071,7 +1113,7 @@ blockquote cite:before {
 
 .share-info__others {
   border-top: solid 1px #777b85;
-  padding-top: 27px;
+  padding-top: 20px;
 }
 .share-info__others-title {
   color: #ffffff;
@@ -1090,6 +1132,10 @@ blockquote cite:before {
 
 .attach-file__item{
   margin-bottom: 10px;
+}
+
+.attach-file__item:last-child {
+  margin-bottom: 0px;
 }
 
 .attach-file__name {
@@ -1174,9 +1220,56 @@ blockquote cite:before {
     margin: 8px 0px;
   }
 }
+
+
+/* ---------------------------------------------------
+   COMPARTIDO POR OTROS EXPORTADORES
+----------------------------------------------------- */
+
+.share-by-others-item {
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  padding: 13px 17px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.share-by-others__icon{
+  background: #dfe2e9;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.share-by-others__title{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595c65;
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+
 /* ---------------------------------------------------
    EVENTS STYLE Ex. Calendario
 ----------------------------------------------------- */
+
+.events__links-section {
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 12px 5px rgba(135, 145, 149, 0.19);
+}
+
+.events__links-section ul{
+  border-radius:5px;
+}
+
+
 .events-row {
   margin-bottom: 25px;
 }
@@ -1193,8 +1286,16 @@ blockquote cite:before {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #555d61;
+  color: #879195;
   padding: 18px;
+}
+
+.event-item__more-info-arrow {
+  background: #d52b1e;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 10px;
+  padding: 3px 7px;
 }
 
 .events__todos:hover {
@@ -1203,6 +1304,22 @@ blockquote cite:before {
 
 .events__todos-arrow {
   color: #d13520;
+}
+
+
+.event-item__card{
+  border: 0px;
+}
+
+.event-item__body{
+  padding: 15px;
+  min-height: 95px;
+}
+
+.event-item__footer{
+  background-color: rgb(255, 255, 255);
+  border-top: 0px;
+  padding: 0px 15px 15px;
 }
 
 .event-item__title {
@@ -1219,6 +1336,10 @@ blockquote cite:before {
 /* ---------------------------------------------------
    FOOTER STYLE
 ----------------------------------------------------- */
+.footer__section{
+  padding: 40px 0px;
+}
+
 .footer__address {
   font-size: 13px;
   font-weight: normal;
@@ -1240,6 +1361,10 @@ blockquote cite:before {
   line-height: normal;
   letter-spacing: normal;
   color: #555d61;
+}
+
+.footer-copyright__section{
+  padding: 5px 0px;
 }
 
 .footer__logo,
