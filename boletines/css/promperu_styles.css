@@ -351,7 +351,7 @@ button.boletin__search--btn.btn.active {
 ----------------------------------------------------- */
 
 /*Genéricos para boletín*/
-.a {
+a, a:hover {
   color: #595c65;
 }
 
@@ -564,6 +564,23 @@ textarea::placeholder {
   min-height: 455px;
 }
 
+.last-news .carousel-indicators{
+  left: auto;
+  margin-right: 0%;
+}
+
+.carousel-indicators li {
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  background-color: #dbe0ec;
+  border: 1px;
+}
+
+.carousel-indicators .active {
+  background-color: #d52b1e;
+}
+
 .last-news__category {
   border-left: 3px solid #7ab916;
   padding-left: 5px;
@@ -601,15 +618,15 @@ textarea::placeholder {
   text-align: left;
   position: relative;
   padding-top: 3px;
+  width:30%
 }
 
 .last-news__more-info:before {
   position: absolute;
-  left: -70%;
+  left: 0;
   right: 0;
   top: -2px;
   content: "";
-  width: 30%;
   height: 1px;
   background: #dfe2e9;
   margin: 0 auto;
@@ -628,20 +645,11 @@ textarea::placeholder {
   color: #d52b1e;
   border-radius: 50px;
   font-size: 10px;
-  padding: 5px 7px;
+  padding: 3px 7px;
+  position: absolute;
+  right: -21px;
 }
 
-.carousel-indicators li {
-  border-radius: 50px;
-  width: 12px;
-  height: 12px;
-  background-color: #dbe0ec;
-  border: 1px;
-}
-
-.carousel-indicators .active {
-  background-color: #d52b1e;
-}
 
 /* ---------------------------------------------------
    NEW OPPORTUNITIES STYLE
@@ -1120,14 +1128,29 @@ blockquote cite:before {
 }
 
 .share-option__send-btn{
-    width: 100%;
+    width: auto;
+    padding: 10px 60px;
 }
 
 
-
+/*Adjuntar Archivo*/
 .attach-file__options {
     padding: 15px 25px;
     position: relative;
+}
+
+.attach-file__options:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 63%;
+  width: 0;
+  height: 0;
+  border: 28px solid transparent;
+  border-bottom-color: #ffffff;
+  border-top: 0;
+  margin-left: -28px;
+  margin-top: -28px;
 }
 
 .attach-file__item{
@@ -1208,6 +1231,22 @@ blockquote cite:before {
   color: #555d61;
   margin-bottom: 0px;
 
+}
+
+/*Adjuntar URL*/
+
+.share-url__options:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 8%;
+  width: 0;
+  height: 0;
+  border: 28px solid transparent;
+  border-bottom-color: #ffffff;
+  border-top: 0;
+  margin-left: -28px;
+  margin-top: -28px;
 }
 
 .share-url__input {
@@ -1309,6 +1348,10 @@ blockquote cite:before {
 
 .event-item__card{
   border: 0px;
+}
+
+.event-item__card-img{
+  width: 100%;
 }
 
 .event-item__body{
@@ -1631,10 +1674,20 @@ TYPE 2
 }
 
 .post-comment__reply-close {
+  margin: 15px 0px 8px;
+  text-align: right;
+}
+
+.post-comment__reply-close--link {
+  font-weight: bold;
+  color: #879195;
+}
+
+.post-comment__reply-close--link:hover {
   text-align: right;
   font-weight: bold;
   color: #879195;
-  margin: 15px 0px 8px;
+  text-decoration: none;
 }
 
 .post-comment__reply-text {
@@ -1708,60 +1761,22 @@ TYPE 2
 
 /*TEST*/
 
-*{
-  margin:0;
-  padding:0;
+.speech-bubble {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
 }
 
-.container-fluid{
-  margin:0;
-  padding:0;
-}
-
-.jumbotron-fluid{
-  width:100%;
-  height:100vh;
-  overflow:hidden;
-}
-
-.nav{
-  background:#fff;
-}
-
-
-
-.nav-item.active .nav-link{
-  color:#cb356b;
-}
-
-
-.display-3{
-  color:#fff;
-  display:block;
-  margin-top:30px;
-}
-
-.one{
-  background: #06beb6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-.two{
-  background: #642B73;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-.three{
-  background: #36D1DC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-.four{
-  background: #CB356B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-bottom-color: #00aabb;
+	border-top: 0;
+	margin-left: -28px;
+	margin-top: -28px;
 }
