@@ -141,6 +141,21 @@ BULLETS ROJO
 
 
 /*options for "sidebar's options"*/
+
+@media (max-width: 576px){ 
+
+    .showMin576{
+        display: none;
+    }
+}
+
+@media (min-width: 576px){ 
+    .showMax576{
+        display: none;
+    }
+
+
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -148,12 +163,12 @@ BULLETS ROJO
 #accordionSidebar {
     top: 0;
     bottom: 0;
-    z-index: 1040;
+    z-index: 1041;
     position: fixed;
     padding: 0px;
 }
 
-@media (min-width: 768px){ 
+@media (min-width: 769px){ 
     .sidebar.toggled {
         width: 220px !important;
     }
@@ -163,7 +178,7 @@ BULLETS ROJO
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 769px){
     #accordionSidebar .toggled{
         margin-left: 220px;
         margin-right: -220px;
@@ -754,6 +769,18 @@ Plomo claro menu: #9fafb7;
 }
 
 
+@media (max-width: 768px){
+    .subscription-section__subscription-text{
+        border-left: 8px solid #d0021b;
+    }
+
+    .subscription-section{
+        border-left: 0px !important;
+    }
+}
+
+
+
 
 
 /* ---------------------------------------------------
@@ -969,6 +996,26 @@ Plomo claro menu: #9fafb7;
   text-align: right;
 }
 
+.copyright__logo img{
+    width:auto;
+}
+
+@media (max-width: 900px){
+    .copyright__logo img{
+        width:100%;
+    }
+}
+
+
+@media (max-width: 576px){
+    .copyright__logo img{
+        width:auto;
+    }
+}
+
+.modal-backdrop{
+    z-index: 1045 !important;
+}
 .footer-copyright {
     background: #fff;
     font-size: 13px;
@@ -978,7 +1025,7 @@ Plomo claro menu: #9fafb7;
     line-height: normal;
     letter-spacing: normal;
     color: #555d61;
-    z-index: 99999;
+    z-index: 1040;
   }
   
   .footer-copyright__section{
@@ -986,7 +1033,15 @@ Plomo claro menu: #9fafb7;
     margin-left: 220px;
   }
 
+  @media (max-width: 768px){
 
+    .footer__address{
+        display:none;
+    }
+    .footer-copyright__section{
+        margin-left: 0px !important;
+    }
+}
 
 /* ---------------------------------------------------
    MODAL DE SUSCRIPCIÓN
