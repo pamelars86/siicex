@@ -176,30 +176,53 @@ BULLETS ROJO
 }
 
 
-
-.sidebar-brand-icon {
-    text-align: center;
-    background: linear-gradient(0deg , transparent,#fff ) 220px 0 no-repeat, linear-gradient(131deg , #f3f5fc 75%, #fff 0%) left no-repeat;
-    background-size: 100%, 100%, 100%, 100%;
-    width: 100%;
-    line-height: 60px;
-    padding: 10px;
-    color: white;
-    margin: 0px;
-    position: relative;
-    height: 85px;
-}
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+.top-bar__search-xs{
+    display: none;
+}
+
+.top-bar__search--web{
+    display: block;
+}
+
+
+@media (max-width: 1000px){
+    .top-bar__search--web{
+        display: none !important;
+    }
+
+    .top-bar__search-xs{
+        display: block !important;
+        padding-top: 25px;
+        height: 50px;
+        background-color: #f3f5fc;
+        border-radius: 30px;
+        padding: 5px;
+        border: solid 1px #dbe0ec;
+        margin-right: 10px;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .top-bar__search-xs-icon{
+        color: #e74c3c !important;
+        padding-top: 12px;
+    }
+
+    .navbar__options--mobile{
+        margin-left: auto!important;
+    }
+}
+
 
 @media (max-width: 768px){
-    .sidebar-toggled #menutop,
+    /*.sidebar-toggled #menutop,
     .sidebar-toggled .body-container,
     .sidebar-toggled .footer__container{
-        /*margin-left: 220px ;*/
-    }
+        margin-left: 220px ;
+    }*/
 
     .sidebar-toggled #accordionSidebar {
         left: 0 !important;
@@ -210,10 +233,46 @@ BULLETS ROJO
         left: -220px;
     }
 
-    .top-bar__search-xs{
-        padding-top: 25px;
+    .topbar {
+        height: 60px;
     }
 
+    
+
+    .topbar .nav-item .nav-link .img-profile {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .sidebar-brand--web{
+        display:none !important;
+    }
+
+    .sidebar-brand-icon{
+        height: 60px !important;
+        padding: 0px 10px !important;
+        width: auto !important;
+    }
+
+    .sidebar-brand {
+        min-height: 60px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .header-brand--mobile{
+        display: block !important; 
+    }
+
+}
+
+@media (min-width: 769px){
+.header-brand--mobile{
+    display: none !important; 
+}
+}
+
+.bars-mobile{
+    color: #595c64;
 }
 
 .sidebar {
@@ -376,6 +435,19 @@ BULLETS ROJO
     margin-bottom: 30px; /* distancia entre logo y opciones sidebar*/
 }
 
+.sidebar-brand-icon {
+    text-align: center;
+    background: linear-gradient(0deg , transparent,#fff ) 220px 0 no-repeat, linear-gradient(131deg , #f3f5fc 75%, #fff 0%) left no-repeat;
+    background-size: 100%, 100%, 100%, 100%;
+    width: 100%;
+    line-height: 60px;
+    padding: 10px;
+    color: white;
+    margin: 0px;
+    position: relative;
+    height: 85px;
+}
+
 #wrapper #content-wrapper {
     background-color: #f8f9fc;
     width: 100%;
@@ -464,6 +536,13 @@ footer.sticky-footer {
     .menu__user-info {
       display: none !important;
     }
+
+    .menu__all-info-user{
+        background: #fff;
+        height: 60px;
+        padding: 8px 5px;
+    }
+
   }
 
 .menu__user-info .user{
@@ -496,11 +575,13 @@ footer.sticky-footer {
 .searchbar{
     margin-bottom: auto;
     margin-top: auto;
-    height: 60px;
-    background-color: #353b48;
+    height: 50px;
+    background-color: #f3f5fc;
     border-radius: 30px;
-    padding: 10px;
-    }
+    padding: 5px;
+    border: solid 1px #dbe0ec;
+    margin-right: 10px;
+}
 
     .search_input{
     color: white;
@@ -515,13 +596,13 @@ footer.sticky-footer {
 
     .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 450px;
+    width: 250px;
     caret-color:red;
     transition: width 0.4s linear;
     }
 
     .searchbar:hover > .search_icon{
-    background: white;
+    background: #f3f5fc;
     color: #e74c3c;
     }
 
@@ -533,7 +614,7 @@ footer.sticky-footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color:white;
+    color: #d13520;
     }
 
 
@@ -601,6 +682,17 @@ Plomo claro menu: #9fafb7;
     border-radius: 4px;
 }
 
+.subscription-section__layout{
+    width: 275px;
+    margin: auto;
+}
+
+.btn-primary__subscribe{
+  font-weight: bold !important;
+  font-size:18px !important;
+  width: 100%;
+}
+
 .subscription-section__subscription-text{
     padding: 25px;
 }
@@ -631,7 +723,7 @@ Plomo claro menu: #9fafb7;
 .subscription-section__subscription-option{
     background-image: url("../img/rectangle.png");
     text-align: center;
-    padding: 25px;
+    padding: 25px 2px;
 }
 .subscription-option__call{
     font-family: Roboto;
@@ -645,6 +737,22 @@ Plomo claro menu: #9fafb7;
     color: #ffffff;
     margin-bottom: 10px;
 }
+
+
+@media (max-width: 1200px){
+    .subscription-section__layout{
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px){
+    .subscription-section__layout{
+        width: 275px;
+        margin: auto;
+    }
+}
+
 
 
 
@@ -860,6 +968,23 @@ Plomo claro menu: #9fafb7;
 .copyright__logo {
   text-align: right;
 }
+
+.footer-copyright {
+    background: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #555d61;
+    z-index: 99999;
+  }
+  
+  .footer-copyright__section{
+    padding: 5px 25px;
+    margin-left: 220px;
+  }
 
 
 

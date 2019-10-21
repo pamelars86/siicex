@@ -34,14 +34,14 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper" class="Site-content">
-    <!-- Sidebar -->
+    <!-- INI: Sidebar -->
     <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Sidebar Toggle (Topbar) -->
-        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle ml-3">
-            <i class="fa fa-bars"></i>
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle text-left">
+            <i class="fas fa-times"></i>
           </button>
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand sidebar-brand--web d-flex align-items-center justify-content-center" href="index.html">
           <div class="sidebar-brand-icon">
               <img src="img/logo.png">
           </div>
@@ -157,7 +157,7 @@
           </a>
       </li>
       </ul>
-      <!-- End of Sidebar -->
+      <!--FIN: Sidebar -->
    
 
     <!-- Content Wrapper -->
@@ -166,27 +166,38 @@
       <!-- Main Content -->
       <div id="content">
 
-        <!-- Topbar -->
+        <!-- INI: HEADER -->
         <nav id="menutop" class="fixed-top navbar navbar-expand navbar-light bg-white topbar mb-4 static-top">
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle ml-3">
-            <i class="fa fa-bars"></i>
-          </button>
+          
+          <!-- ini: option selected - only web -->
           <div class="header__option-selected">
               <i class="fas fa-circle header__option-selected-bullet font-8"></i>
               <span class="header__option-selected-name">Boletín de Inteligencia</span>
           </div>
-          <!-- Topbar Search -->
-          <div class="searchbar">
-                <input class="search_input" type="text" name="" placeholder="Search...">
+          <!-- fin -->
+
+          <!-- ini: search - only web -->
+          <div class="searchbar ml-auto searchbar__web top-bar__search--web">
+                <input class="search_input" type="text" name="" placeholder="Buscar...">
                 <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-              </div>
-              
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none top-bar__search-xs">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </div>
+          <!-- fin -->
+        
+
+          <!-- ini: bars+logo - only mobile -->
+          <div class="header-brand--mobile sidebar-brand d-flex align-items-center justify-content-center sidebar-brand-icon">
+             <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle">
+                <i class="bars-mobile fa fa-bars"></i>
+              </button>                
+              <a href="#"><img src="img/logo.png"></a>
+         </div>          
+         <!-- fin -->
+
+          <!-- ini: search mobile + usuario -->
+          <ul class="navbar-nav navbar__options--mobile">
+            <!-- ini: search - only mobile -->
+            <li class="nav-item dropdown no-arrow top-bar__search-xs">
+              <a class="nav-link dropdown-toggle top-bar__search-xs-icon" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
               <!-- Dropdown - Messages -->
@@ -203,6 +214,7 @@
                 </form>
               </div>
             </li>
+            <!-- fin -->
 
             <!-- Nav Item - User Information -->
             <li class="menu__user nav-item dropdown no-arrow menu__all-info-user">
@@ -229,7 +241,7 @@
             </li>
           </ul>
         </nav>
-        <!-- End of Topbar -->
+        <!-- FIN: HEADER -->
 
         <!-- Begin Page Content -->
         <div class="body-container container-fluid">
@@ -244,8 +256,10 @@
                                </p>
                             </div>
                             <div class="col-sm-4 subscription-section__subscription-option">
-                                <p class="subscription-option__call">Suscribete y recíbela cada mes en tu email.</p>
-                               <button class="btn btn-primary btn-primary__submit" type="submit"  data-toggle="modal" data-target="#subcriptionExportador">Suscribirme</button>
+                               <div class="subscription-section__layout">
+                                    <p class="subscription-option__call">Suscribete y recíbela cada mes en tu email.</p>
+                                    <button class="btn btn-primary btn-primary__subscribe" type="submit"  data-toggle="modal" data-target="#subscriptionEmprendedor">Suscribirme</button>
+                               </div>
                             </div>
                         </div>
             
@@ -542,27 +556,44 @@
 
        <!--INI FOOTER -->
        <div class="sticky-footer footer__container dark-bg">
-        <div class="row">
-            <div class="col-sm-8">
-            <p class="footer__address">
-                Calle 21 N° 713 Urb. El Palomar - San Isidro - Lima - Perú
-            </p>
-            <p class="footer__address">
-                Av. Jorge Basadre 610 - San Isidro - Lima - Perú
-            </p>
-            <p class="footer__address">
-                Teléfonos: (511) 6167300 - 6167400 | sae@promperu.gob.pe -
-                sae1@promperu.gob.pe
-            </p>
+            <div class="row">
+                <div class="col-sm-8">
+                <p class="footer__address">
+                    Calle 21 N° 713 Urb. El Palomar - San Isidro - Lima - Perú
+                </p>
+                <p class="footer__address">
+                    Av. Jorge Basadre 610 - San Isidro - Lima - Perú
+                </p>
+                <p class="footer__address">
+                    Teléfonos: (511) 6167300 - 6167400 | sae@promperu.gob.pe -
+                    sae1@promperu.gob.pe
+                </p>
+                </div>
+                <div class="col-sm-4 footer__logo">
+                <img src="img/logo-promperu-footer.png" />
+                </div>
             </div>
-            <div class="col-sm-4 footer__logo">
-            <img src="img/logo-promperu-footer.png" />
-            </div>
+
+    
+            
         </div>
-</div>
+        <!--<div class="footer-copyright">
+                <div class="footer-copyright__section">
+                  <div class="row align-items-center">
+                    <div class="col-sm-8">
+                      Administración | Términos de Uso | Copyright 2008 SIICEX | Óptima
+                      Vizualización
+                    </div>
+                    <div class="col-sm-4 copyright__logo">
+                      <img src="img/logo-mincetur.png" />
+                    </div>
+                  </div>
+                </div>
+                
+              </div> -->
 <!--FIN FOOTER -->
  <!-- Modal EMPRENDEDOR-->
- <div class="modal fade" id="subcriptionExportador" tabindex="-1" role="dialog" aria-labelledby="subcriptionExportadorTitle" aria-hidden="true">
+ <div class="modal fade" id="subscriptionEmprendedor" tabindex="-1" role="dialog" aria-labelledby="subscriptionExportadorTitle" aria-hidden="true">
     <div class="modal-subscription modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
