@@ -5,7 +5,7 @@ PROMPERU
 Archivo de css genéricos
 */
 
-@import "https://fonts.googleapis.com/css?family=Sarala&display=swap";
+@import url('https://fonts.googleapis.com/css?family=Alef&display=swap');
 
 @font-face {
   font-family: DINex;

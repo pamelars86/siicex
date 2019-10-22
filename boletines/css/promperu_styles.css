@@ -15,6 +15,7 @@ De los mockups
 
 Celeste plomo: #f3f5fc
 */
+@import url('https://fonts.googleapis.com/css?family=Alef&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -35,6 +36,21 @@ TYPE 1
 @font-face {
   font-family: DINex;
   src: url("../fonts/D-DINExp.otf");
+}
+
+@media (max-width: 768px){ 
+
+  .showMin768{
+      display: none;
+  }
+}
+
+@media (min-width: 768px){ 
+  .showMax768{
+      display: none;
+  }
+
+
 }
 
 /* ---------------------------------------------------
@@ -830,25 +846,27 @@ blockquote {
   color: #4c4c4c;
 }
 blockquote:before {
-  font-family: Georgia, serif;
+  font-family: 'Alef', serif;
   position: absolute;
-  font-size: 6em;
+  font-size: 7.5em;
   line-height: 1;
-  top: 0;
+  top: -16px;
   left: 0;
   content: "\201C";
   color: #babdc5;
+  font-style:normal;
 }
 blockquote:after {
-  font-family: Georgia, serif;
+  font-family: 'Alef', serif;
   position: absolute;
   float: right;
-  font-size: 6em;
+  font-size: 7.5em;
   line-height: 1;
-  right: 0;
-  bottom: -0.5em;
+  right: -12px;
+  bottom: -0.7em;
   content: "\201D";
   color: #babdc5;
+  font-style:normal;
 }
 blockquote footer {
   padding: 0 2em 0 0;
@@ -880,6 +898,35 @@ blockquote cite:before {
   font-size: 15px;
   padding: 6px 9px 6px 10px;
 }
+
+/*Opinion y audio en mobile*/
+@media only screen and (max-width: 768px) {
+  .opinion-audio__column:before {
+    position: absolute;
+    left: 45px;
+    right: 45px;
+    top: 8px;
+    content: "";
+    height: 2px;
+    background: #babdc5;
+    margin: 0 auto;
+    opacity: 0.7;
+  }
+
+  .opinion-audio__column {
+    border-left: 0px !important;
+  }
+
+  .blockquote-opinion{
+    margin-top: 40px;
+  }
+  .opinions-row {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+
 
 /* ---------------------------------------------------
    LAST COURSES STYLE
@@ -1779,4 +1826,16 @@ TYPE 2
 	border-top: 0;
 	margin-left: -28px;
 	margin-top: -28px;
+}
+
+
+
+/*
+ CAROUSEL MULTI ITEM
+
+*/
+
+.carousel-multi .carousel-control-prev,
+.carousel-multi .carousel-control-next{
+  display: none;
 }
