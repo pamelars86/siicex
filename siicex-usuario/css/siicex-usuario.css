@@ -1043,9 +1043,6 @@ Plomo claro menu: #9fafb7;
     }
 }
 
-/* ---------------------------------------------------
-   MODAL DE SUSCRIPCIÓN
------------------------------------------------------ */
 
 
 @media (min-width: 576px){
@@ -1149,4 +1146,82 @@ Plomo claro menu: #9fafb7;
     background: #d0d3d9;
     color: #595c65;
 
+}
+
+
+/* ---------------------------------------------------
+   HERRAMIENTAS DE ANÁLISIS
+----------------------------------------------------- */
+.analysis-item {
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.analysis-item__header{
+    border-radius: 4px;
+    background-color: #dbe0ec;
+    border-color: #dbe0ec;
+}
+
+.analysis-item__header-title{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+    padding-top: 3px;
+}
+
+
+.analysis-item__more-info-arrow {
+    background: #d52b1e;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 3px 7px;
+  }
+
+.analysis-item__body{
+    padding:0px;
+}
+
+.analysis-item__body-row{
+    padding: 25px 25px 25px 0px;
+}
+
+
+.analysis-item__logo{
+    border: solid 1px #dbe0ec;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+.analysis-item__body-title{
+    font-family: DINEx;
+    font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    color: #555d61;
+}
+
+.analysis-item__body-description{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #879195;
 }
