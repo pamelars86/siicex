@@ -167,6 +167,48 @@ fieldset[disabled] .btn-primary__submit--nocomments.active {
 }
 
 
+/*BUTTON GRAY - PROMPERU*/
+.btn-primary__gray{
+  background-color: #b6b6b6;
+  border-color: #b6b6b6;
+  color: #595c65;
+  font-weight: bold;
+}
+.btn-primary__gray:hover,
+.btn-primary__gray:focus,
+.btn-primary__gray:active,
+.btn-primary__gray.active,
+.open .dropdown-toggle.btn-primary__gray {
+  background-color: #b6b6b6;
+  border-color: #b6b6b6;
+  color: #ffffff;
+}
+
+.btn-primary__gray.disabled,
+.btn-primary__gray.disabled:hover,
+.btn-primary__gray.disabled:focus,
+.btn-primary__gray.disabled:active,
+.btn-primary__gray.disabled.active,
+.btn-primary__gray[disabled],
+.btn-primary__gray[disabled]:hover,
+.btn-primary__gray[disabled]:focus,
+.btn-primary__gray[disabled]:active,
+.btn-primary__gray.active[disabled],
+fieldset[disabled] .btn-primary__gray,
+fieldset[disabled] .btn-primary__gray:hover,
+fieldset[disabled] .btn-primary__gray:focus,
+fieldset[disabled] .btn-primary__gray:active,
+fieldset[disabled] .btn-primary__gray.active {
+  background-color: #b6b6b6 !important;
+  border-color: #b6b6b6 !important;
+  color:#fff !important;
+}
+
+.btn-primary__gray.disabled, .btn-primary__gray:disabled{
+  opacity: 1;
+}
+
+/*FIN*/
 
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -2812,6 +2854,10 @@ table.table-mail tr td {
 
 .gray-bg-light {
   background-color: #eff0f4;
+}
+
+.gray-bg-light-2{
+  background-color: #d7dae0;
 }
 
 .gray-bg {

@@ -677,14 +677,29 @@ textarea::placeholder {
 .new-opportunity__item {
   background: #fff;
   border-left: 5px solid #7ab916;
-  padding: 18px 29px;
+  padding: 20px 29px;
   margin-bottom: 10px;
 }
+
+/* without border left*/
+.new-opportunity__item--subasta{
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  border-left: 0px;
+}
+
+@media (min-width: 768px){ 
+  .new-opportunity__item-body {
+    min-height: 125px;
+  }
+}
+
 
 .new-opportunity__item-title {
   font-family: DINEx;
   font-size: 21px;
   color: #555d61;
+  line-height: 1;
 }
 
 .new-opportunity__item-extract {
@@ -695,6 +710,7 @@ textarea::placeholder {
 
 .new-opportunity__more-info {
   text-align: right;
+  margin-bottom: 0px;
 }
 
 .new-opportunity__more-info-link {
@@ -1804,31 +1820,103 @@ TYPE 2
   }
 }
 
-
-
-/*TEST*/
-
-.speech-bubble {
-	position: relative;
-	background: #00aabb;
-	border-radius: .4em;
+/* ---------------------------------------------------
+   SUBASTAS
+----------------------------------------------------- */
+.boletin-section__subasta{
+  padding: 5px 0px 45px;
+}
+.subastas__title-section{
+  padding-bottom: 25px;
 }
 
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 28px solid transparent;
-	border-bottom-color: #00aabb;
-	border-top: 0;
-	margin-left: -28px;
-	margin-top: -28px;
+.boletin__title-name-subasta {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #555d61;
+  font-family: DINex;
 }
 
+.strikethough {
+  width:100%; 
+  text-align:center; 
+  border-bottom: 1px solid #bcbcbc; 
+  overflow: inherit;
+  margin: 0px 15px;
+}
 
+ .strikethough span {
+  padding: 7px 15px;
+  position: relative;
+  top: 15px;
+  background: #d7dae0;
+ }
+
+ .subasta-item{
+
+ }
+
+
+ .subasta-item__title{
+  font-family:DINex;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  color: #555d61;
+  margin-bottom: 0px;
+ }
+
+ .subasta-item__followers{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #879195;
+  margin-bottom: 8px;
+ }
+
+
+ .subasta-item__details {
+  border-left: solid 2px #d0021b;
+  padding-left: 15px;
+}
+
+.subasta-item__interesting {
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  padding: 5px;
+  height: 100%;
+}
+
+.subasta-item__close {
+  border-radius: 3px;
+  background-color: #eef2fb;
+  color: #879195;
+  text-align: center;
+  padding: 5px;
+}
+
+.subasta-item__close-counter {
+  font-family: DINex;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  color: #4c4c4c;
+  text-transform: uppercase;
+
+}
+
+.subasta-item__iaminterested {
+  margin-top: 10px;
+  text-align: center;
+}
 
 /*
  CAROUSEL MULTI ITEM
