@@ -21,6 +21,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.font-14{
+  font-size: 14px
+}
 /*
 TYPE 1
 */
@@ -212,6 +215,12 @@ BULLETS ROJO
   top: -5px;
   left: -19px;
 }
+
+
+.bullet-item__text--pl {
+  padding-left: 15px;
+}
+
 
 .header-title--col{
     padding-left: 0px;
@@ -1821,7 +1830,7 @@ TYPE 2
 }
 
 /* ---------------------------------------------------
-   SUBASTAS
+   BOLETÍN - TIPO SUBASTAS
 ----------------------------------------------------- */
 .boletin-section__subasta{
   padding: 5px 0px 45px;
@@ -1926,4 +1935,493 @@ TYPE 2
 .carousel-multi .carousel-control-prev,
 .carousel-multi .carousel-control-next{
   display: none;
+}
+
+
+/* ---------------------------------------------------
+   BOLETÍN - TIPO OTROS MODULOS
+----------------------------------------------------- */
+
+/* Section: Entrevistas a exportadores*/
+.boletin__section-anuncio-paro{
+  padding: 0px 0px 20px;
+}
+
+.anuncio-paro{
+  background: #d0021b;
+  color: #fff;
+  padding: 15px 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.anuncio-paro__icon{
+  font-size: 35px;
+}
+
+.anuncio-paro__title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.anuncio-paro__more-info-text{
+  font-weight: bold;
+  font-size: 13px;
+}
+.anuncio-paro__more-info-icon {
+  background: #fff;
+  color: #d52b1e;
+  border-radius: 50px;
+  font-size: 10px;
+  padding: 3px 5px;
+  margin-left: 2px;
+}
+
+
+.anuncio-paro__description {
+  color: #fff;
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+
+.boletin-title__interview{
+  margin-top: 25px;
+}
+
+.interviews__section{
+  margin-top: 15px;
+}
+
+.interview-card{
+  border-radius: 4px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  border: 0;
+}
+
+.interview-card__body{
+  padding: 15px 20px 20px;
+}
+.interview-card__title{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595c65;
+  margin-bottom: 5px;
+}
+
+.interview-card__extract{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgb(135, 145, 149);
+  margin-bottom: 0px;
+}
+
+.interview-item {
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.interview-item__right-side{
+  padding-left: 10px !important;
+}
+
+.interview-item__title{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595c65;
+  margin-bottom: 2px;
+  padding-right: 5px;
+}
+
+.interview-item__extract{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: #879195;
+  margin-bottom: 0px;
+}
+
+
+/*
+DESARROLLA TU PROPIA WEB
+*/
+
+.propia-web__level{
+  background:#fff;
+  border-radius: 5px;
+  color: #595c65;
+  font-size: 14px;
+  padding: 0px 5px;
+  margin-left: 8px;
+}
+
+.propia-web__title-section {
+  position: relative;
+  margin-bottom:10px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: DINex;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.propia-web__row{
+  padding: 10px 0px 20px 0px;
+}
+
+.propia-web__title{
+  position: relative;
+  margin-bottom:10px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: DINex;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.propia-web__title-section::after {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: "";
+  width: 13%;
+  height: 2px;
+  background: #d63621;
+  margin: 0 auto;
+}
+
+.propia-web__step-item{
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 87px !important;
+}
+
+.propia-web__next-steps-title{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.propia-web__step-item-text{
+  font-family: DINEx;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  color: #595c65;
+  
+}
+
+/*
+CONSULTORIO
+*/
+@media only screen and (min-width: 997px) {
+  .consultorio__description-section{ 
+    width: 750px;
+    margin: auto;
+  } 
+}
+
+.consultorio__description-text{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #879195;
+}
+
+
+/*
+
+OTRAS NOTICIAS
+*/
+
+.other-news__title{
+  font-family: DINEx;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: 0px;
+  color: #4c4c4c;
+  text-transform: uppercase;
+}
+
+.other-news__extract{
+  border-left: 2px solid #7ab916;
+  padding: 0px 25px;
+}
+
+.other-news__extract-text{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: #596167;
+}
+
+.other-news__source{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+
+.other-news__source-name{
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding:5px;
+}
+
+#carouselOtherNewsIndicators .carousel-indicators li{
+  background-color: white;
+}
+
+#carouselOtherNewsIndicators .carousel-indicators .active{
+  background-color: #d52b1e;
+}
+
+.other-news__prev{
+  padding: 20px 15px 15px;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+}
+
+.other-news__next {
+  padding: 20px 15px 15px;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+}
+
+#carouselOtherNewsIndicators .carousel-control-next, 
+#carouselOtherNewsIndicators .carousel-control-prev{
+  width: 5%;
+  opacity: 1;
+}
+
+#carouselOtherNewsIndicators .carousel-control-next{
+  justify-content: flex-end;
+}
+
+#carouselOtherNewsIndicators .carousel-control-prev{
+  justify-content: flex-start;
+}
+
+
+
+
+#carouselOtherNewsIndicators .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d52b1e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ #carouselOtherNewsIndicators .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d52b1e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+
+
+ /*preguntas frecuentes*/
+
+ .faq__text{
+  color: #d52b1e;
+ }
+
+ /*enlaces de interés*/
+ .interesting-links{
+   border-radius: 4px;
+   box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+   background-color: #ffffff;
+   padding: 20px;
+   margin-top: 15px;
+ }
+
+ .interesting-links__bullets-red {
+  padding-left: 15px;
+  margin: 0px;
+}
+.interesting-links__bullet-item-text {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  color: #555d61;
+  font-family: DINex;
+  margin-bottom: 10px;
+}
+
+.interesting-links__bullet-item-text::before {
+  color: #d52b1e;
+  content: "\2022";
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  top: -5px;
+  left: -19px;
+}
+
+
+.interesting-link-item__title{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #d0031c;
+}
+
+.interesting-link-item__source{
+    font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595c65;
+}
+/* ---------------------------------------------------
+   BOLETÍN - SECTOR "EXPORTACIÓN DE SERVICIO" (amarillo)
+----------------------------------------------------- */
+.sector-amarillo--color{
+  color: #f5c83f
+}
+
+.sector-amarillo--bg-color{
+  background: #f5c83f
+}
+
+.boletin__sector.sector-amarillo--bg-color::after {
+  border-left: 14px solid #f5c83f;
+}
+
+.boletin__title-name.boletin__title-name--amarillo::after {
+  background: #f5c83f;
+}
+
+.last-news__main.last-news__main--amarillo,
+.new-opportunity__item.new-opportunity__item--amarillo,
+.last-news-sector__main-item.last-news-sector__main-item--amarillo{
+  border-left: 5px solid #f5c83f;
+}
+
+.last-news__category.last-news__category--amarillo {
+  border-left: 3px solid #f5c83f;
+}
+
+
+
+
+/* ---------------------------------------------------
+   BOLETÍN - SECTOR "VESTIMENTA Y DECORACIÓN" (morado)
+----------------------------------------------------- */
+.sector-morado--color{
+  color: #7f1f6a
+}
+
+.sector-morado--bg-color{
+  background: #7f1f6a
+}
+
+.boletin__sector.sector-morado--bg-color::after {
+  border-left: 14px solid #7f1f6a;
+}
+
+.boletin__title-name.boletin__title-name--morado::after {
+  background: #7f1f6a;
+}
+
+.last-news__main.last-news__main--morado,
+.new-opportunity__item.new-opportunity__item--morado,
+.last-news-sector__main-item.last-news-sector__main-item--morado{
+  border-left: 5px solid #7f1f6a;
+}
+
+.last-news__category.last-news__category--morado {
+  border-left: 3px solid #7f1f6a;
+}
+
+
+
+/* ---------------------------------------------------
+   BOLETÍN - SECTOR "ACUÍCOLA" (azul)
+----------------------------------------------------- */
+.sector-azul--color{
+  color: #005cb9
+}
+
+.sector-azul--bg-color{
+  background: #005cb9
+}
+
+
+.boletin__sector.sector-azul--bg-color::after {
+  border-left: 14px solid #005cb9;
+}
+
+.boletin__title-name.boletin__title-name--azul::after {
+  background: #005cb9;
+}
+
+.last-news__main.last-news__main--azul,
+.new-opportunity__item.new-opportunity__item--azul,
+.last-news-sector__main-item.last-news-sector__main-item--azul{
+  border-left: 5px solid #005cb9;
+}
+
+.last-news__category.last-news__category--azul {
+  border-left: 3px solid #005cb9;
 }

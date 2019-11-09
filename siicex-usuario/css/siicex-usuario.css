@@ -29,6 +29,10 @@
     flex: 1 1;
 }
 
+#wrapper {
+    background: #dee2ea;
+}
+
 body {
     font-family: Roboto, sans-serif;
     background: #fafafa;
@@ -988,7 +992,7 @@ Plomo claro menu: #9fafb7;
   }
 
   .footer__container {
-    padding: 25px;
+    padding: 38px 25px;
   }
   
   .footer__logo,
@@ -1224,4 +1228,28 @@ Plomo claro menu: #9fafb7;
     line-height: 1.64;
     letter-spacing: normal;
     color: #879195;
+}
+
+
+/* ---------------------------------------------------
+   PREGUNTAS FRECUENTES
+----------------------------------------------------- */
+.faqpromp-item {
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.faqpromp-item__description{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #879195;
+    padding: 25px 0px;
 }
