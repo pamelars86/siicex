@@ -1999,6 +1999,8 @@ TYPE 2
   box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
   background-color: #ffffff;
   border: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .interview-card__body{
@@ -2028,12 +2030,15 @@ TYPE 2
   margin-bottom: 0px;
 }
 
+
+
 .interview-item {
   border-radius: 5px;
   box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
   background-color: #ffffff;
   padding: 10px;
   margin-bottom: 10px;
+  min-height: 102px;
 }
 
 .interview-item__right-side{
@@ -2064,6 +2069,42 @@ TYPE 2
   color: #879195;
   margin-bottom: 0px;
 }
+
+
+/*modal de youtube - entrevista*/
+.interview-card__youtube{
+  width:100%;
+  height:100%;
+}
+
+.interview-youtube__modal{
+  height: 90vh;
+}
+
+.interview-youtube__modal-header{
+  padding:0px !important;
+ /* position: relative*/
+  border: 0px;
+  background: #000;
+}
+
+.interview-youtube__modal-close{
+ /* position: absolute;
+  right: 57px;
+  top: 35px;
+  z-index: 2;*/
+    color: white;
+    background: #869194 !important;
+    opacity: 1;
+    border-radius: 53%;
+    padding: 2px 7px !important;
+    margin: 5px !important;
+}
+
+.interview-youtube__modal-body{
+  padding:0px !important;
+}
+
 
 
 /*
@@ -2127,6 +2168,8 @@ DESARROLLA TU PROPIA WEB
   background-color: #ffffff;
   padding: 20px;
   min-height: 87px !important;
+  position:relative;
+  margin-bottom: 10px;
 }
 
 .propia-web__next-steps-title{
@@ -2149,8 +2192,22 @@ DESARROLLA TU PROPIA WEB
   font-style: normal;
   line-height: 1;
   color: #595c65;
+  padding-left: 20px;
   
 }
+
+.propia-web__number-bg{
+  font-family: DINex;
+  font-size: 71px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: #e1e3ea;
+  position: absolute;
+  top: -8px;
+  left: -3px;
+}
+
 
 /*
 CONSULTORIO
@@ -2172,6 +2229,25 @@ CONSULTORIO
   letter-spacing: normal;
   text-align: center;
   color: #879195;
+}
+
+
+/*
+ir a Preguntas frecuentes
+*/
+
+.go-to-faq__more-info-text{
+  font-weight: bold;
+  font-size: 13px;
+  color: #d52b1e;
+}
+.go-to-faq__more-info-icon {
+  background: #d52b1e;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 10px;
+  padding: 3px 5px;
+  margin-left: 2px;
 }
 
 
@@ -2298,7 +2374,10 @@ OTRAS NOTICIAS
   position: relative;
   color: #555d61;
   font-family: DINex;
-  margin-bottom: 10px;
+  margin-bottom: 19px;
+}
+.interesting-links__bullet-item-text:last-child{
+  margin-bottom: 0px;
 }
 
 .interesting-links__bullet-item-text::before {
@@ -2307,7 +2386,7 @@ OTRAS NOTICIAS
   display: inline-block;
   font-size: 25px;
   position: absolute;
-  top: -5px;
+  top: -8px;
   left: -19px;
 }
 
@@ -2333,6 +2412,162 @@ OTRAS NOTICIAS
   letter-spacing: normal;
   color: #595c65;
 }
+
+
+/*
+ÚLTIMOS SUCESOS
+*/
+
+
+.timeline-item__description {
+	position: relative;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: auto;
+  padding: 20px 15px;
+}
+
+.timeline-item__description:after {
+  content: '';
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top-color: #ffffff;
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+.timeline-item__text{
+  font-family: DINex;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.timeline-item__text--highlight{
+  color: #d0021b;
+  text-decoration: underline;
+}
+
+.timeline-item__point{
+  background-color: #81bb27;
+}
+
+.timeline-item__date{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595c65;
+}
+
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+/*
+Visto en redes
+*/
+
+.social-network__section{
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  padding: 2px;
+  margin-bottom: 15px;
+}
+
+.social-network__header{
+  background-color: #dbe0ec;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+
+.social-network__icon{
+  color: #fff;
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+.social-network__body{
+  padding: 15px 20px;
+}
+
+.social-network__body--instagram{
+  padding: 8px 20px;
+}
+
+.social-network__tweet {
+  margin-bottom: 20px;
+}
+
+.social-network__comment-user{
+  color:#d0021b;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.social-network__comment-text{
+  color:#879195;
+  line-height: 1;
+  margin-bottom: 0px;
+}
+
+.social-network__instagram-photo{
+  border-radius: 3.6px;
+}
+
+.social-network__instagram-photo {
+  margin-right: 10px;
+}
+
+.social-network__instagram-photo-img{
+  border-radius: 3.6px;
+}
+
+
 /* ---------------------------------------------------
    BOLETÍN - SECTOR "EXPORTACIÓN DE SERVICIO" (amarillo)
 ----------------------------------------------------- */
