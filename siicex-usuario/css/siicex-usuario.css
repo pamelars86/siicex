@@ -1560,3 +1560,78 @@ Plomo claro menu: #9fafb7;
   .contact-form__form-section{
     margin-top: 10px;
   }
+
+
+  /* ---------------------------------------------------
+   PÁGINA: GLOSARIO
+----------------------------------------------------- */
+.glosario-item {
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.glosario-item__term{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+
+
+.glosario-item__description{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #879195;
+}
+
+.glosario-pagination .pagination > li > a, .glosario-pagination .pagination > li > span {
+    border: 0px;
+}
+
+.glosario-pagination ul.pagination {
+    margin-bottom: 0px;
+}
+
+.glosario-pagination--row{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+}
+.glosario-pagination__letter{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    color:#b4b4b4 !important
+}
+
+.glosario-pagination__letter--selected{
+    background: transparent !important;
+    color: #d0021b !important;
+    height: 100%;
+    font-weight: bold;
+}
+
+.glosario-pagination li.page-item {
+    padding: 10px 8px;
+}
+
+.glosario-pagination li.page-item.active {
+    border-bottom: 2px solid #d0021b !important;
+}
