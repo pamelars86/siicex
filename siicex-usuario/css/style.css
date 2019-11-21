@@ -2606,35 +2606,7 @@ img.circle-border {
 .ui-draggable .ibox-title {
   cursor: move;
 }
-.breadcrumb {
-  background-color: #eaebef;
-  padding: 0;
-  margin-bottom: 0;
-}
-.breadcrumb > li a {
-  color: inherit;
-}
-.breadcrumb > .active {
-  color: inherit;
-}
 
-.breadcrumb li a {
-  font-size: 20px;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.breadcrumb__path{
-  margin-top: 3px;
-}
-
-.breadcrumb__btn-section {
-  margin-left: 10px;
-}
-
-.breadcrumb__circle-icon{
-  color: #d13520;
-}
 
 code {
   background-color: #F9F2F4;
