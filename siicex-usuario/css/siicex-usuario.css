@@ -1736,6 +1736,10 @@ Plomo claro menu: #9fafb7;
 /* ---------------------------------------------------
    PÁGINA: MI PRODUCTO
 ----------------------------------------------------- */
+.mi-producto__section{
+    margin-bottom: 20px;
+}
+
 .mi-producto__main-tab-name {
     background-color: #f3f5fc;
 }
@@ -1812,4 +1816,204 @@ Plomo claro menu: #9fafb7;
 .interest-tag-item--black{
     background: #2b2828ab;
     color: #d1d1d1;
+}
+
+
+/*requisito item*/
+.requisito-item{
+border-radius: 5px;
+box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+background-color: #ffffff;
+padding: 15px 25px;
+margin-bottom: 10px;
+}
+
+.requisito-item--red {
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #d0021b;
+    color: #fff;
+}
+
+.requisito-item__title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+    margin-bottom: 5px;
+}
+
+.requisito-item__extract {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #879195;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.requisito-item__ellipsis{
+    color: #d0021b;
+}
+
+
+.requisito-item__ellipsis--white{
+    color: #fff;
+}
+
+
+
+/*noticias de mi producto*/
+
+.mi-producto__last-new-item {
+    padding: 20px 30px;
+    border-left: 8px solid #d0021b;
+    border-radius: 5px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.4)),url(../img/miproducto-noticia-item.jpg) top left 100% repeat fixed;
+}
+.mp-last-new-item__title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.mp-last-new-item__extract {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.mi-producto__last-new-item {
+    padding: 25px 30px;
+    border-left: 8px solid #d0021b;
+    border-radius: 5px;
+}
+
+.mp-last-new-item__more-info {
+    position: relative;
+    padding-top: 3px;
+}
+
+.mp-last-new-item__more-info-date {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    width: 30%;
+}
+
+.mp-last-new-item__more-info-arrow {
+    background: #d52b1e;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 5px 7px;
+}
+
+.mi-producto__header-title{
+    margin-bottom: 20px !important;
+}
+
+.mi-producto__estudio-mercado-item{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.mp__estudio-mercado-item__title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+    margin-bottom: 5px;
+}
+
+.mp__estudio-mercado-item__extract {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #879195;
+}
+
+.estudio-mercado-item__ellipsis{
+    color: #d0021b;
+}
+
+.mp-all-aranceles{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding:24px;
+}
+
+.arancel-item__title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #555d61;
+}
+
+.arancel-item__value {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #595c65;
+}
+
+.arancel-item__description {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #879195;
+    text-transform: uppercase;
+    text-align: center;
 }
