@@ -67,6 +67,11 @@ a:focus {
     margin: 40px 0;
 }
 
+.font-32{
+    font-size: 32px;
+
+}
+
 .font-21{
     font-size: 21px;
 
@@ -105,6 +110,14 @@ Guardar
     background: #eef2fa;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.link-ver-todos--light{
+    background: #f7f8fb;
+}
+
+.link-ver-todos--red{
+    color: #d52b1e;
 }
 
 .icon-same-size{
@@ -169,9 +182,9 @@ BULLETS ROJO
     color: #d52b1e;
     content: "\2022";
     display: inline-block;
-    font-size: 25px;
+    font-size: 21px;
     position: absolute;
-    top: -13px;
+    top: -8px;
   }
 
   .header-title--col{
@@ -688,7 +701,7 @@ footer.sticky-footer {
 
 @media (max-width: 768px) {
     .content-option {
-        margin: 110px 20px 20px;
+        margin: 90px 10px 10px;
     }
 }
 
@@ -1294,12 +1307,12 @@ Plomo claro menu: #9fafb7;
   PÁGINA: QUE ES SIICEX
 ----------------------------------------------------- */
 .content-option__v2 {
-    margin: 110px 0px 80px 220px;
+    margin: 85px 0px 80px 220px;
 }
 
 @media (max-width: 768px) {
     .content-option__v2 {
-        margin: 110px auto;
+        margin: 60px auto;
     }
 
     .content-option__v2-section{
@@ -1986,12 +1999,12 @@ margin-bottom: 10px;
 /*noticias de mi producto*/
 
 .mi-producto__last-new-item {
-    padding: 20px 30px;
+    padding: 25px 30px;
     border-left: 8px solid #d0021b;
     border-radius: 5px;
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.4)),url(../img/miproducto-noticia-item.jpg) top left 100% fixed;
-    background-size: cover;
+    background-size: cover !important;
     margin-bottom: 10px;
+    min-height: 210px;
 }
 
 .mi-producto__last-new-item-card{
@@ -2045,11 +2058,6 @@ margin-bottom: 10px;
     color: #ffffff;
 }
 
-.mi-producto__last-new-item {
-    padding: 25px 30px;
-    border-left: 8px solid #d0021b;
-    border-radius: 5px;
-}
 
 .mp-last-new-item__more-info {
     position: relative;
@@ -2276,13 +2284,19 @@ margin-bottom: 10px;
     color: #ffffff;
 }
 
-.new-opportunity__more-info-text {
+.help__more-info-text {
     font-weight: bold;
     padding-right: 2px;
     font-size: 13px;
+    color: #fff;
+    margin-right: 5px;
 }
 
-.new-opportunity__more-info-arrow {
+.help__more-info-text--gray{
+    color: #595c65;
+}
+
+.help__more-info-arrow {
     background: #d52b1e;
     color: #fff;
     border-radius: 50px;
@@ -2290,7 +2304,316 @@ margin-bottom: 10px;
     padding: 5px 7px;
 }
 
-.new-opportunity__more-info {
+.help__more-info {
     text-align: right;
     margin-bottom: 0px;
+}
+
+.event-item__card{
+    border-radius: 4px;
+    border-radius: 5px;
+}
+.event-item__body{
+    padding: 15px;
+}
+
+.event-item__img{
+    border-top-left-radius: calc(5px - 1px);
+    border-top-right-radius: calc(5px - 1px);
+}
+
+.event-item__title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: #595c65;
+}
+
+.event-item__description {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #879195;
+}
+
+.event-item__footer {
+    background-color: rgb(255, 255, 255);
+    border-top: 0px;
+    padding: 0px 15px 15px;
+}
+
+.event-item__more-info-link{
+    padding-right: 2px;
+    color: #d52b1e;
+}
+
+.event-item__more-info-text {
+    font-weight: bold;
+    padding-right: 2px;
+    font-size: 13px;
+}
+
+
+.event-item__more-info-arrow{
+    background: #d52b1e;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 3px 7px;
+}
+
+
+/* ---------------------------------------------------
+   PÁGINA: EMPRESAS EXPORTADORAS
+----------------------------------------------------- */
+.option-back-section{
+    background: #eff0f4;
+    padding: 20px 0px;
+}
+
+.option-back__name {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+}
+
+.option-back__icon{
+    color: #d0021b;
+    margin-right: 5px;
+}
+
+.empexp__header-list {
+    background-color: #595c65;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.empexp-item{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.empexp-item__bg-section {
+    border-radius: 5px;
+    background-color: #f7f8fb;
+    padding: 15px 25px 25px;
+}
+
+.empexp-item__market-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #595c65;
+}
+
+.empexp-item__bg-section p{
+    color: #595c65;
+    line-height: normal;
+}
+
+.empexp-item__country-name{
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------
+   PÁGINA: ARANCELES PREFERENCIALES
+----------------------------------------------------- */
+
+.arancel-item {
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.dpw-subpartida::after{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    color: #d0021b;
+}
+
+.dpw-subpartida {
+    background: #f7f8fb !important;
+    border: 0px;
+    color: #595c65 !important;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+
+.arancel-item__subpartida {
+    border-right: 1px solid #dee2ea;
+    padding: 15px 0px;
+}
+
+.arancel-item__value-op2 {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #7eba41;
+}
+
+.arancel-item__subpartida-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #595c65;
+    margin-bottom: 10px;
+}
+
+.flag__wrapper{
+    border-radius: 50%;
+    background: #dee2ea;
+}
+.flag-icon{
+    border-radius: 50%;
+}
+
+
+/* ---------------------------------------------------
+   PÁGINA: QUIERES EXPORTAR
+----------------------------------------------------- */
+
+
+.quieresexp__subtitle {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #879195;
+}
+
+.quieresexp-item{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 25px;
+    margin-top: 80px;
+}
+
+.quieresexp-item__title{
+    font-family: DINex;
+    font-size: 21px;
+    color: #555d61;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+.quieresexp-item__list-item{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    color: #555d61;
+}
+
+.quieresexp-item__list-item::before {
+    color: #d52b1e;
+    content: "\2022";
+    display: inline-block;
+    font-size: 21px;
+    position: absolute;
+    top: -8px;
+  }
+
+.quieresexp-item__description {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #879195;
+    margin: 10px 0px;
+}
+.quieresexp-item__back {
+    font-size: 13px;
+    font-weight: bold;
+    color: #595c65;
+}
+
+.quieresexp-item__img{
+    margin: -50px 0px -70px;
+}
+
+.quieresexp__platform {
+    margin: 60px 0px 20px 0px;
+}
+
+
+
+.platform-item {
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+}
+
+.platform-item__title,
+.platform-help__title {
+    font-family: DINex;
+    font-size: 21px;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #555d61;
+    text-transform: uppercase;
+}
+
+.platform-item__description {
+    font-size: 14px;
+    color: #879195;
+    margin-bottom: 10px;
+}
+
+.platform-help {
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+}
+.platform-help__col {
+    padding: 30px !important;
+}
+
+.platform-help__col-der {
+    background-color: #f6f7f9;
+    border-left: 1px solid #e3e3e3;
+}
+
+
+/* ---------------------------------------------------
+   PÁGINA: TRATADOS Y REGULAMENTACIONES
+----------------------------------------------------- */
+
+
+.tratados__main-section{
+    background-image: url(../img/regulaciones.jpeg);
+    min-height: 450px;
+    background-size:cover
 }
