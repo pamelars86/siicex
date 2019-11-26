@@ -1321,8 +1321,8 @@ Plomo claro menu: #9fafb7;
     }
 
     .content-option__v2-section{
-        padding-left: 30px !important;
-        padding-right: 30px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
 
@@ -1933,6 +1933,11 @@ Plomo claro menu: #9fafb7;
 .interest-tag-item--black{
     background: #2b2828ab;
     color: #d1d1d1;
+}
+
+.interest-tag-item--gray{
+    background: #cbcbcb;
+    color: #595c65;
 }
 
 
@@ -2697,4 +2702,57 @@ margin-bottom: 10px;
     font-weight: bold;
     color: #595c65;
     margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------
+   PÁGINA: ESTUDIO MERCADO - DETALLE 1
+----------------------------------------------------- */
+
+.mercado-main{
+    background: #fff;
+    padding: 45px;
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .mercado-main {
+        padding: 25px;
+    }
+}
+
+.mercado-main__category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d0031c;
+}
+
+.mercado-main__title {
+    font-family: DINex;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #555d61;
+}
+
+p.mercado-main__date {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #595c65;
+}
+
+.mercado-main__extract {
+    font-size: 14px;
+    color: #879195;
+    margin-bottom: 10px;
+}
+
+.mercado-main__tag {
+    border-radius: 3px;
+    padding: 5px 8px;
+    white-space: nowrap;
+    font-size: 13px;
+    margin-right: 5px;
 }
