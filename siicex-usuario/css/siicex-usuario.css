@@ -2971,3 +2971,16 @@ p.mercado-main__date {
     box-shadow: 2px 3px 12px 5px rgba(135, 145, 149, 0.19);
     background: #fff;
 }
+
+.boletin__nav-link--active {
+    color: #d52b1e !important;
+    border-bottom: 2px solid #d52b1e;
+    font-weight: bold !important;
+}
+.boletin__nav-link {
+    color: #555d61;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
