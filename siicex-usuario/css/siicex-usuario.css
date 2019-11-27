@@ -133,6 +133,10 @@ Guardar
 .icon-red{
     color: #d52b1e;
 }
+
+.general-subtitle-bullet {
+    margin-bottom: 10px;
+}
 /*
 BULLETS ROJO 
 */
@@ -796,6 +800,7 @@ Plomo claro menu: #9fafb7;
     background-image: url("../img/rectangle.png");
     text-align: center;
     padding: 25px 2px;
+    border-radius: 0px 5px 5px;
 }
 .subscription-option__call{
     font-family: Roboto;
@@ -1342,19 +1347,16 @@ Plomo claro menu: #9fafb7;
 }
 
 .siicex-definition{
-    border-radius: 5px;
-    box-shadow: 0 16px 24px -10px var(--dark-indigo-34);
-    background-image: linear-gradient(to bottom, rgba(228, 23, 48, 0.87), #d0021b);
+    border-radius: 10px;
+    box-shadow: 0 16px 24px -10px rgba(5, 9, 25, 0.34);
+    background-image: linear-gradient(to bottom,#ca1b30e0, #ca1b30e0);
     padding: 40px;
-    margin: 15px;
+    margin: 15px;   
 }
 
 .siicex-definition__title{
     font-family: DINex;
   font-size: 21px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
   color: #ffffff;
   text-transform: uppercase;
@@ -1914,6 +1916,10 @@ Plomo claro menu: #9fafb7;
     text-align: right;
     padding-right: 20px;
     font-weight: bold;
+}
+
+.estadistica__filter-icon-table{
+    border-radius: 0px 5px 5px;
 }
 
 
@@ -2627,9 +2633,9 @@ margin-bottom: 10px;
 
 
 .tratados__main-section{
-    background-image: url(../img/regulaciones.jpeg);
+    background-image: url(../img/regulaciones-2.jpeg);
     min-height: 450px;
-    background-size:cover
+    background-size:cover;
 }
 
 .documentacion-item{
@@ -2755,4 +2761,213 @@ p.mercado-main__date {
     white-space: nowrap;
     font-size: 13px;
     margin-right: 5px;
+}
+
+
+
+/* ---------------------------------------------------
+   PÁGINA: HOME
+----------------------------------------------------- */
+.siicex-home__main-section{
+    background-image: url(../img/home.png);
+    min-height: 450px;
+    background-size:cover;
+}
+
+.siicex-home__bg{
+    padding: 60px 40px;
+}
+
+.siicex-home__title{
+    font-family: DINex;
+    font-size: 30px;
+    line-height: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.social-network__section {
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 2px;
+    margin-bottom: 15px;
+}
+
+.social-network__header {
+    background-color: #dbe0ec;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-weight: bold;
+    padding: 12px 20px;
+}
+
+.social-network__body {
+    padding: 15px 20px;
+}
+
+.social-network__tweet {
+    margin-bottom: 20px;
+}
+
+.social-network__comment-user {
+    color: #d0021b;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.social-network__comment-text {
+    color: #879195;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+.social-network__instagram-card {
+    border: 0px;
+}
+
+.social-network__instagram-body {
+    padding: 5px 0px;
+}
+
+.social-network__instagram-items {
+    padding: 20px 30px;
+}
+
+.social-network__instagram-img {
+  border-radius: 5px
+}
+
+.subscription-section__subscription-text--home {
+    padding: 25px !important;
+}
+
+.informado__step{
+    font-family: DINex;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.informado__title{
+    font-family: DINex;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.informado__description{
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.informado__img-section{
+    background-image: url(../img/mantenteinformado.png);
+    background-size:cover;
+}
+
+
+
+/* ---------------------------------------------------
+   PÁGINA: ESTADÍSTICAS GENERALES
+----------------------------------------------------- */
+
+.alert-warning {
+    border-color: #b46f00;
+}
+
+.estadistica__source {
+    font-size: 11px;
+    text-align: right;
+    padding: 10px;
+    color: #879195;
+    font-weight: bold;
+}
+
+.estadisticas-gen__select-country-section{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+}
+
+.estadisticas-gen__select-country--col {
+    padding: 25px 0px 25px 25px !important;
+}
+
+.estadisticas-gen__country{
+    border-right: 1px solid #dfe2e9;
+}
+
+.estadisticas-gen__info-country--col {
+    padding: 25px !important;
+}
+
+.siicex-button--red{
+    color: #fff;
+    background: #d0021b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.siicex-button--red:hover{
+    background-color: #e26251 !important;
+    border-color: #e26251 !important;
+    color: #FFFFFF !important;
+}
+
+.siicex-button--white{
+    color: #17262f;
+    background: #fff;
+    font-size: 18px;
+    font-weight: bold; 
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.19);
+}
+
+.siicex-button--white:hover{
+    color: #17262f;
+    background: #f3f3f3;
+}
+
+.estadisticas-gen__dpw-country{
+    background: #f7f8fb !important;
+    border: 0px;
+    color: #595c65 !important;
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-family: DINex;
+}
+
+.estadisticas-gen__top-country{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #595c65;
+    font-weight: bold;
+}
+
+.porc--green{
+    color: #89ae64;
+}
+.porc--bold{
+    font-weight: bold;
+}
+
+.top-country__detail{
+    line-height: normal;
+}
+
+.top-country__title{
+    text-transform: uppercase;
+}
+
+.nav__links-section {
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 12px 5px rgba(135, 145, 149, 0.19);
+    background: #fff;
 }

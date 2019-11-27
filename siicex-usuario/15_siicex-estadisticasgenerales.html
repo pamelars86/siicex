@@ -26,7 +26,8 @@
 <!-- Font Awesome JS -->
 <script defer src="fontawesome-free-5.10.2-web/js/all.js"></script>
 <script defer src="fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
-   
+<link rel="stylesheet" href="flag-icon-css-master/css/flag-icon.min.css">
+ 
 
 </head>
 
@@ -58,7 +59,7 @@
                     <i class="fas fa-chevron-right"></i>
                   </span>
                   <span class="sidebar__suboption-text">
-                    Mi producto
+                    Mi Producto
                   </span>
                 </a>
               </li>
@@ -172,7 +173,7 @@
           <!-- ini: option selected - only web -->
           <div class="header__option-selected">
               <i class="fas fa-circle header__option-selected-bullet font-8"></i>
-              <span class="header__option-selected-name">Mi Producto</span>
+              <span class="header__option-selected-name">Estadísticas generales</span>
           </div>
           <!-- fin -->
 
@@ -244,16 +245,548 @@
         <!-- FIN: HEADER -->
 
         <!-- INI body-container -->
-        <div class="body-container container-fluid">
-            <!-- INI OPCION: MI PRODUCTO -->
+        <div class="body-container">
+            <!-- INI OPCION: ESTADÍSTICAS GENERALES -->
+            <div class="content-option__v2">
 
-            <div class="content-option">
+                <div class="option-back-section m-b-lg">
+                    <div class="content-option__v2-section">
+                        <span class="option-back__icon"><i class="fas fa-arrow-left"></i></span>
+                        <span class="option-back__name">VOLVER A LA FICHA</span>
+                    </div>
+                </div>
+
+                <div class="content-option__v2-section">
+                    <div class="alert alert-warning text-center" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> Las estadísticas que se muestran a continuación se refieren al producto palta en general, no a la partida específica.
+                    </div>
+                </div>
+
+                <div class="content-option__v2-section m-b-sm">
+                    <div class="row">
+                      <div class="col-sm-12 advantages__title-section">
+                        <span class="advantages__title-name">comercio global</span>
+                      </div>
+                    </div>
+                </div>
+
+                <!--INI: Estadísticas Globales -->
+                <div class="content-option__v2-section m-b-lg">
+                  <div class="row">
+                      <!--ini: tabla estadísticas IZQUIERDA -->
+                      <div class="col-sm-6">
+                          <div class="row align-items-center m-b-sm">
+                            <div class="col-sm-9 col-8">
+                                <ul id="header-title">
+                                            <li class="header-title__subtitle-name font-21">
+                                                <span class="header-title__subtitle-name--pl">PRINCIPALES PAISES EXPORTADORES
+                                                </span>
+                                            </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-4 text-right">
+                                <div>
+                                  <span class="estadistica__filter-icon"><i class="fas fa-bars"></i></span>
+                                  <span class="estadistica__filter-icon"><i class="fas fa-chart-bar estadistica__filter-icon--red"></i></span>
+                                </div>
+                            </div>
+                          </div>
+                          <div
+                          class="estadistica-table__wrapper m-b-sm"
+                        >
+                          <table class="estadisticas__filters table">
+                            <thead class="thead-semidark">
+                              <tr>
+                                <th scope="col" class="estadistica__filter-market">
+                                  Principales mercados
+                                </th>
+                                <th
+                                  scope="col"
+                                  class="estadistica__filter-icon estadistica__filter-icon--active estadistica__filter-icon-table"
+                                >
+                                  <i class="fas fa-chevron-down"></i>
+                                </th>
+                              </tr>
+                            </thead>
+                          </table>
+                          <div class="table-responsive">
+                            <table class="estadisticas__table table table-striped">
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col">MERCADO</th>
+                                  <th scope="col">%VAR 17-16</th>
+                                  <th scope="col">%PARTIDA 17</th>
+                                  <th scope="col">FOB 17 (MILES US$)</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Paises Bajos
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                  <td>245.999,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">España</th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                  <td>245.999,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Reino Unido
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                  <td>245.999,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">China</th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                  <td>245.999,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">Japón</th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                  <td>245.999,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Hong Kong
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                  <td>245.999,00</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Costa Rica
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                  <td>245.999,00</td>
+        
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <p class="estadistica__source">Fuente: SUNAT</p>
+
+                        </div>
+
+                      </div>
+                     <!-- Fin: tabla estadísticas IZQUIERDA-->
+              
+                            <!--ini: tabla esstadísticas derecha -->
+                            <div class="col-sm-6">
+                                <div class="row align-items-center m-b-sm">
+                                  <div class="col-sm-9 col-8">
+                                          <ul id="header-title">
+                                                  <li class="header-title__subtitle-name font-21">
+                                                      <span class="header-title__subtitle-name--pl">PRINCIPALES PAISES IMPORTADORES
+                                                      </span>
+                                                  </li>
+                                              </ul>
+                                  </div>
+                                  <div class="col-sm-3 col-4 text-right">
+                                      <div>
+                                        <span class="estadistica__filter-icon"><i class="fas fa-bars"></i></span>
+                                        <span class="estadistica__filter-icon"><i class="fas fa-chart-bar estadistica__filter-icon--red"></i></span>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div
+                                class="estadistica-table__wrapper m-b-sm"
+                              >
+                                <table class="estadisticas__filters table">
+                                  <thead class="thead-semidark">
+                                    <tr>
+                                      <th scope="col" class="estadistica__filter-market">
+                                        Principales mercados
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        class="estadistica__filter-icon estadistica__filter-icon--active estadistica__filter-icon-table"
+                                      >
+                                        <i class="fas fa-chevron-down"></i>
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                </table>
+                                <div class="table-responsive">
+                                  <table class="estadisticas__table table table-striped">
+                                    <thead class="thead-dark">
+                                      <tr>
+                                        <th scope="col">MERCADO</th>
+                                        <th scope="col">%VAR 17-16</th>
+                                        <th scope="col">%PARTIDA 17</th>
+                                        <th scope="col">FOB 17 (MILES US$)</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Paises Bajos
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                        <td>245.999,00</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">España</th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                        <td>245.999,00</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Reino Unido
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                        <td>245.999,00</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">China</th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                        <td>245.999,00</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">Japón</th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                        <td>245.999,00</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Hong Kong
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                        <td>245.999,00</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Costa Rica
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                        <td>245.999,00</td>
+              
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <p class="estadistica__source">Fuente: SUNAT</p>
+
+                              </div>
+                            </div>
+                          </div>
+                           <!-- Fin: tabla estadísticas derecha-->
+
+                  </div>
+                  <!-- Fin: Estadísticas Globales-->
+
+
+                  <!-- Ini: Seleccionar país -->
+                  <div class="content-option__v2-section m-b-lg">
+                      <div class="row estadisticas-gen__select-country-section no-gutters">
+                        <div class="col-sm-3 estadisticas-gen__select-country--col ">
+                          <div class="estadisticas-gen__country">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle estadisticas-gen__dpw-country" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  PAÍSES BAJOS
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </div>
+                            </div>
+                            <a href="#" class="btn siicex-button--red m-r-sm btn-lg active" role="button" aria-pressed="true">EXPORTACIÓN</a>
+                            <a href="#" class="btn siicex-button--white m-r-sm btn-lg active" role="button" aria-pressed="true">IMPORTACIÓN</a>
+                          </div>
+                        </div>
+                        <div class="col-sm-9 estadisticas-gen__info-country--col">
+                          <div class="estadisticas-gen__top-country m-b-sm">TOP COUNTRY</div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                                <p class="top-country__title">EEUU <span class="flag__wrapper"><span class="flag-icon flag-icon-us"></span></span></p>
+                                <p class="top-country__detail">VAR <span class="porc--green porc--bold">42%</span> PART <span class="porc--green porc--bold">36%</span </p>
+                                <p class="top-country__detail">Total Imp. <span class="porc--green">2015</span> <span class="porc--green porc--bold">US$ 79,336.01</span> <span class="porc--bold">M</span></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p class="top-country__title">ALEMANIA <span class="flag__wrapper"><span class="flag-icon flag-icon-de"></span></span></p>
+                                <p class="top-country__detail">VAR <span class="porc--green porc--bold">42%</span> PART <span class="porc--green porc--bold">36%</span </p>
+                                <p class="top-country__detail">Total Imp. <span class="porc--green">2015</span> <span class="porc--green porc--bold">US$ 79,336.01</span> <span class="porc--bold">M</span></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p class="top-country__title">ESPAÑA <span class="flag__wrapper"><span class="flag-icon flag-icon-es"></span></span></p>
+                                <p class="top-country__detail">VAR <span class="porc--green porc--bold">42%</span> PART <span class="porc--green porc--bold">36%</span </p>
+                                <p class="top-country__detail">Total Imp. <span class="porc--green">2015</span> <span class="porc--green porc--bold">US$ 79,336.01</span> <span class="porc--bold">M</span></p>
+                            </div>
+                          </div>
+                        </div>
+                          
+                      </div>
+                  </div>
+                  <!-- Ini: Seleccionar país -->
 
 
 
+                <!--INI: Estadísticas PERÚ -->
+                <div class="content-option__v2-section m-b-sm">
+                    <div class="row">
+                      <div class="col-sm-12 advantages__title-section">
+                        <span class="advantages__title-name">COMERCIO PERÚ</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="content-option__v2-section m-b-lg">
+                  <div class="row">
+                      <!--ini: tabla estadísticas IZQUIERDA -->
+                      <div class="col-sm-6">
+                          <div class="row align-items-center m-b-sm">
+                            <div class="col-sm-9 col-8">
+                                <ul id="header-title">
+                                            <li class="header-title__subtitle-name font-21">
+                                                <span class="header-title__subtitle-name--pl">TOP EXPORTADORES
+                                                </span>
+                                            </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-4 text-right">
+                                <div>
+                                  <span class="estadistica__filter-icon"><i class="fas fa-bars"></i></span>
+                                  <span class="estadistica__filter-icon"><i class="fas fa-chart-bar estadistica__filter-icon--red"></i></span>
+                                </div>
+                            </div>
+                          </div>
+                          <div
+                          class="estadistica-table__wrapper m-b-sm"
+                        >
+                          <table class="estadisticas__filters table">
+                            <thead class="thead-semidark">
+                              <tr>
+                                <th scope="col" class="estadistica__filter-market">
+                                  Principales mercados
+                                </th>
+                                <th
+                                  scope="col"
+                                  class="estadistica__filter-icon estadistica__filter-icon--active estadistica__filter-icon-table"
+                                >
+                                  <i class="fas fa-chevron-down"></i>
+                                </th>
+                              </tr>
+                            </thead>
+                          </table>
+                          <div class="table-responsive">
+                            <table class="estadisticas__table table table-striped">
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col">MERCADO</th>
+                                  <th scope="col">%VAR 17-16</th>
+                                  <th scope="col">%PARTIDA 17</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Paises Bajos
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">España</th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Reino Unido
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">China</th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">Japón</th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Hong Kong
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row" class="estadistica__pais">
+                                    Costa Rica
+                                  </th>
+                                  <td>285</td>
+                                  <td>36%</td>        
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                      </div>
+                     <!-- Fin: tabla estadísticas IZQUIERDA-->
+              
+                            <!--ini: tabla esstadísticas derecha -->
+                            <div class="col-sm-6">
+                                <div class="row align-items-center m-b-sm">
+                                  <div class="col-sm-9 col-8">
+                                          <ul id="header-title">
+                                                  <li class="header-title__subtitle-name font-21">
+                                                      <span class="header-title__subtitle-name--pl">TOP MERCADOS
+                                                      </span>
+                                                  </li>
+                                              </ul>
+                                  </div>
+                                  <div class="col-sm-3 col-4 text-right">
+                                      <div>
+                                        <span class="estadistica__filter-icon"><i class="fas fa-bars"></i></span>
+                                        <span class="estadistica__filter-icon"><i class="fas fa-chart-bar estadistica__filter-icon--red"></i></span>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div
+                                class="estadistica-table__wrapper m-b-sm"
+                              >
+                                <table class="estadisticas__filters table">
+                                  <thead class="thead-semidark">
+                                    <tr>
+                                      <th scope="col" class="estadistica__filter-market">
+                                        Principales mercados
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        class="estadistica__filter-icon estadistica__filter-icon--active estadistica__filter-icon-table"
+                                      >
+                                        <i class="fas fa-chevron-down"></i>
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                </table>
+                                <div class="table-responsive">
+                                  <table class="estadisticas__table table table-striped">
+                                    <thead class="thead-dark">
+                                      <tr>
+                                        <th scope="col">MERCADO</th>
+                                        <th scope="col">%VAR 17-16</th>
+                                        <th scope="col">%PARTIDA 17</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Paises Bajos
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">España</th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Reino Unido
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">China</th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">Japón</th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Hong Kong
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="estadistica__pais">
+                                          Costa Rica
+                                        </th>
+                                        <td>285</td>
+                                        <td>36%</td>              
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <!-- Fin: tabla estadísticas derecha-->
+
+                  </div>
+                  <!-- Fin: Estadísticas PERÚ-->
+
+
+
+                <!--INI: Estadísticas POR -->
+                <div class="content-option__v2-section m-b-lg">
+                    <div class="row">
+                      <div class="col-sm-12 advantages__title-section">
+                        <span class="advantages__title-name">ESTADÍSTICAS POR</span>
+                      </div>
+                    </div>
+                </div>
+
+
+
+                <div class="content-option__v2-section nav__links-section">
+                    <ul class="nav  nav__links-section">
+                      <li class="nav-item boletin__nav-item">
+                        <a
+                          class="nav-link active boletin__nav-link boletin__nav-link--active"
+                          href="#"
+                        >
+                          PRÓXIMOS
+                        </a>
+                      </li>
+                      <li class="nav-item boletin__nav-item">
+                        <a class="nav-link boletin__nav-link" href="#">
+                          INFORMES COMERCIALES
+                        </a>
+                      </li>
+        
+                      <li class="nav-item boletin__nav-item ml-auto">
+                        <a class="nav-link events__todos" href="#">
+                          VER TODOS
+                          <i class="events__todos-arrow fas fa-arrow-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                
             </div>
-
-            <!-- FIN OPCION: MI PRODUCTO -->
+            <!-- FIN OPCION: ESTADÍSTICAS GENERALES-->
 
         </div>
         <!-- FIN body-container -->
@@ -313,6 +846,8 @@
 
 
   <!-- Bootstrap core JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
