@@ -100,6 +100,15 @@ Guardar
     background-color: #dee2ea;
 }
 
+/* block min height depending on column size*/
+.item-col4{
+    min-height: 105px;
+}
+
+.item-col6{
+    min-height: 95px;
+}
+
 /*ver todos*/
 
 .link-ver-todos {
@@ -770,7 +779,7 @@ Plomo claro menu: #9fafb7;
 }
 
 .subscription-section__subscription-text{
-    padding: 25px;
+    padding: 25px !important;
 }
 
 .subscription-text__title{
@@ -1919,7 +1928,7 @@ Plomo claro menu: #9fafb7;
 }
 
 .estadistica__filter-icon-table{
-    border-radius: 0px 5px 5px;
+    border-radius: 0px 5px 5px 0px !important;
 }
 
 
@@ -1954,6 +1963,7 @@ box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
 background-color: #ffffff;
 padding: 25px 25px;
 margin-bottom: 10px;
+min-height: 105px;
 }
 
 .requisito-item--red {
@@ -2982,5 +2992,41 @@ p.mercado-main__date {
     text-align: center;
     padding: 16px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
+}
+
+.boletin__nav-link:hover {
+    font-weight: bold;
+    color: #d52b1e;
+    border-bottom: 2px solid #d52b1e;
+}
+
+
+/* ---------------------------------------------------
+   PÁGINA: SECTORES PRODUCTIVOS OPCION 1
+----------------------------------------------------- */
+
+
+.grafico__source {
+    font-size: 11px;
+    text-align: right;
+    color: #879195;
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------------------
+   PÁGINA: SECTORES PRODUCTIVOS OPCION 2
+----------------------------------------------------- */
+.food-item__number {
+    background: #dfe2e9;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.food-item__name {
+    font-weight: bold;
+    color: #595c65;
 }

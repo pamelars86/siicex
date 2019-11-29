@@ -172,7 +172,7 @@
           <!-- ini: option selected - only web -->
           <div class="header__option-selected">
               <i class="fas fa-circle header__option-selected-bullet font-8"></i>
-              <span class="header__option-selected-name">Mi Producto</span>
+              <span class="header__option-selected-name">Sectores productivos</span>
           </div>
           <!-- fin -->
 
@@ -245,15 +245,673 @@
 
         <!-- INI body-container -->
         <div class="body-container container-fluid">
-            <!-- INI OPCION: MI PRODUCTO -->
+            <!-- INI OPCION: SECTORES PRODUCTIVOS OPCION 1 -->
 
             <div class="content-option">
 
+              <div class="row m-b-lg">
+                <div class="col-sm-12">
+                  <ul class="nav nav-fill nav__links-section">
+                    <li class="nav-item boletin__nav-item">
+                      <a
+                        class="nav-link active boletin__nav-link boletin__nav-link--active"
+                        href="#"
+                      >
+                        GENERAL
+                      </a>
+                    </li>
+                    <li class="nav-item boletin__nav-item">
+                      <a class="nav-link boletin__nav-link" href="#">
+                        AGRONEGOCIOS
+                      </a>
+                    </li>
+                    <li class="nav-item boletin__nav-item">
+                      <a class="nav-link boletin__nav-link" href="#">
+                        PRODUCTORES PESQUEROS
+                      </a>
+                    </li>
+                    <li class="nav-item boletin__nav-item">
+                      <a class="nav-link boletin__nav-link" href="#">
+                          MANUFACTURAS DIVERSAS
+                      </a>
+                    </li>
+                    <li class="nav-item boletin__nav-item">
+                      <a class="nav-link boletin__nav-link" href="#">
+                          VESTIMENTA Y DECORACIÓN
+                      </a>
+                    </li>
 
+                    <li class="nav-item boletin__nav-item">
+                        <a class="nav-link boletin__nav-link" href="#">
+                            SERVICIOS
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ini NOTICIAS, TOP EXPORTADORES-->
+              <div class="row m-b-lg">
+                <div class="col-sm-4">
+                  <ul id="header-title" class="mi-producto__header-title">
+                    <li class="header-title__subtitle-name font-21">
+                      <span class="header-title__subtitle-name--pl">TOP PARTIDAS
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="row no-gutters top-exportador-item__wrapper m-b-sm">
+                    <div class="col-sm-12">
+                      <div class="top-partida__food-item">
+                          <div class="row align-items-center">
+                            <div class="col-sm-2 text-center"><span class="food-item__number">1</span></div>
+                            <div class="col-sm-3 text-center">
+                              <img src="img/palta.png" class="img-fluid">
+                            </div>
+                            <div class="col-sm-7">
+                                <p class="food-item__name">Palta: Frescos</p>
+                                <p class="food-item__escription">962.92 millon u$s. Export a E.E.U.U</p> 
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><p class="link-ver-todos text-center">VER TODOS <i class="fas fa-arrow-right icon-red"></i></p></a>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="row align-items-center m-b-sm">
+                      <div class="col-sm-9 col-8">
+                              <ul id="header-title"">
+                                      <li class="header-title__subtitle-name font-21">
+                                          <span class="header-title__subtitle-name--pl">ESTADÍSTICAS
+                                          </span>
+                                      </li>
+                                  </ul>
+                      </div>
+                      <div class="col-sm-3 col-4 text-right">
+                          <div>
+                            <span class="estadistica__filter-icon"><i class="fas fa-bars"></i></span>
+                            <span class="estadistica__filter-icon"><i class="fas fa-chart-bar estadistica__filter-icon--red"></i></span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="estadistica-table__wrapper m-b-sm" >
+                        <table class="estadisticas__filters table">
+                            <thead class="thead-semidark">
+                              <tr>
+                                <th scope="col" class="estadistica__filter-market">
+                                    Evolución total de exportaciones en el Perú
+                                </th>
+                                <th
+                                  scope="col"
+                                  class="estadistica__filter-icon estadistica__filter-icon--active estadistica__filter-icon-table"
+                                >
+                                  <i class="fas fa-chevron-down"></i>
+                                </th>
+                              </tr>
+                            </thead>
+                          </table>
+                          <div>
+                            <canvas id="barChart" height="115"></canvas>
+                        </div>
+                    </div>
+                    <a href="#">
+                      <p class="link-ver-todos d-flex justify-content-between">
+                        <span></span>
+                        <span>VER TODOS <i class="fas fa-arrow-right icon-red"></i></span>
+                        <span class="grafico__source">Fuente: SUNAT</span>
+                      </p>
+                    </a>
+                </div>
+
+              </div>
+              <!-- TOP EXPORTADORES, ESTADÍSTICAS-->
+
+              <!-- INI NOTICIAS -->
+              <div class="row">
+                  <div class="col-sm-12">
+                    <ul id="header-title" class="mi-producto__header-title">
+                      <li class="header-title__subtitle-name font-21">
+                        <span class="header-title__subtitle-name--pl">NOTICIAS
+                        </span>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-sm-3">
+                          <div class="mi-producto__last-new-item" style="background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.4)),url(img/miproducto-noticia-item.jpg) top left 100% fixed;">
+                            <p class="mp-last-new-item__title m-b-md">
+                              Balanza comercial del Perú acumuló superávit de US$4.924M entre enero y octubre.
+                            </p>
+                            <p class="mp-last-new-item__extract m-b-md">
+                              El BCR indicó que las exportaciones totalizaron US$ 40.233 millones en los diez primeros meses del año, monto…
+                            </p>
+                            <p class="mp-last-new-item__more-info d-flex">
+                              <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                              <a href="#" class="ml-auto bd-highlight">
+                                  <span class="mp-last-new-item__more-info-arrow">
+                                       <i class="fas fa-chevron-right"></i>
+                                    </span>
+                              </a>
+                            </p>
+                          </div>
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="mi-producto__last-new-item" style="background: #595c65;">
+                            <p class="mp-last-new-item__title-v2 m-b-md">
+                                Ministra Valencia sostiene que empresas peruanas alcanzarían las 8.000 exportaciones este año.
+                            </p>
+                            <p class="mp-last-new-item__more-info d-flex">
+                              <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                              <a href="#" class="ml-auto bd-highlight">
+                                  <span class="mp-last-new-item__more-info-arrow">
+                                      <i class="fas fa-chevron-right"></i>
+                                    </span>
+                              </a>
+                            </p>
+                          </div>
+
+                      </div>
+                      <div class="col-sm-3">
+                          <div class="mi-producto__last-new-item" style="background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.4)),url(img/miproducto-noticia-item-2.jpg) top left 100% fixed;">
+                            <p class="mp-last-new-item__title-v2 m-b-md">
+                                Ministra Valencia sostiene que empresas peruanas alcanzarían las 8.000 exportaciones este año.
+                            </p>
+                            <p class="mp-last-new-item__more-info d-flex">
+                              <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                              <a href="#" class="ml-auto bd-highlight">
+                                  <span class="mp-last-new-item__more-info-arrow">
+                                      <i class="fas fa-chevron-right"></i>
+                                    </span>
+                              </a>
+                            </p>
+                          </div>
+
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="mi-producto__last-new-item"  style="background: #595c65;">
+                          <p class="mp-last-new-item__title m-b-md">
+                            Balanza comercial del Perú acumuló superávit de US$4.924M entre enero y octubre.
+                          </p>
+                          <p class="mp-last-new-item__extract m-b-md">
+                            El BCR indicó que las exportaciones totalizaron US$ 40.233 millones en los diez primeros meses del año, monto…
+                          </p>
+                          <p class="mp-last-new-item__more-info d-flex">
+                            <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                            <a href="#" class="ml-auto bd-highlight">
+                                <span class="mp-last-new-item__more-info-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                  </span>
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+              <!-- FIN NOTICIAS-->
+
+              <div class="row">
+                  <div class="col-sm-4">
+                      <div class="row">
+                        <div class="col-sm-9 col-8">
+                                <ul id="header-title" class="mi-producto__header-title">
+                                        <li class="header-title__subtitle-name font-21">
+                                            <span class="header-title__subtitle-name--pl">REGULACIÓN Y TRATADOS
+                                            </span>
+                                        </li>
+                                    </ul>
+                        </div>
+                        <div class="col-sm-3 col-4">
+                          <div class="dropdown last-courses__filters">
+                            <button class="btn last-courses__filter-btn dropdown-toggle" type="button" id="dropdownCourseFilters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              FILTRAR
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <div class="requisito-item">
+                              <div class="row align-items-center">
+                                <div class="col-sm-10 col-10">
+                                  <p class="requisito-item__title">
+                                    Requisitos y accesos a mercados (RAM)
+                                  </p>
+                                  <p class="requisito-item__extract">
+                                    Brinda información de requisitos de accesos a mercados internacionales.
+                                  </p>
+                                </div>
+                                <div class="col-sm-2 col-2 text-center">
+                                    <a
+                                      class="dropdown-toggle last-course-item__dropdown"
+                                      href="#"
+                                      role="button"
+                                      id="dropdownLastCourseOptions"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <span class="requisito-item__ellipsis"
+                                        ><i class="fas fa-ellipsis-h"></i
+                                      ></span>
+                                    </a>
+                                    <div
+                                      class="dropdown-menu last-courses__filter-menu"
+                                      aria-labelledby="dropdownLastCourseOptions"
+                                    >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-cloud-download-alt"></i>
+                                        Descarga</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-share-alt"></i> Compartir</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-download"></i> Guardar</a
+                                      >
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="requisito-item">
+                                <div class="row align-items-center">
+                                  <div class="col-sm-10 col-10">
+                                    <p class="requisito-item__title">
+                                      Plaguicidas LRM
+                                    </p>
+                                    <p class="requisito-item__extract">
+                                      Brinda información de requisitos de accesos a mercados internacionales.
+                                    </p>
+                                  </div>
+                                  <div class="col-sm-2 col-2 text-center">
+                                      <a
+                                        class="dropdown-toggle last-course-item__dropdown"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownLastCourseOptions"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                      >
+                                        <span class="requisito-item__ellipsis"
+                                          ><i class="fas fa-ellipsis-h"></i
+                                        ></span>
+                                      </a>
+                                      <div
+                                        class="dropdown-menu last-courses__filter-menu"
+                                        aria-labelledby="dropdownLastCourseOptions"
+                                      >
+                                        <a
+                                          class="dropdown-item options-list"
+                                          href="#"
+                                          ><i class="fas fa-cloud-download-alt"></i>
+                                          Descarga</a
+                                        >
+                                        <a
+                                          class="dropdown-item options-list"
+                                          href="#"
+                                          ><i class="fas fa-share-alt"></i> Compartir</a
+                                        >
+                                        <a
+                                          class="dropdown-item options-list"
+                                          href="#"
+                                          ><i class="fas fa-download"></i> Guardar</a
+                                        >
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="requisito-item">
+                                  <div class="row align-items-center">
+                                    <div class="col-sm-10 col-10">
+                                      <p class="requisito-item__title">
+                                        Plaguicidas LRM
+                                      </p>
+                                      <p class="requisito-item__extract">
+                                        Brinda información de requisitos de accesos a mercados internacionales.
+                                      </p>
+                                    </div>
+                                    <div class="col-sm-2 col-2 text-center">
+                                        <a
+                                          class="dropdown-toggle last-course-item__dropdown"
+                                          href="#"
+                                          role="button"
+                                          id="dropdownLastCourseOptions"
+                                          data-toggle="dropdown"
+                                          aria-haspopup="true"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="requisito-item__ellipsis"
+                                            ><i class="fas fa-ellipsis-h"></i
+                                          ></span>
+                                        </a>
+                                        <div
+                                          class="dropdown-menu last-courses__filter-menu"
+                                          aria-labelledby="dropdownLastCourseOptions"
+                                        >
+                                          <a
+                                            class="dropdown-item options-list"
+                                            href="#"
+                                            ><i class="fas fa-cloud-download-alt"></i>
+                                            Descarga</a
+                                          >
+                                          <a
+                                            class="dropdown-item options-list"
+                                            href="#"
+                                            ><i class="fas fa-share-alt"></i> Compartir</a
+                                          >
+                                          <a
+                                            class="dropdown-item options-list"
+                                            href="#"
+                                            ><i class="fas fa-download"></i> Guardar</a
+                                          >
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            <div class="requisito-item requisito-item--red">
+                              <div class="row align-items-center">
+                                <div class="col-sm-2 col-2  text-center">
+                                    <span class="requisito-item__warning"><i class="fas fa-exclamation-triangle"></i></span>
+                                </div>
+                                <div class="col-sm-8 col-8 requisito-item__ley">Ley de Inocuidad de los Alimentos de EE.UU (FSMA)</div>
+                                <div class="col-sm-2 col-2 text-center">
+                                    <span class="requisito-item__ellipsis--white"
+                                      ><i class="fas fa-ellipsis-h"></i
+                                    ></span></div>
+                              </div>
+                            </div>
+                            <p class="link-ver-todos text-center">VER TODOS <i class="fas fa-arrow-right icon-red"></i></p>
+
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-4">
+                      <ul id="header-title" class="mi-producto__header-title">
+                        <li class="header-title__subtitle-name font-21">
+                          <span class="header-title__subtitle-name--pl">ESTUDIOS DE MERCADO
+                          </span>
+                        </li>
+                      </ul>
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <div class="mi-producto__estudio-mercado-item">
+                              <div class="row align-items-center">
+                                <div class="col-sm-2 col-2 text-center">
+                                  <span class="mp-estudio-mercado-item__icon">
+                                    <i class="fas fa-chart-line icon-same-size"></i>
+                                  </span>
+                                </div>
+                                <div class="col-sm-8 col-8">
+                                  <p class="mp__estudio-mercado-item__title">
+                                    Informe especializado
+                                  </p>
+                                  <p class="mp__estudio-mercado-item__extract">
+                                    Exportación de frutas y pulpas Congeladas en
+                                    Alemania
+                                  </p>
+                                </div>
+                                <div class="col-sm-2 col-2 text-center">
+                                  <a
+                                    class="dropdown-toggle last-course-item__dropdown"
+                                    href="#"
+                                    role="button"
+                                    id="dropdownLastCourseOptions"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <span class="estudio-mercado-item__ellipsis"
+                                      ><i class="fas fa-ellipsis-h"></i
+                                    ></span>
+                                  </a>
+                                  <div
+                                    class="dropdown-menu last-courses__filter-menu"
+                                    aria-labelledby="dropdownLastCourseOptions"
+                                  >
+                                    <a
+                                      class="dropdown-item options-list"
+                                      href="#"
+                                      ><i class="fas fa-cloud-download-alt"></i>
+                                      Descarga</a
+                                    >
+                                    <a
+                                      class="dropdown-item options-list"
+                                      href="#"
+                                      ><i class="fas fa-share-alt"></i> Compartir</a
+                                    >
+                                    <a
+                                      class="dropdown-item options-list"
+                                      href="#"
+                                      ><i class="fas fa-download"></i> Guardar</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="mi-producto__estudio-mercado-item">
+                                <div class="row align-items-center">
+                                  <div class="col-sm-2 col-2 text-center">
+                                    <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
+                                  </div>
+                                  <div class="col-sm-8 col-8">
+                                    <p class="mp__estudio-mercado-item__title">
+                                      Webinar
+                                    </p>
+                                    <p class="mp__estudio-mercado-item__extract">
+                                      Exportación de frutas y pulpas Congeladas en
+                                      Alemania
+                                    </p>
+                                  </div>
+                                  <div class="col-sm-2 col-2 text-center">
+                                    <a
+                                      class="dropdown-toggle last-course-item__dropdown"
+                                      href="#"
+                                      role="button"
+                                      id="dropdownLastCourseOptions"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <span class="estudio-mercado-item__ellipsis"
+                                        ><i class="fas fa-ellipsis-h"></i
+                                      ></span>
+                                    </a>
+                                    <div
+                                      class="dropdown-menu last-courses__filter-menu"
+                                      aria-labelledby="dropdownLastCourseOptions"
+                                    >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-cloud-download-alt"></i>
+                                        Descarga</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-share-alt"></i> Compartir</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-download"></i> Guardar</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+                            <div class="mi-producto__estudio-mercado-item">
+                                <div class="row align-items-center">
+                                  <div class="col-sm-2 col-2 text-center">
+                                    <span class="mp-estudio-mercado-item__icon"><i class="fas fa-check-square icon-same-size"></i></span>
+                                  </div>
+                                  <div class="col-sm-8 col-8">
+                                    <p class="mp__estudio-mercado-item__title">
+                                      Nuevo lanzamiento
+                                    </p>
+                                    <p class="mp__estudio-mercado-item__extract">
+                                      Exportación de frutas y pulpas Congeladas en
+                                      Alemania
+                                    </p>
+                                  </div>
+                                  <div class="col-sm-2 col-2 text-center">
+                                    <a
+                                      class="dropdown-toggle last-course-item__dropdown"
+                                      href="#"
+                                      role="button"
+                                      id="dropdownLastCourseOptions"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <span class="estudio-mercado-item__ellipsis"
+                                        ><i class="fas fa-ellipsis-h"></i
+                                      ></span>
+                                    </a>
+                                    <div
+                                      class="dropdown-menu last-courses__filter-menu"
+                                      aria-labelledby="dropdownLastCourseOptions"
+                                    >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-cloud-download-alt"></i>
+                                        Descarga</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-share-alt"></i> Compartir</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-download"></i> Guardar</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                            <div class="mi-producto__estudio-mercado-item">
+                                <div class="row align-items-center">
+                                  <div class="col-sm-2 col-2 text-center">
+                                    <span class="mp-estudio-mercado-item__icon"><i class="far fa-file-alt icon-same-size"></i></span>
+                                  </div>
+                                  <div class="col-sm-8 col-8">
+                                    <p class="mp__estudio-mercado-item__title">
+                                      Guía de mercado
+                                    </p>
+                                    <p class="mp__estudio-mercado-item__extract">
+                                      Exportación de frutas y pulpas Congeladas en
+                                      Alemania
+                                    </p>
+                                  </div>
+                                  <div class="col-sm-2 col-2 text-center">
+                                    <a
+                                      class="dropdown-toggle last-course-item__dropdown"
+                                      href="#"
+                                      role="button"
+                                      id="dropdownLastCourseOptions"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <span class="estudio-mercado-item__ellipsis"
+                                        ><i class="fas fa-ellipsis-h"></i
+                                      ></span>
+                                    </a>
+                                    <div
+                                      class="dropdown-menu last-courses__filter-menu"
+                                      aria-labelledby="dropdownLastCourseOptions"
+                                    >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-cloud-download-alt"></i>
+                                        Descarga</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-share-alt"></i> Compartir</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        ><i class="fas fa-download"></i> Guardar</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="#"><p class="link-ver-todos text-center">VER TODOS <i class="fas fa-arrow-right icon-red"></i></p></a>
+
+
+                          </div>
+                        </div>    
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                  <div class="col-sm-12">
+                          <ul id="header-title" class="mi-producto__header-title">
+                                  <li class="header-title__subtitle-name font-21">
+                                      <span class="header-title__subtitle-name--pl">EVENTOS
+                                      </span>
+                                  </li>
+                              </ul>
+                  </div>
+              </div>
+
+              <!-- ini: Loremp ipso-->
+                
+                <div class="row subscription-section no-gutters">
+                   <div class="col-sm-4 ">
+                      <div class="mp-eventos-relacionados__help">
+                          <span class="mp-er__help-title">Lorem ipso</span>
+                          <p class="mp-er__help-description">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          </p>
+                          <p class="help__more-info">
+                              <a href="#" class="help__more-info-link">
+                                <span class="help__more-info-text">Ir a la web</span>
+                                <span class="help__more-info-arrow"><i class="fas fa-chevron-right"></i>
+                                </span>
+                              </a>
+                            </p>
+                        </div>
+                  </div>
+                  <div class="col-sm-8 informado__img-section">
+
+                  </div>
+                </div>
+              <!-- fin: loremp ipso -->
 
             </div>
-
-            <!-- FIN OPCION: MI PRODUCTO -->
+            <!-- FIN OPCION: SECTORES PRODUCTIVOS OPCION 1  -->
 
         </div>
         <!-- FIN body-container -->
@@ -313,6 +971,7 @@
 
 
   <!-- Bootstrap core JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -323,6 +982,9 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
+    <!-- ChartJS-->
+    <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="js/siicex-chartjs-demo.js"></script>
 
 </body>
 
