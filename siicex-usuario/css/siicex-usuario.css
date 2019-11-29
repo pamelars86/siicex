@@ -146,6 +146,12 @@ Guardar
 .general-subtitle-bullet {
     margin-bottom: 10px;
 }
+
+
+.card-footer {
+    background-color: transparent;
+    border-top: 0px;
+}
 /*
 BULLETS ROJO 
 */
@@ -2039,8 +2045,9 @@ min-height: 105px;
     margin-bottom: 10px;
 }
 
-.mp-last-new-item-card__card-img-overlay{
-    padding: 25px 30px;
+.last-new__card-body, 
+.last-new__card-footer{
+    padding: 0px;
 }
 
 .mi-producto__last-new-img{
@@ -2338,6 +2345,8 @@ min-height: 105px;
 .event-item__card{
     border-radius: 4px;
     border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+
 }
 .event-item__body{
     padding: 15px;
@@ -3029,4 +3038,67 @@ p.mercado-main__date {
 .food-item__name {
     font-weight: bold;
     color: #595c65;
+}
+
+
+/* ---------------------------------------------------
+   PÁGINA: TODAS LAS NOTICIAS DESTACADAS
+----------------------------------------------------- */
+
+.featured-news__main {
+    background-image: url(../img/main-noticia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.featured-news__main-inner-card{
+    background: transparent;
+    position: absolute;
+    bottom: 0px;
+    width: 45%;
+}
+
+
+.featured-news__main-inner-card {
+    background: transparent;
+    border-left: 8px solid #d0021b;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+    .featured-news__secondary {
+        padding-left: 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-news__main-inner-card{
+        width: auto;
+        position: inherit;
+    }
+}
+
+
+.featured-news_main-title{
+    font-family: DINex;
+    font-size: 21px;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    
+}
+
+.featured-news_last-new-item {
+    margin-bottom: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .featured-news_subscription-section-l {
+        padding: 10px !important;
+    }
 }
