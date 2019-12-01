@@ -1961,6 +1961,13 @@ Plomo claro menu: #9fafb7;
     color: #595c65;
 }
 
+.miproducto__linechart{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 20px;
+}
+
 
 /*requisito item*/
 .requisito-item{
@@ -3102,3 +3109,87 @@ p.mercado-main__date {
         padding: 10px !important;
     }
 }
+
+
+
+/* ---------------------------------------------------
+   PÁGINA: PÁGINA DETALLE NOTICIA DESTACADA
+----------------------------------------------------- */
+
+.featured-news-detail__title{
+    font-family: DINEx;
+    font-size: 35px;
+    line-height: 1.29;
+    color: #595c65;
+    text-transform: uppercase;
+}
+
+.featured-news-detail__subtitle{
+    font-family: DINEx;
+    font-size: 21px;
+    line-height: 1.24;
+    letter-spacing: 0px;
+    color: #595c65;
+}
+
+.featured-news-detail__author{
+    color:#d0021b;
+    font-weight: bold;
+}
+
+.featured-news-detail__date{
+    color: #595c65;
+    font-weight: bold;
+}
+
+.featured-news-detail__main-img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.featured-news-detail__photo-description{
+    font-size: 13px;
+    line-height: normal !important;
+    color: #595c65;
+    text-align: right;
+}
+
+.featured-news-detail__photo-description--main{
+    background: #f6f7f9;
+    padding: 15px 30px;
+    margin-bottom: 0px;
+}
+
+.featured-news-detail__statements{
+    padding: 20px 30px;
+    background: #fff; 
+    border-radius: 5px;
+}
+
+.featured-news-detail__statements p {
+    line-height: 25px;
+    letter-spacing: normal;
+    color: #879195;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+
+
+/* ---------------------------------------------------
+   PÁGINA: PÁGINA MODAL SEARCH
+----------------------------------------------------- */
+
+.modal-search__title-section{
+    background: #454950;
+    padding: 15px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.modal-search__content{
+   background: #595b64 !important
+}
+
