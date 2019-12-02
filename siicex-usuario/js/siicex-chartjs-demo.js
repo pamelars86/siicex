@@ -71,7 +71,7 @@ var lineData = {
             pointHighlightFill: "#fff",
             backgroundColor: 'transparent',
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 80, 81, 56, 55, 40, 31, 60]
+            data: [19000, 18950, 19100, 18920, 19100, 19050, 19150, 19170, 19000]
         },
         {
             label: "2018",        
@@ -84,7 +84,7 @@ var lineData = {
             pointHighlightFill: "#fff",
             backgroundColor: 'transparent',
             pointHighlightStroke: "rgba(26,179,148,1)",
-            data: [28, 48, 40, 19, 86, 27, 90, 56, 70]
+            data: [18900, 19000, 19050, 19124, 19000, 19300, 19150, 19400, 19100]
         }
     ]
 };

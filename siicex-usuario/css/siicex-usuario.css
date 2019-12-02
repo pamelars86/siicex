@@ -1215,9 +1215,8 @@ Plomo claro menu: #9fafb7;
 .sector__tag--green{
     background: #7eba41;
     color: #fff;
-
-
 }
+
 
 .sector__tag--gray{
     background: #d0d3d9;
@@ -1870,6 +1869,49 @@ Plomo claro menu: #9fafb7;
   
 }
 
+/*dropdown */
+.estadistica__filter-dpd{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #879195;
+    font-size: 13px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.icon-filter-results--red{
+    color: #d0021b;
+}
+
+.add-market__navs-links{
+    background-image: linear-gradient(to top, #ffffff 50%, #dee3ef 134%) !important;
+}
+
+.add-market__nav-item{
+    margin: 0px 15px;
+}
+
+.add-product--pr{
+    padding-right: 0px !important;
+}
+
+.add-product__text{
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #879195;
+}
+
+.add-product__icon{
+    border: 1px solid #d0021b;
+    color: #d0021b;
+    padding: 5px 7px;
+    border-radius: 50%;
+    font-size: 10px;
+}
 
 /*table de estadísticas*/
 .estadisticas__filters{
@@ -1976,7 +2018,7 @@ box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
 background-color: #ffffff;
 padding: 25px 25px;
 margin-bottom: 10px;
-min-height: 105px;
+ /* min-height: 105px; */
 }
 
 .requisito-item--red {
@@ -2180,6 +2222,10 @@ min-height: 105px;
     background-color: #ffffff;
     padding:24px;
     margin-bottom: 10px;
+}
+
+.mp-arancel-item:last-child {
+    margin-bottom: 0px !important;
 }
 
 .arancel-item__title {
@@ -2406,6 +2452,50 @@ min-height: 105px;
     border-radius: 50px;
     font-size: 10px;
     padding: 3px 7px;
+}
+
+
+/*modasl de mi producto*/
+
+.mp-sector__tag{
+    border-radius: 3px;
+    padding: 5px 8px;
+    white-space: nowrap;
+    font-size: 13px;
+    background: #cbcbcb;
+    color: #595c65;
+}
+
+.mp-sector__tag-arrow{
+    color: #fff;
+}
+
+.mp-sector__tags-title{
+    font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595c65;
+}
+
+.add-product__search {
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.add-product__product-notfound {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+    color: #d52b1e;
+    background: #eef2fa;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 

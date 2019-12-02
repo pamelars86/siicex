@@ -255,14 +255,17 @@
                   <div class="col-sm-12">
                       <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
                           <li class="nav-item">
-                            <a class="nav-link mi-producto__main-tab-name active" id="frutas-tab" data-toggle="tab" href="#frutas" role="tab" aria-controls="home" aria-selected="true">VARIOS (FRUTAS FRESCAS)</a>
+                            <a class="nav-link mi-producto__main-tab-name active" id="frutas-tab" data-toggle="tab" href="#frutas" role="tab" aria-controls="home" aria-selected="true">PALTA</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link mi-producto__main-tab-name " id="mineria-tab" data-toggle="tab" href="#mineria" role="tab" aria-controls="profile" aria-selected="false">OTROS (SECTOR MINERÍA)</a>
+                            <a class="nav-link mi-producto__main-tab-name " id="arroz-tab" data-toggle="tab" href="#arroz" role="tab" aria-controls="profile" aria-selected="false">ARROZ</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link mi-producto__main-tab-name " id="papas-tab" data-toggle="tab" href="#papas" role="tab" aria-controls="profile" aria-selected="false">PAPAS</a>
                           </li>
                           <li class="ml-auto p-2 bd-highlight add-product--pr">
-                            <a href="#" class="add-product--pr"><span class="add-product__text">AÑADIR PRODUCTOS</span> <span class="add-product__icon"><i class="fas fa-plus"></i></span></a>
-                          </li>
+                            <a href="#" class="add-product--pr" data-toggle="modal" data-target="#addProduct"><span class="add-product__text">AÑADIR PRODUCTOS</span> <span class="add-product__icon"><i class="fas fa-plus"></i></span></a>  
+                        </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                           <div class="tab-pane fade show active" id="frutas" role="tabpanel" aria-labelledby="frutas-tab">
@@ -314,11 +317,6 @@
                               </div>
                             </div>
                           </div>
-
-                          
-                          <div class="tab-pane fade" id="mineria" role="tabpanel" aria-labelledby="mineria-tab">
-                            ...
-                          </div>
                         </div>
 
                   </div>
@@ -330,7 +328,22 @@
                             </a>
                           </li>
                           <li class="nav-item boletin__nav-item add-market__nav-item">
-                            <a href="#" class="add-product--pr"><span class="add-product__text">AGREGAR MERCADO</span> <span class="add-product__icon"><i class="fas fa-plus"></i></span></a>
+                            <a class="nav-link active boletin__nav-link" href="#">
+                              EEUU <span class="flag__wrapper"><span class="flag-icon flag-icon-us"></span></span>
+                            </a>
+                          </li>
+                          <li class="nav-item boletin__nav-item add-market__nav-item">
+                            <a class="nav-link active boletin__nav-link" href="#">
+                              ESPAÑA <span class="flag__wrapper"><span class="flag-icon flag-icon-es"></span></span>
+                            </a>
+                          </li>
+                          <li class="nav-item boletin__nav-item add-market__nav-item">
+                            <a class="nav-link active boletin__nav-link" href="#">
+                              ALEMANIA <span class="flag__wrapper"><span class="flag-icon flag-icon-de"></span></span>
+                            </a>
+                          </li>
+                          <li class="nav-item boletin__nav-item add-market__nav-item">
+                            <a href="#" class="add-product--pr"><span class="add-product__icon"><i class="fas fa-plus"></i></span></a>
 
                           </li>
                       </div>
@@ -1213,7 +1226,7 @@
 
             </div>
 
-            <!-- FIN OPCION: MI PRODUCTO -->
+            <!-- FIN OPCION: MI PRODUCTO - modals -->
 
         </div>
         <!-- FIN body-container -->
@@ -1272,6 +1285,73 @@
 <!--FIN FOOTER -->
 
 
+ <!-- Modal EMPRENDEDOR-->
+ <div class="modal fade bd-example-modal-xl" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="subscriptionExportadorTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row m-b-lg">
+                                <div class="col-sm-12 advantages__title-section">
+                                <span class="advantages__title-name">Selecciona tu producto </span>
+                                </div>
+                                <div class="col-sm-12">
+                                <p class="quieresexp__subtitle">Consulta toda nuestra iteligecia comercial de forma personalizada</p>
+                                </div>
+                    </div>
+
+                <div class="row justify-content-center recursos__search m-b-lg">
+                        <div class="col-sm-8">
+                            <div class="add-product__search">
+                                        <form action="index.html" method="get">
+                                            <div class="input-group">
+                                                <i class="recursos__search-icon fas fa-search"></i>
+                                                <input type="text" placeholder="LAMINADO" name="search" class="recursos__search-form-control form-control input-lg">
+                                                <div class="input-group-btn">
+                                                    <button class="btn btn-primary btn-primary__submit" type="submit">BUSCAR</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                            </div>
+                        </div>
+                </div>
+                 <div class="row justify-content-center m-b-lg">
+                        <div class="col-sm-8">
+                            <p class="mp-sector__tags-title text-center m-b-sm">Resultados</p>
+                        </div>
+
+                        <div class="col-sm-8">
+                            </div>
+
+                        <div class="col-sm-8">
+                                <p class="add-product__product-notfound text-center">¿NO ENCUENTRAS TU PRODUCTO?</p>
+                            </div>
+                </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <p class="mp-sector__tags-title text-center m-b-sm">Productos destacados</p>
+                                <div class="sector__tags">
+                                        <span class="mp-sector__tag">Champú de palta <i class="fas fa-arrow-right mp-sector__tag-arrow"></i></span>
+                                        <span class="mp-sector__tag">Mercados grandes <i class="fas fa-arrow-right mp-sector__tag-arrow"></i></span>
+                                        <span class="mp-sector__tag">Oportunidades en emiratos Árabe<i class="fas fa-arrow-right mp-sector__tag-arrow"></i></span>
+                                        <span class="mp-sector__tag">Champú de palta <i class="fas fa-arrow-right mp-sector__tag-arrow"></i></span>
+                                        <span class="mp-sector__tag">Oportunidades en emiratos Árabe<i class="fas fa-arrow-right mp-sector__tag-arrow"></i></span>
+                                        <span class="mp-sector__tag">Mercados grandes <i class="fas fa-arrow-right mp-sector__tag-arrow"></i></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
   <!-- Bootstrap core JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 

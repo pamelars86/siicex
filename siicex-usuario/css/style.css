@@ -4204,8 +4204,9 @@ body.rtls.top-navigation .footer.fixed {
     border: 0px;
     border-radius: 1px;
     padding: 6px 0px;
-    font-size: 18px;
+    font-size: 14px;
     height: 50px;
+    color: #879195;
 }
 
 .recursos__search-icon{
