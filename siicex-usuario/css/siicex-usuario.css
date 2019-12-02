@@ -2455,7 +2455,7 @@ margin-bottom: 10px;
 }
 
 
-/*modasl de mi producto*/
+/*modals de mi producto*/
 
 .mp-sector__tag{
     border-radius: 3px;
@@ -2493,12 +2493,66 @@ margin-bottom: 10px;
     font-size: 13px;
     font-weight: bold;
     color: #d52b1e;
-    background: #eef2fa;
+    background: #f6f7f9;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
+.add-product__result-item{
+    padding: 0px 15px;
+}
 
+.add-product__result-detail{
+    font-size: 13px;
+    font-weight: bold;
+    color: #595c65;
+}
+
+.add-product__result-description{
+    font-size: 14px;
+    color: #879195;
+    line-height: normal;
+}
+
+.add-product__result-arrow--red{
+    color: #d52b1e;
+}
+
+.add-product__result-item:nth-child(odd){
+    background: #f6f7f9
+}
+
+.event-item__result-main-arrow{
+    background: #d52b1e;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 5px 9px;
+}
+
+.add-product__all-results {
+    height: 250px;
+}
+
+.add-product__modal-subtitle{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+.add-market__btn-icon{
+    padding: 4px 6px;
+    font-size: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 5px;
+}
 /* ---------------------------------------------------
    PÁGINA: EMPRESAS EXPORTADORAS
 ----------------------------------------------------- */
