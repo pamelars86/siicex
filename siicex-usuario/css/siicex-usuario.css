@@ -2789,6 +2789,21 @@ margin-bottom: 10px;
     font-size:25px;
 }
 
+.search-input__all{
+    border-bottom: 1px solid #b2b3b6;
+}
+
+.search-input {
+    background: transparent !important;
+    border: 0px;
+}
+
+.search-input__btn-icon{
+    padding: 0px 10px;
+    background: transparent;
+    border: 0px;
+}
+
 
 /* ---------------------------------------------------
    PÁGINA: QUIERES EXPORTAR
