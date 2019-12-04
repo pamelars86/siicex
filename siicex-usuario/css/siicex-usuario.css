@@ -125,6 +125,11 @@ Guardar
     background: #f7f8fb;
 }
 
+
+.link-ver-todos--white{
+    background: #fff;
+}
+
 .link-ver-todos--red{
     color: #d52b1e;
 }
@@ -871,6 +876,10 @@ Plomo claro menu: #9fafb7;
   padding: 15px 10px;
 }
 
+.filters--bold{
+    font-weight: bold !important;
+}
+
 
 .text-filter__form-control{
     border: 0px;
@@ -1024,7 +1033,7 @@ Plomo claro menu: #9fafb7;
 ----------------------------------------------------- */
 
 .contenido-boletin{
-    box-shadow: 2px 0px 11px 0 rgba(0,0,0,.15);
+    box-shadow:  inset 0px 11px 8px -10px #CCC;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -2088,6 +2097,10 @@ margin-bottom: 10px;
     min-height: 210px;
 }
 
+.mi-producto__last-new-item--minh185{
+    min-height: 185px;
+}
+
 .mi-producto__last-new-item-card{
     border-left: 8px solid #d0021b;
     border-radius: 5px;
@@ -2713,10 +2726,60 @@ margin-bottom: 10px;
     line-height: normal;
 }
 
-.empexp-item__country-name{
+.empexp-item__country-name {
     text-decoration: underline;
+    font-weight: bold;
+    font-size: 13px;
 }
 
+.empexp-modal__body{
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.empexp-partidas__table{
+    margin-bottom: 0px;
+}
+.empexp-partidas__table td{
+        font-size: 13px !important;
+        color: #595b64;
+}
+
+td.empexp-partidas__subsector, td.empexp-partidas__partida {
+    padding: 0px !important;
+}
+
+.empexp-partida__row {
+    background: #f7f8fb;
+    margin-bottom: 5px;
+    border-bottom: 5px solid #fff;
+}
+
+.empexp-partidas__subtable {
+    width: 100%;
+}
+
+.empexp-partidas__subtable tr:first-child {
+    border-top: 0px;
+}
+
+.empexp-partidas__subtable tr{
+    border-top: 1px solid #dee2e6;
+}
+
+
+.empexp-partidas__subtable td{
+    border-top: 0px
+}
+
+.empexp-partidas__subtable {
+    border-left: 1px solid #dee2e6;
+}
+
+.empexp-partidas__table-thead {
+    background: #595b64;
+    color: #fff;
+}
 
 /* ---------------------------------------------------
    PÁGINA: ARANCELES PREFERENCIALES
@@ -2933,12 +2996,21 @@ margin-bottom: 10px;
     margin-bottom: 10px;
 }
 
+.documentacion-item .collapse {
+    margin-top: 15px;
+}
+
 .documentacion-item__country {
     font-family: DINex;
     font-size: 21px;
     letter-spacing: 0px;
     color: #555d61;
     margin-left: 5px;
+}
+
+.item-collapse__details{
+    box-shadow: inset 0px 11px 8px -10px #CCC;
+    padding-top: 15px;
 }
 
 
@@ -2997,9 +3069,101 @@ margin-bottom: 10px;
     margin-bottom: 10px;
 }
 
+
+/* ---------------------------------------------------
+   PÁGINA: ESTUDIO MERCADO - pagina 13
+----------------------------------------------------- */
+.em-perfilprod__tab-title{
+    color: #595c65;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+}
+.em-perfilprod__tab-partida{
+    color: #d52b1e;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+}
+
+#em-perfilprod__tabs {
+    background: #eff0f4;
+    border-radius: 5px;
+}
+
+#em-perfilprod__tabs .nav-link {
+    padding: 15px 20px;
+}
+
+#em-perfilprod__tabs .nav-link.active {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+}
+
+.em-perfilprod__all-tabscontent{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 25px;
+    background: #fff;
+}
+
+.em-perfilprod__tabcontent-title{
+    color: #595c65;
+    font-size: 21px;
+    font-family: DINex;
+}
+
+.em-perfilprod__tabcontent-subtitle{
+    color: #595c65;
+}
+
+.em-perfilprod__verdetalle {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+    color: #879195;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.em-perfilprod__fob-title{
+    color: #595c65;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.em-perfilprod__fob-value{
+    color: #595c65;
+    font-size: 45px;
+    line-height: normal;
+    border-right: 1px solid #dfe2e9;
+}
+
+.em-perfilprod__var {
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #7eba41;
+}
+
+.em-perfilprod__fob-section{
+    background: #f7f8fb;
+    padding: 20px;
+}
+
 /* ---------------------------------------------------
    PÁGINA: ESTUDIO MERCADO - DETALLE 1
 ----------------------------------------------------- */
+.p-r-xs{
+    padding-right: 10px !important;
+  }
 
 .mercado-main{
     background: #fff;
@@ -3050,7 +3214,39 @@ p.mercado-main__date {
     margin-right: 5px;
 }
 
+.estudio-mercado__tag-infografia {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+    color: #595c65;
+    background: #dbe1edcf;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.mercado-main__pdf-section{
+    position: relative;
+}
+.estudio-mercado__tag-pdf{
+    position: absolute;
+    background: #ffffffa3;
+    color: #595964;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+}
 
+
+.mercado-main__pdf-icon {
+    background: #dbe1ed;
+    color: #595c64;
+    padding: 15px 16px;
+    font-size: 18px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin:5px;
+}
 
 /* ---------------------------------------------------
    PÁGINA: HOME
@@ -3159,6 +3355,24 @@ p.mercado-main__date {
     background-size:cover;
 }
 
+
+.slider-mini__carousel-indicators{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.slider-mini__carousel-indicators .active {
+    background-color: #d52b1e;
+}
+
+.slider-mini__carousel-indicators li {
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: #dbe0ec;
+    border: 1px;
+}
 
 
 /* ---------------------------------------------------

@@ -20,6 +20,7 @@
 <!-- Our Custom CSS -->
 <link rel="stylesheet" href="css/siicex-usuario.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/icons-styles.css">
 <!-- Scrollbar Custom CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
@@ -249,17 +250,89 @@
 
             <div class="content-option">
 
+                <div class="row boletin__filters no-gutters m-b-md">
+                    <div class="col-sm-2 select_box">
+                       <span class="select-arrow">
+                            <i class="icon icon-filter-results-button icon-filter-results--red"></i>
+                        </span>
+                       <select class="form-control dropdown__form-control filters--bold" >
+                           <option>SECTOR</option>
+                           <option>AGRO</option>
+                       </select>
+                    </div>
+                    <div class="col-sm-2 select_box">
+                       <span class="select-arrow">
+                            <i class="icon icon-filter-results-button icon-filter-results--red"></i>
+                        </span>
+                       <select class="form-control dropdown__form-control filters--bold" >
+                           <option>PAÍS</option>
+                           <option>Perú</option>
+                       </select>
+                    </div>
+                    <div class="col-sm-3 select_box">
+                       <span class="select-arrow">
+                            <i class="icon icon-filter-results-button icon-filter-results--red"></i>
+                        </span>
+                        <select class="form-control dropdown__form-control filters--bold" >
+                            <option>LÍNEA DE PRODUCTO</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-sm-3 p-r-xs">
+                         <input type="text" class="form-control text-filter__form-control filters--bold" placeholder="PALABRA ASOCIADA O CONCRETA">
+                    </div>
+                    <div class="col-sm-2">
+                         <input type="text" class="form-control text-filter__form-control filters--bold" placeholder="NRO DE PARTIDA">
+                    </div>
+                </div>
+
                 <div class="row m-b-md">
                     <div class="col-sm-4">
-                            <ul id="header-title" class="mi-producto__header-title">
-                              <li class="header-title__subtitle-name font-21">
-                                <span class="header-title__subtitle-name--pl">TOP ESTUDIOS DE MERCADO
-                                </span>
-                              </li>
-                            </ul>
+
+                        <div class="row">
+                            <div class="col-sm-9 col-8">
+                                    <ul id="header-title" class="mi-producto__header-title">
+                                            <li class="header-title__subtitle-name font-21">
+                                                <span class="header-title__subtitle-name--pl">TOP ESTUDIOS DE MERCADO
+                                                </span>
+                                            </li>
+                                        </ul>
+                            </div>
+                            <div class="col-sm-3 col-4 text-right">
+                              
+                                <div class="dropdown">
+                                    <button
+                                      class="btn estadistica__filter-dpd dropdown-toggle"
+                                      type="button"
+                                      id="dropdownEstudioMercado"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <i class="icon icon-filter-results-button icon-filter-results--red"></i>
+                                    </button>
+                                    <div
+                                      class="dropdown-menu"
+                                      aria-labelledby="dropdownEstudioMercado"
+                                    >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        >Opción 1</a
+                                      >
+                                      <a
+                                        class="dropdown-item options-list"
+                                        href="#"
+                                        >Opción 2</a
+                                      >
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+
                             <div class="row">
                                 <div class="col-sm-12">
-                                  <div class="mi-producto__estudio-mercado-item item-col4">
+                                  <div class="mi-producto__estudio-mercado-item">
                                     <div class="row align-items-center">
                                       <div class="col-sm-2 col-2 text-center">
                                         <span class="mp-estudio-mercado-item__icon">
@@ -315,7 +388,7 @@
                                   </div>
 
 
-                                  <div class="mi-producto__estudio-mercado-item item-col4">
+                                  <div class="mi-producto__estudio-mercado-item">
                                       <div class="row align-items-center">
                                         <div class="col-sm-2 col-2 text-center">
                                           <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
@@ -370,7 +443,7 @@
 
 
 
-                                  <div class="mi-producto__estudio-mercado-item item-col4">
+                                  <div class="mi-producto__estudio-mercado-item">
                                       <div class="row align-items-center">
                                         <div class="col-sm-2 col-2 text-center">
                                           <span class="mp-estudio-mercado-item__icon"><i class="fas fa-check-square icon-same-size"></i></span>
@@ -424,7 +497,7 @@
                                     </div>
 
 
-                                  <div class="mi-producto__estudio-mercado-item item-col4">
+                                  <div class="mi-producto__estudio-mercado-item">
                                       <div class="row align-items-center">
                                         <div class="col-sm-2 col-2 text-center">
                                           <span class="mp-estudio-mercado-item__icon"><i class="far fa-file-alt icon-same-size"></i></span>
@@ -699,7 +772,7 @@
                             </ul>
                             <div class="row">
                                 <div class="col-sm-12">
-                                  <div class="mi-producto__estudio-mercado-item">
+                                  <div class="mi-producto__estudio-mercado-item item-col4">
                                       <div class="row align-items-center">
                                         <div class="col-sm-2 col-2 text-center">
                                           <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
@@ -747,7 +820,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="mi-producto__estudio-mercado-item">
+                                    <div class="mi-producto__estudio-mercado-item item-col4">
                                         <div class="row align-items-center">
                                           <div class="col-sm-2 col-2 text-center">
                                             <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
@@ -795,7 +868,7 @@
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="mi-producto__estudio-mercado-item">
+                                      <div class="mi-producto__estudio-mercado-item item-col4">
                                           <div class="row align-items-center">
                                             <div class="col-sm-2 col-2 text-center">
                                               <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
@@ -843,7 +916,7 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="mi-producto__estudio-mercado-item">
+                                        <div class="mi-producto__estudio-mercado-item item-col4">
                                             <div class="row align-items-center">
                                               <div class="col-sm-2 col-2 text-center">
                                                 <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
@@ -899,8 +972,85 @@
                     </div>
                 </div>
 
-
                 <div class="row">
+                    <div class="col-sm-12">
+                            <ul id="header-title" class="mi-producto__header-title">
+                              <li class="header-title__subtitle-name font-21">
+                                <span class="header-title__subtitle-name--pl">INFOGRAFÍAS</span>
+                              </li>
+                            </ul>
+                                
+                    </div>
+                    
+                </div>
+                <div class="row m-b-md">
+                  <div class="col-sm-4">
+                        
+                      <div class="mi-producto__last-new-item card" style="background: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0, 0.72)),url(img/revista-item-card.png) top left;">
+                        <div class="card-body last-new__card-body">
+                        <p class="m-b-md"><span class="estudio-mercado__tag-infografia">NUEVO</span></p>
+                        <p class="mp-last-new-item__title-v2 m-b-md">
+                            Nuevos mercados para la Quinua - Colombia, China y República Dominicana
+                        </p>
+                        </div>
+                        <div class="card-footer last-new__card-footer">
+                        <p class="mp-last-new-item__more-info d-flex">
+                            <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                            <a href="#" class="ml-auto bd-highlight">
+                                <span class="mp-estudio-mercado-item__icon">
+                                    <i class="fas fa-cloud-download-alt  icon-same-size"></i>
+                                  </span>
+                            </a>
+                        </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                        
+                      <div class="mi-producto__last-new-item card" style="background: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0, 0.72)),url(img/revista-item-card.png) top left;">
+                        <div class="card-body last-new__card-body">
+                        <p class="m-b-md"><span class="estudio-mercado__tag-infografia">NUEVO</span></p>
+                        <p class="mp-last-new-item__title-v2 m-b-md">
+                            Nuevos mercados para la Quinua - Colombia, China y República Dominicana
+                        </p>
+                        </div>
+                        <div class="card-footer last-new__card-footer">
+                        <p class="mp-last-new-item__more-info d-flex">
+                            <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                            <a href="#" class="ml-auto bd-highlight">
+                                <span class="mp-estudio-mercado-item__icon">
+                                    <i class="fas fa-cloud-download-alt  icon-same-size"></i>
+                                  </span>
+                            </a>
+                        </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                        
+                      <div class="mi-producto__last-new-item card" style="background: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0, 0.72)),url(img/revista-item-card.png) top left;">
+                        <div class="card-body last-new__card-body">
+                        <p class="m-b-md"><span class="estudio-mercado__tag-infografia">NUEVO</span></p>
+                        <p class="mp-last-new-item__title-v2 m-b-md">
+                            Nuevos mercados para la Quinua - Colombia, China y República Dominicana
+                        </p>
+                        </div>
+                        <div class="card-footer last-new__card-footer">
+                        <p class="mp-last-new-item__more-info d-flex">
+                            <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                            <a href="#" class="ml-auto bd-highlight">
+                                <span class="mp-estudio-mercado-item__icon">
+                                    <i class="fas fa-cloud-download-alt  icon-same-size"></i>
+                                  </span>
+                            </a>
+                        </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row m-b-md">
                     <div class="col-sm-6">
                             <ul id="header-title" class="mi-producto__header-title">
                               <li class="header-title__subtitle-name font-21">
@@ -1145,7 +1295,7 @@
                                   <div class="mi-producto__estudio-mercado-item">
                                       <div class="row align-items-center">
                                         <div class="col-sm-2 col-2 text-center">
-                                          <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
+                                          <span class="mp-estudio-mercado-item__icon"><i class="far fa-file-alt icon-same-size"></i></span>
                                         </div>
                                         <div class="col-sm-8 col-8">
                                           <p class="mp__estudio-mercado-item__title">
@@ -1193,7 +1343,7 @@
                                     <div class="mi-producto__estudio-mercado-item">
                                         <div class="row align-items-center">
                                           <div class="col-sm-2 col-2 text-center">
-                                            <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
+                                            <span class="mp-estudio-mercado-item__icon"><i class="far fa-file-alt icon-same-size"></i></span>
                                           </div>
                                           <div class="col-sm-8 col-8">
                                             <p class="mp__estudio-mercado-item__title">
@@ -1241,7 +1391,7 @@
                                       <div class="mi-producto__estudio-mercado-item">
                                           <div class="row align-items-center">
                                             <div class="col-sm-2 col-2 text-center">
-                                              <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
+                                              <span class="mp-estudio-mercado-item__icon"><i class="far fa-file-alt icon-same-size"></i></span>
                                             </div>
                                             <div class="col-sm-8 col-8">
                                               <p class="mp__estudio-mercado-item__title">
@@ -1289,7 +1439,7 @@
                                         <div class="mi-producto__estudio-mercado-item">
                                             <div class="row align-items-center">
                                               <div class="col-sm-2 col-2 text-center">
-                                                <span class="mp-estudio-mercado-item__icon"><i class="fas fa-desktop icon-same-size"></i></span>
+                                                <span class="mp-estudio-mercado-item__icon"><i class="far fa-file-alt icon-same-size"></i></span>
                                               </div>
                                               <div class="col-sm-8 col-8">
                                                 <p class="mp__estudio-mercado-item__title">
@@ -1342,7 +1492,85 @@
                     </div>
                 </div>
 
+                <div class="row m-b-sm">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-9 col-8">
+                                    <ul id="header-title" class="mi-producto__header-title">
+                                            <li class="header-title__subtitle-name font-21">
+                                                <span class="header-title__subtitle-name--pl">PERFIL DE PRODUCTO
+                                                </span>
+                                            </li>
+                                        </ul>
+                            </div>
+                            <div class="col-sm-3 col-4 text-right">
+                                <div>
+                                    <a href="#"><span class="link-ver-todos">VER TODOS <i class="fas fa-arrow-right icon-red"></i></span></a>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-4">
+                      <div class="nav flex-column nav-pills" id="em-perfilprod__tabs" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="em-perfilprod__tabs-1" data-toggle="pill" href="#tab1" role="tab" aria-controls="em-perfilprod__tabs-1" aria-selected="true">
+                            <p class="em-perfilprod__tab-title">Banano Orgánico en Bélgica</p>
+                            <p class="em-perfilprod__tab-partida">Nro. de partida 1737749039</p>
+                        </a>
+                        <a class="nav-link" id="em-perfilprod__tabs-2" data-toggle="pill" href="#tab2" role="tab" aria-controls="em-perfilprod__tabs-2" aria-selected="false">
+                            <p class="em-perfilprod__tab-title">Capsicum (Pimientos) en Alemania</p>
+                            <p class="em-perfilprod__tab-partida">Nro. de partida 1737749039</p>
+                        </a>
+                        <a class="nav-link" id="em-perfilprod__tabs-3" data-toggle="pill" href="#tab3" role="tab" aria-controls="vem-perfilprod__tabs-3" aria-selected="false">
+                            <p class="em-perfilprod__tab-title">Granos de Cacao en Holanda (Países Bajos)</p>
+                            <p class="em-perfilprod__tab-partida">Nro. de partida 1737749039</p>
+                        </a>
+                        <a class="nav-link" id="em-perfilprod__tabs-4" data-toggle="pill" href="#tab4" role="tab" aria-controls="em-perfilprod__tabs-4" aria-selected="false">
+                            <p class="em-perfilprod__tab-title">Pulpa de Açaí congelada en Estados Unidos</p>
+                            <p class="em-perfilprod__tab-partida">Nro. de partida 1737749039</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-8 em-perfilprod__all-tabscontent">
+                      <div class="tab-content" id="em-perfilprod__tabsContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="em-perfilprod__tabs-1">
+                          <p class="em-perfilprod__tabcontent-title m-b-sm">
+                            <strong>Mercado</strong>: Banano Orgánico en Bélgica, 2018
+                          </p>
+                          <p class="m-b-sm">
+                              El mercado de análisis del presente perfil es "Bélgica" porque durante los últimos cinco años ha sido el segundo mayor importador
+                               a nivel mundial de este producto (partida arancelaria 08039001100), por detrás de Estados Unidos. 
+                               Adicional a ello, presenta una variación positiva durante el año 2017 de +13.48% en comparación con el año 2016.)
+                          </p>
+                          <p class="em-perfilprod__tabcontent-subtitle">
+                              <strong>PRINCIPALES EXPORTADORES HACIA BÉLGICA</strong>
+                          </p>
+                          <p class="m-b-sm">
+                              Colombia, España, Perú, Ecuador, Camerún, Costa de Marfil
+                          </p>
+                          <div class="row em-perfilprod__fob-section m-b-sm">
+                              <div class="col-sm-6">
+                                  <p class="em-perfilprod__fob-title m-b-xs">FOB 17</p>
+                                  <p class="em-perfilprod__fob-value">585,785,263</p>
+                              </div>
+                            <div class="col-sm-6 text-center">
+                                <p class="em-perfilprod__fob-title m-b-xs">%VAR 16 - 17</p>
+                                <p class="em-perfilprod__var">48% <i class="fas fa-caret-up top-exportador__icon-up"></i></p>
+                            </div>
+                          </div>
+
+                          <div>
+                              <a href="#"><span class="em-perfilprod__verdetalle">VER DETALLE <i class="fas fa-arrow-right icon-red"></i></span></a>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="em-perfilprod__tabs-2">...</div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="em-perfilprod__tabs-3">...</div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="em-perfilprod__tabs-4">...</div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
             <!-- FIN OPCION: ESTUDIO DE MERCADO -->

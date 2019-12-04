@@ -254,7 +254,7 @@
                   </div>
               </div>
               <div class="content-option__v2-section">
-                  <div class="row last-courses__title">
+                  <div class="row m-b-sm">
                       <div class="col-sm-9 col-8">
                               <ul id="header-title" class="mi-producto__header-title">
                                       <li class="header-title__subtitle-name font-21">
@@ -264,11 +264,12 @@
                                   </ul>
                       </div>
                       <div class="col-sm-3 col-4">
-                        <div class="dropdown last-courses__filters">
-                          <button class="btn last-courses__filter-btn dropdown-toggle" type="button" id="dropdownCourseFilters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            BUSCAR
-                          </button>
-                        </div>
+                          <div class="input-group search-input__all">
+                              <input type="text" class="form-control search-input" placeholder="BUSCAR" aria-label="Buscar" aria-describedby="button-addon2">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary search-input__btn-icon" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                              </div>
+                            </div>
                       </div>
                     </div>
             </div>
@@ -401,7 +402,7 @@
                       <div class="row bg-white">
                           <div class="col-sm-12">
                               <div class="collapse" id="expExportadoraInfo">
-                                <div class="row m-t-sm">
+                                <div class="row item-collapse__details  m-t-sm">
                                   <div class="col-sm-6">
                                     <div class="empexp-item__bg-section m-b-sm">
                                       <p class="empexp-item__market-title m-b-sm">MERCADOS</p>
@@ -415,16 +416,31 @@
 
                                     <div class="empexp-item__bg-section m-b-sm">
                                         <p class="empexp-item__market-title m-b-sm">EVOLUCIÓN</p>
+                                        
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                              <canvas id="barChartHorizontal" width="800" height="400"></canvas>
+                                          </div>
+                                          <div class="col-sm-6">
+                                              <canvas id="barChartHorizontal2" width="800" height="400"></canvas>
+                                          </div>
+                                        </div>
                                       </div>
                                   </div>
                                   <div class="col-sm-6">
                                     <div class="empexp-item__distribution">
                                         <p class="empexp-item__market-title m-b-sm">Distribución del porcentaje de participación del 2017</p>
+                                        <div>
+                                          <canvas id="barChartStackedHorizontal" width="800" height="200"></canvas>
+                                        </div>
                                         <p class="link-ver-todos estadistica__source link-ver-todos--light text-right">Fuente SIICEX</p>
+
                                     </div>
                                   </div>
                                   <div class="col-sm-12">
-                                      <p class="link-ver-todos link-ver-todos--light link-ver-todos--red text-center">VER PARTIDAS EXPORTADAS 2017 <i class="fas fa-arrow-right icon-red"></i></p>
+                                      <a href="#"  data-toggle="modal" data-target="#addProduct">
+                                        <p class="link-ver-todos link-ver-todos--light link-ver-todos--red text-center">VER PARTIDAS EXPORTADAS 2017 <i class="fas fa-arrow-right icon-red"></i></p>
+                                      </a>
                                   </div>
                                 </div>
                               </div>
@@ -500,6 +516,167 @@
 <!--FIN FOOTER -->
 
 
+ <!-- Modal ADICIONAR PRODUCTO-->
+ <div class="modal fade bd-example-modal-xl" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="subscriptionExportadorTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body empexp-modal__body">
+                <div class="row m-b-sm">
+                    <div class="col-sm-9 col-8">
+                            <ul id="header-title" class="mi-producto__header-title">
+                                    <li class="header-title__subtitle-name font-21">
+                                        <span class="header-title__subtitle-name--pl">PARTIDAS EXPORTADAS EN EL AÑO 2017
+                                        </span>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="col-sm-3 col-4">
+                        <div class="input-group search-input__all">
+                            <input type="text" class="form-control search-input" placeholder="BUSCAR" aria-label="Buscar" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary search-input__btn-icon" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-12">
+
+                        <div class="table-responsive">
+                            <table class="empexp-partidas__table table">
+                              <thead class="empexp-partidas__table-thead">
+                                <tr>
+                                  <th scope="col">SECTOR</th>
+                                  <th scope="col">SUBSECTOR</th>
+                                  <th scope="col">PARTIDA</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="empexp-partida__row">
+                                  <th scope="row" class="estadistica__pais">
+                                      Maderas y papeles
+                                  </th>
+                                  <td class="empexp-partidas__subsector">
+                                    <table class="empexp-partidas__subtable">
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                    </table>
+                                    
+                                  </td>
+                                  <td class="empexp-partidas__partida">
+                                      <table class="empexp-partidas__subtable">
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                </tr>
+                                <tr class="empexp-partida__row">
+                                  <th scope="row" class="estadistica__pais">
+                                      Maderas y papeles
+                                  </th>
+                                  <td class="empexp-partidas__subsector">
+                                    <table class="empexp-partidas__subtable">
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                    </table>
+                                    
+                                  </td>
+                                  <td class="empexp-partidas__partida">
+                                      <table class="empexp-partidas__subtable">
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                </tr>
+                                <tr class="empexp-partida__row">
+                                  <th scope="row" class="estadistica__pais">
+                                      Maderas y papeles
+                                  </th>
+                                  <td class="empexp-partidas__subsector">
+                                    <table class="empexp-partidas__subtable">
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Manufacturas de corcho, espartería y cestería y o</td>
+                                      </tr>
+                                    </table>
+                                    
+                                  </td>
+                                  <td class="empexp-partidas__partida">
+                                      <table class="empexp-partidas__subtable">
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4821900000 - DEMÁS ETIQUETAS DE TODAS CLASES, DE PAPEL O CARTÓN</td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                </tr>
+                              
+                              </tbody>
+                            </table>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript-->
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -511,6 +688,9 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
+    <!-- ChartJS-->
+    <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="js/siicex-chartjs-demo-barcharthorizontal.js"></script>
 
 </body>
 
