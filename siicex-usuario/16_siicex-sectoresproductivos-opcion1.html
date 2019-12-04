@@ -20,13 +20,15 @@
 <!-- Our Custom CSS -->
 <link rel="stylesheet" href="css/siicex-usuario.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/icons-styles.css">
+
 <!-- Scrollbar Custom CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
 <!-- Font Awesome JS -->
 <script defer src="fontawesome-free-5.10.2-web/js/all.js"></script>
 <script defer src="fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
-   
+
 
 </head>
 
@@ -364,6 +366,9 @@
                               </tr>
                             </thead>
                           </table>
+                          <div class="miproducto__linechart">
+                              <canvas id="lineChart" height="110"></canvas>
+                          </div>
                     </div>
                     <a href="#">
                       <p class="link-ver-todos d-flex justify-content-between">
@@ -463,23 +468,45 @@
 
               <div class="row">
                   <div class="col-sm-4">
-                      <div class="row">
-                        <div class="col-sm-9 col-8">
-                                <ul id="header-title" class="mi-producto__header-title">
-                                        <li class="header-title__subtitle-name font-21">
-                                            <span class="header-title__subtitle-name--pl">REGULACIÓN Y TRATADOS
-                                            </span>
-                                        </li>
-                                    </ul>
-                        </div>
-                        <div class="col-sm-3 col-4">
-                          <div class="dropdown last-courses__filters">
-                            <button class="btn last-courses__filter-btn dropdown-toggle" type="button" id="dropdownCourseFilters" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              FILTRAR
-                            </button>
+                      <div class="row align-items-center">
+                          <div class="col-sm-9 col-8">
+                                  <ul id="header-title"  class="mi-producto__header-title">
+                                          <li class="header-title__subtitle-name font-21">
+                                              <span class="header-title__subtitle-name--pl">REGULACIÓN Y TRATADOS
+                                              </span>
+                                          </li>
+                                      </ul>
+                          </div>
+                          <div class="col-sm-3 col-4 text-right">
+                            <div class="dropdown">
+                              <button
+                                class="btn estadistica__filter-dpd dropdown-toggle"
+                                type="button"
+                                id="dropdownEstudioMercado"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                FILTRAR <i class="icon icon-filter-results-button icon-filter-results--red"></i>
+                              </button>
+                              <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownEstudioMercado"
+                              >
+                                <a
+                                  class="dropdown-item options-list"
+                                  href="#"
+                                  >Opción 1</a
+                                >
+                                <a
+                                  class="dropdown-item options-list"
+                                  href="#"
+                                  >Opción 2</a
+                                >
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
 
                       <div class="row">
                           <div class="col-sm-12">
@@ -650,12 +677,46 @@
 
 
                   <div class="col-sm-4">
-                      <ul id="header-title" class="mi-producto__header-title">
-                        <li class="header-title__subtitle-name font-21">
-                          <span class="header-title__subtitle-name--pl">ESTUDIOS DE MERCADO
-                          </span>
-                        </li>
-                      </ul>
+                      
+                      <div class="row align-items-center">
+                          <div class="col-sm-9 col-8">
+                                  <ul id="header-title"  class="mi-producto__header-title">
+                                          <li class="header-title__subtitle-name font-21">
+                                              <span class="header-title__subtitle-name--pl">ESTUDIOS DE MERCADO
+                                              </span>
+                                          </li>
+                                      </ul>
+                          </div>
+                          <div class="col-sm-3 col-4 text-right">
+                            <div class="dropdown">
+                              <button
+                                class="btn estadistica__filter-dpd dropdown-toggle"
+                                type="button"
+                                id="dropdownEstudioMercado"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                FILTRAR <i class="icon icon-filter-results-button icon-filter-results--red"></i>
+                              </button>
+                              <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownEstudioMercado"
+                              >
+                                <a
+                                  class="dropdown-item options-list"
+                                  href="#"
+                                  >Opción 1</a
+                                >
+                                <a
+                                  class="dropdown-item options-list"
+                                  href="#"
+                                  >Opción 2</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       <div class="row">
                           <div class="col-sm-12">
                             <div class="mi-producto__estudio-mercado-item">
@@ -881,44 +942,292 @@
                           </div>
                         </div>    
                 </div>
-              </div>
 
 
 
-              <div class="row">
-                  <div class="col-sm-12">
-                          <ul id="header-title" class="mi-producto__header-title">
-                                  <li class="header-title__subtitle-name font-21">
-                                      <span class="header-title__subtitle-name--pl">EVENTOS
-                                      </span>
-                                  </li>
-                              </ul>
-                  </div>
-              </div>
 
-              <!-- ini: Loremp ipso-->
-                
-                <div class="row subscription-section no-gutters">
-                   <div class="col-sm-4 ">
-                      <div class="mp-eventos-relacionados__help">
-                          <p class="mp-er__help-title">Lorem ipso</p>
-                          <p class="mp-er__help-description">
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                          </p>
-                          <p class="help__more-info">
-                              <a href="#" class="help__more-info-link">
-                                <span class="help__more-info-text">Ir a la web</span>
-                                <span class="help__more-info-arrow"><i class="fas fa-chevron-right"></i>
-                                </span>
-                              </a>
-                            </p>
+                <div class="col-sm-4">
+                      
+                    <div class="row align-items-center">
+                        <div class="col-sm-12">
+                                <ul id="header-title"  class="mi-producto__header-title">
+                                        <li class="header-title__subtitle-name font-21">
+                                            <span class="header-title__subtitle-name--pl">CATÁLOGO DE OFERTAS
+                                            </span>
+                                        </li>
+                                    </ul>
                         </div>
+                      </div>
+                    <div class="row">
+
+
+                        <div class="col-sm-6 text-center">
+                            <div class="card  mercado-main__pdf-section m-b-sm">
+                                <span class="estudio-mercado__tag-pdf">PDF</span>
+
+                                <img src="img/catalogo-oferta1.png" class="card-img-top" alt="...">
+                                <div class="pdf-card-footer card-footer">
+                                    <div class="pdf-options">
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                          <a href="#">
+                                            <span class="mercado-main__pdf-icon-xs "><i class="fas fa-share-alt icon-same-size-15px"></i>
+                                            </span>
+                                          </a>
+                                        </div>
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                            <a href="#">
+                                        <span class="mercado-main__pdf-icon-xs "><i class="fas fa-cloud-download-alt icon-same-size-15px"></i>
+                                        </span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <p class="pdf-description">
+                                      Quinua
+                                    </p>
+                                </div>
+                              </div>
+                        </div>
+
+
+
+                        <div class="col-sm-6 text-center">
+                            <div class="card  mercado-main__pdf-section m-b-sm">
+                                <span class="estudio-mercado__tag-pdf">PDF</span>
+
+                                <img src="img/catalogo-oferta1.png" class="card-img-top" alt="...">
+                                <div class="pdf-card-footer card-footer">
+                                    <div class="pdf-options">
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                          <a href="#">
+                                            <span class="mercado-main__pdf-icon-xs "><i class="fas fa-share-alt icon-same-size-15px"></i>
+                                            </span>
+                                          </a>
+                                        </div>
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                            <a href="#">
+                                        <span class="mercado-main__pdf-icon-xs "><i class="fas fa-cloud-download-alt icon-same-size-15px"></i>
+                                        </span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <p class="pdf-description">
+                                      Agronegocios
+                                    </p>
+                                </div>
+                              </div>
+                        </div>
+
+
+                        <div class="col-sm-6 text-center">
+                            <div class="card  mercado-main__pdf-section m-b-sm">
+                                <span class="estudio-mercado__tag-pdf">PDF</span>
+
+                                <img src="img/catalogo-oferta1.png" class="card-img-top" alt="...">
+                                <div class="pdf-card-footer card-footer">
+                                    <div class="pdf-options">
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                          <a href="#">
+                                            <span class="mercado-main__pdf-icon-xs "><i class="fas fa-share-alt icon-same-size-15px"></i>
+                                            </span>
+                                          </a>
+                                        </div>
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                            <a href="#">
+                                        <span class="mercado-main__pdf-icon-xs "><i class="fas fa-cloud-download-alt icon-same-size-15px"></i>
+                                        </span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <p class="pdf-description">
+                                      Productos Naturales
+                                    </p>
+                                </div>
+                              </div>
+                        </div>
+
+
+
+                        <div class="col-sm-6 text-center">
+                            <div class="card  mercado-main__pdf-section m-b-sm">
+                                <span class="estudio-mercado__tag-pdf">PDF</span>
+
+                                <img src="img/catalogo-oferta1.png" class="card-img-top" alt="...">
+                                <div class="pdf-card-footer card-footer">
+                                    <div class="pdf-options">
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                          <a href="#">
+                                            <span class="mercado-main__pdf-icon-xs "><i class="fas fa-share-alt icon-same-size-15px"></i>
+                                            </span>
+                                          </a>
+                                        </div>
+                                        <div class="mercado-main__pdf-icon-wrap">
+                                            <a href="#">
+                                        <span class="mercado-main__pdf-icon-xs "><i class="fas fa-cloud-download-alt icon-same-size-15px"></i>
+                                        </span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <p class="pdf-description">
+                                      Plátanos
+                                    </p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <a href="#"><p class="link-ver-todos text-center">VER TODOS <i class="fas fa-arrow-right icon-red"></i></p></a>
+
+
+                        </div>
+                      </div>    
+                </div>
+              </div>
+
+
+
+              <!-- ini: EVENTOS -->
+                  <div class="row last-courses__title">
+                      <div class="col-sm-12">
+                              <ul id="header-title" class="mi-producto__header-title">
+                                      <li class="header-title__subtitle-name font-21">
+                                          <span class="header-title__subtitle-name--pl">EVENTOS
+                                          </span>
+                                      </li>
+                                  </ul>
+                      </div>
+                </div>
+
+                <div class="row m-b-md">
+                  <div class="col-sm-12">
+                    <ul class="nav  nav__links-section align-items-center">
+                      <li class="nav-item boletin__nav-item">
+                        <a
+                          class="nav-link active boletin__nav-link boletin__nav-link--active"
+                          href="#"
+                        >
+                          PRÓXIMOS
+                        </a>
+                      </li>
+                      <li class="nav-item boletin__nav-item">
+                        <a class="nav-link boletin__nav-link" href="#">
+                          INFORMES COMERCIALES
+                        </a>
+                      </li>
+                      <li class="nav-item ml-auto">
+                          <a href="#"><span class="link-ver-todos link-ver-todos--white">VER TODOS <i class="fas fa-arrow-right icon-red"></i></span></a>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="col-sm-8 informado__img-section">
+                </div>
+
+                
+                <div class="row m-b-lg">
+                  <div class="col-sm-12">
+                    <div class="card-deck">
+                        <div class="card event-item__card">
+                          <img src="img/evento-relacionado.png" class="card-img-top event-item__img" alt="...">
+                          <div class="card-body event-item__body">
+                              <p class="card-title event-item__title">
+                                  MISIÓN COMERCIAL EN EL MARCO DE LA FERIA EXPOMINAS QUITO 2019
+                              </p>
+                              <p class="event-item__description">
+                                  Participa del evento especializado que busca promocionar la oferta exportable de contenidos y soluciones empresariales del sector servicios en México.
+                              </p>
+                          </div>
+                          <div class="card-footer event-item__footer">
+                                <a href="#" class="d-flex bd-highlight event-item__more-info-link">
+                                  <span class="bd-highlight event-item__more-info-text">13 de abril de 2019</span>
+                                  <span class="ml-auto bd-highlight event-item__more-info-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                  </span>
+                                </a>
+                              </div>
+                        </div>
+                        <div class="card event-item__card">
+                          <img src="img/evento-relacionado.png" class="card-img-top event-item__img" alt="...">
+                          <div class="card-body event-item__body">
+                              <p class="card-title event-item__title">
+                                  MISIÓN COMERCIAL EN EL MARCO DE LA FERIA EXPOMINAS QUITO 2019
+                              </p>
+                              <p class="event-item__description">
+                                  Participa del evento especializado que busca promocionar la oferta exportable de contenidos y soluciones empresariales del sector servicios en México.
+                              </p>
+                          </div>
+                          <div class="card-footer event-item__footer">
+                                <a href="#" class="d-flex bd-highlight event-item__more-info-link">
+                                  <span class="bd-highlight event-item__more-info-text">13 de abril de 2019</span>
+                                  <span class="ml-auto bd-highlight event-item__more-info-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                  </span>
+                                </a>
+                              </div>
+                        </div>
+                        <div class="card event-item__card">
+                          <img src="img/evento-relacionado.png" class="card-img-top event-item__img" alt="...">
+                          <div class="card-body event-item__body">
+                              <p class="card-title event-item__title">
+                                  MISIÓN COMERCIAL EN EL MARCO DE LA FERIA EXPOMINAS QUITO 2019
+                              </p>
+                              <p class="event-item__description">
+                                  Participa del evento especializado que busca promocionar la oferta exportable de contenidos y soluciones empresariales del sector servicios en México.
+                              </p>
+                          </div>
+                          <div class="card-footer event-item__footer">
+                                <a href="#" class="d-flex bd-highlight event-item__more-info-link">
+                                  <span class="bd-highlight event-item__more-info-text">13 de abril de 2019</span>
+                                  <span class="ml-auto bd-highlight event-item__more-info-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                  </span>
+                                </a>
+                              </div>
+                        </div>
+                        <div class="card event-item__card">
+                          <img src="img/evento-relacionado.png" class="card-img-top event-item__img" alt="...">
+                          <div class="card-body event-item__body">
+                              <p class="card-title event-item__title">
+                                  MISIÓN COMERCIAL EN EL MARCO DE LA FERIA EXPOMINAS QUITO 2019
+                              </p>
+                              <p class="event-item__description">
+                                  Participa del evento especializado que busca promocionar la oferta exportable de contenidos y soluciones empresariales del sector servicios en México.
+                              </p>
+                          </div>
+                          <div class="card-footer event-item__footer">
+                                <a href="#" class="d-flex bd-highlight event-item__more-info-link">
+                                  <span class="bd-highlight event-item__more-info-text">13 de abril de 2019</span>
+                                  <span class="ml-auto bd-highlight event-item__more-info-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                  </span>
+                                </a>
+                              </div>
+                        </div>
+                      </div>
 
                   </div>
                 </div>
-              <!-- fin: loremp ipso -->
+              <!-- fin: EVENTOS -->
+
+             <!-- ini: Loremp ipso-->
+                
+             <div class="row subscription-section no-gutters">
+                <div class="col-sm-4 ">
+                   <div class="mp-eventos-relacionados__help">
+                       <span class="mp-er__help-title">Lorem ipso</span>
+                       <p class="mp-er__help-description">
+                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                       </p>
+                       <p class="help__more-info">
+                           <a href="#" class="help__more-info-link">
+                             <span class="help__more-info-text">Ir a la web</span>
+                             <span class="help__more-info-arrow"><i class="fas fa-chevron-right"></i>
+                             </span>
+                           </a>
+                         </p>
+                     </div>
+               </div>
+               <div class="col-sm-8 informado__img-section">
+
+               </div>
+             </div>
+           <!-- fin: loremp ipso -->
 
             </div>
             <!-- FIN OPCION: SECTORES PRODUCTIVOS OPCION 1  -->
@@ -991,6 +1300,9 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+<!-- ChartJS-->
+<script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+<script src="js/siicex-chartjs-demo-linechart.js"></script>
 
 
 </body>

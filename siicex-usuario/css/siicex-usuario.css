@@ -144,6 +144,13 @@ Guardar
     height: 18px !important;
 }
 
+
+
+.icon-same-size-15px {
+    width: 15px !important;
+    height: 15px !important;
+}
+
 .icon-red{
     color: #d52b1e;
 }
@@ -219,6 +226,26 @@ BULLETS ROJO
   .header-title--col{
       padding-left: 0px;
   }
+
+
+  .thead-dark{
+    background: #595b64;
+    color: #fff;
+  }
+
+  .table .thead-dark th {
+    color: #fff;
+    background-color: #595b64;
+    border-color: #595b64;
+}
+
+.table .thead-dark th:first-child {
+    border-top-left-radius: 5px !important;
+}
+
+.table .thead-dark th:last-child {
+    border-top-right-radius: 5px !important;
+}
 
 
 /*options for "sidebar's options"*/
@@ -1961,7 +1988,7 @@ Plomo claro menu: #9fafb7;
 }
 
 .estadisticas__table td {
-    font-size: 13px !important;
+    font-size: 14px !important;
     color: #879195;
     text-align: ce;
 }
@@ -2348,6 +2375,13 @@ margin-bottom: 10px;
     padding: 0px;
 }
 
+.top-exportador__icon-down{
+    color: #d0021b;
+    font-size: 20px;
+    padding: 0px;
+
+}
+
 
 .top-exportador-item p {
     line-height: normal;
@@ -2365,11 +2399,13 @@ margin-bottom: 10px;
     color: #595c65;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: normal;
 }
 
 .top-exportador-item__sector {
     font-weight: bold;
     color: #595c65;
+    line-height: normal;
 }
 
 .top-exportador-item__sector--name{
@@ -3248,6 +3284,41 @@ p.mercado-main__date {
     margin:5px;
 }
 
+.mercado-main__pdf-icon-xs {
+    background: #dbe1ed;
+    color: #595c64;
+    padding: 8px 9px;
+    font-size: 14px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin:5px;
+}
+
+.mercado-main__pdf-icon-wrap{
+    padding: 7px 0px;
+}
+
+.pdf-description {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595c65;
+    background: #fff;
+}
+
+.pdf-options{
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+.pdf-card-footer.card-footer {
+    padding: 25px;
+}
+
 /* ---------------------------------------------------
    PÁGINA: HOME
 ----------------------------------------------------- */
@@ -3403,10 +3474,31 @@ p.mercado-main__date {
 
 .estadisticas-gen__country{
     border-right: 1px solid #dfe2e9;
+    padding-right: 20px;
 }
 
 .estadisticas-gen__info-country--col {
     padding: 25px !important;
+}
+
+
+
+.estadisticas-gen__table-top-expo tbody td, .estadisticas-gen__table-top-expo tbody th {
+    padding: 20px !important;
+}
+
+.estadisticas-gen__table-top-expo tbody tr,
+.estadisticas-gen__table-top-market tbody tr {
+    border-bottom: 1px solid #dfe2e9;
+}
+
+.estadisticas-gen__table-top-expo tbody tr:last-child,
+.estadisticas-gen__table-top-market tbody tr:last-child{
+    border: 0px;
+}
+
+.estadisticas-gen__table-top-market th.estadistica__pais {
+    padding: 7px 10px;
 }
 
 .siicex-button--red{
@@ -3439,9 +3531,20 @@ p.mercado-main__date {
     background: #f7f8fb !important;
     border: 0px;
     color: #595c65 !important;
-    font-size: 21px;
+    font-size: 21px !important;
     margin-bottom: 10px;
     font-family: DINex;
+}
+.estadisticas-gen__dpw-country::after{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    color: #d0021b;
 }
 
 .estadisticas-gen__top-country{
@@ -3520,6 +3623,20 @@ p.mercado-main__date {
 .food-item__name {
     font-weight: bold;
     color: #595c65;
+    line-height: normal;
+}
+
+
+.food-item__description {
+    line-height: normal;
+}
+
+
+.food-items__wrapper{
+    border-radius: 5px;
+    box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+    background-color: #ffffff;
+    padding: 5px 30px;
 }
 
 
