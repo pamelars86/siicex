@@ -139,6 +139,11 @@ Guardar
     height: 25px !important;
 }
 
+.icon-same-size-20px {
+    width: 20px !important;
+    height: 20px !important;
+}
+
 .icon-same-size-18px {
     width: 18px !important;
     height: 18px !important;
@@ -625,6 +630,13 @@ footer.sticky-footer {
     padding: 20px 30px;
 }
 
+.nologin__section{
+    background: #f3f5fc;
+    height: 85px;
+    padding: 10px;
+    align-items: center;
+    width: 290px;
+}
 
 .menu__user {
    display:inline-flex;
@@ -634,6 +646,103 @@ footer.sticky-footer {
     margin: 0px;
     width: 45px;
     height: 45px;
+}
+
+.nologin__welcome{
+    font-family: DINEx;
+    font-size: 18px;
+    line-height: normal;
+    color: #555d61;
+  }
+
+.nologin__login-text{
+    font-family: Roboto;
+    font-size: 13px;
+    color: #879195;
+    line-height: normal
+}
+
+.nologin__forgot-pwdmsg{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d0021b;
+}
+
+.nologin__msg{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9b9b9b;
+}
+
+.nologin__icon-wrap{
+    background: #dbe1ed;
+    color: #595c64;
+    padding: 10px 13px;
+    font-size: 17px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.nologin__form-wrap {
+    background: #f3f5fc;
+    padding: 15px 20px;
+    border-radius: 0px;
+
+    margin-top: 0px;
+    border: 0px;
+}
+
+.nologin__form-wrap--white{
+    background: #fff;
+}
+
+.nologin__dashboard-text{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    color: #595c65
+}
+
+.nologin__dashboard-sucess{
+    font-family: DINEx;
+    font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #555d61;
+}
+.nologin__dashboard-email{
+        background: transparent !important;
+        border: 0px;
+        padding: 0px !important;
+}
+
+.nologin__dashboard-arrow {
+    padding: 0px 10px;
+    background: transparent;
+    border: 0px;
+    color: #d0021b;
+}
+
+.nologin__dashboard-sucess-icon {
+    color: #7eba41;
+    font-size: 50px;
 }
 
 .menu__notifications {
@@ -910,7 +1019,7 @@ Plomo claro menu: #9fafb7;
 
 .text-filter__form-control{
     border: 0px;
-    border-bottom: 2px solid #dfe2e9 !important;
+    border-bottom: 2px solid #c0c0c3 !important;
     border-radius: 1px;
     padding: 6px 0px;
     font-size: 14px;
@@ -996,7 +1105,7 @@ Plomo claro menu: #9fafb7;
 }
 
 .boletines__year--row{
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #ceced0;
     padding-top: 15px;
 }
 
@@ -1458,7 +1567,7 @@ Plomo claro menu: #9fafb7;
     right: 0;
     bottom: -5px;
     content: "";
-    width: 30%;
+    width: 15%;
     height: 2px;
     background: #d52b1e;
     margin: 0 auto;
@@ -1612,7 +1721,20 @@ Plomo claro menu: #9fafb7;
     box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
     background-color: #ffffff;
     padding:35px;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        height: auto;
+    }
+}
+
+  
+
 
   .contact-form__title-name {
     margin-bottom: 20px !important;
@@ -1623,14 +1745,15 @@ Plomo claro menu: #9fafb7;
     position: relative;
     font-family: DINex;
   }
-  
+
+
   .contact-form__title-name::after {
     position: absolute;
     left: 0;
     right: 0;
     bottom: -3px;
     content: "";
-    width: 30%;
+    width: 20%;
     height: 2px;
     background: #d52b1e;
     margin: 0 auto;
@@ -1668,6 +1791,12 @@ Plomo claro menu: #9fafb7;
     margin-top: 10px;
   }
 
+  .contact-form__msg-desc-success{
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: normal;
+    color: #7a7a7a;
+  }
 
   /* ---------------------------------------------------
    PÁGINA: GLOSARIO
@@ -1743,6 +1872,28 @@ Plomo claro menu: #9fafb7;
     border-bottom: 2px solid #d0021b !important;
 }
 
+.glosario__search-item {
+    padding: 5px !important;
+}
+
+.glosario__search-icon {
+    padding: 5px 10px;
+    background: transparent;
+    border: 0px;
+    color: #d0021b;
+    font-size: 16px;
+    border-left: 1px solid #dfe2e9;
+    border-radius: 0px !important;
+}
+
+.glosario__search-icon:hover {
+    background: transparent;
+    color: #d0021b;
+}
+
+.glosario__allsearch{
+    width: 100%;
+}
 
   /* ---------------------------------------------------
    PÁGINA: REVISTA EXPORTANDO.PE
@@ -3593,6 +3744,57 @@ p.mercado-main__date {
     font-weight: bold;
     color: #d52b1e;
     border-bottom: 2px solid #d52b1e;
+}
+
+.estadisticas-gen__accordion-thead{
+    background: #595b64 !important;
+    color: #fff;
+    font-weight: bold;
+    margin:2px;
+    padding: 10px !important;
+}
+
+.estadisticas-gen__accordion .card:nth-of-type(odd) {
+    background: #f7f8fb;
+}
+
+.estadisticas-gen__accordion .card:nth-of-type(even) {
+    background: #fff;
+}
+
+.estadisticas-gen__accordion .card-header{
+    background: transparent;
+    padding: 10px;
+    border: 0px;
+}
+
+.estadisticas-gen__accordion .card{
+    border: 0px;
+}
+
+.estadisticas-gen__details-card-body{
+    padding: 0px 20px;
+    background: #dfe2e9;
+    box-shadow: rgb(204, 204, 204) 0px 11px 8px -10px inset;
+}
+
+.estadisticas-gen__details-icon-minus{
+    color: #d52b1e;
+}
+
+.estadisticas-gen__details-collapse{
+    background: #fff;
+    margin: 2px;
+}
+
+.estadisticas-gen__details-card-body td {
+    color: #676a6c;
+}
+
+.estadisticas-gen__details-icon-wrap{
+    padding: 2px 4px;
+    border-radius: 50%;
+    border: 1px solid #d52b1e;
 }
 
 

@@ -4295,9 +4295,17 @@ Plomo claro menu: #9fafb7;
 
 .login__form-control{
       border: 0px !important;
-    border-bottom: 1px solid #595864 !important;
     border-radius: 1px;
-    padding: 6px 0px;
-    margin-bottom: 40px;
-    font-size:18px;
+    padding: 10px;
+  }
+
+  .login__form-control::placeholder{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #c8c8c8;
   }
