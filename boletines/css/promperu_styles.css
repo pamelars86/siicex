@@ -3027,3 +3027,48 @@ Visto en redes
 .subscription-form__link-badge.badge:last-child {
   margin-right: 0px;
 }
+
+
+.select_box {
+  overflow: hidden;
+  position: relative;
+}
+
+.select_box select {
+  border: 0;
+  position: relative;
+  z-index: 99;
+  background: none;
+  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  padding: 0px;
+}
+
+.select-arrow {
+  color: #d52b1e;
+  right: 0px;
+  top: 10px;
+  width: 30px;
+  position: absolute;
+  display: block;
+  z-index: 100;
+  margin: 0 0 0 0;
+  pointer-events: none;
+}
+
+.text-filter__form-control {
+  border: 0px !important;
+  border-bottom: 2px solid #c0c0c3 !important;
+  border-radius: 1px;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #555d61;
+}
