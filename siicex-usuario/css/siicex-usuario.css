@@ -3996,6 +3996,14 @@ p.mercado-main__date {
     text-transform: uppercase;
 }
 
+.modal-search__arrow-section {
+    background: #fff;
+    color: #d52b1e;
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 3px 7px;
+}
+
 .modal-search__content{
    background: #595b64 !important
 }
@@ -4073,4 +4081,12 @@ p.mercado-main__date {
     margin-left: 5px;
     font-size: 13px !important;
     border-radius: 8px !important;
+}
+
+.modal-search__law-warning {
+    background: #ff9d00;
+    color: #595b63;
+    border-radius: 50%;
+    padding: 8px 10px;
+    font-size: 25px;
 }
