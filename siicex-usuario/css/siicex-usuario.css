@@ -190,7 +190,15 @@ BULLETS ROJO
     position: relative;
     color: #555d61;
     font-family: DINex;
+    font-size: 21px;
   }
+
+
+@media (max-width: 768px) {
+    .header-title__subtitle-name{
+        font-size: 16px;
+    }
+}
 
   .bullets-red {
     padding-left: 15px;
@@ -1541,6 +1549,14 @@ Plomo claro menu: #9fafb7;
     font-weight: bold;
 }
 
+
+@media (min-width: 768px) {
+    .siicex-definition__video-button:last-child {
+        margin-left: 5px;
+    }
+}
+
+
 .advantages__full-section {
     margin-top: 25px;
 }
@@ -2275,6 +2291,7 @@ margin-bottom: 10px;
     min-height: 210px;
 }
 
+
 .mi-producto__last-new-item--minh185{
     min-height: 185px;
 }
@@ -2377,6 +2394,14 @@ margin-bottom: 10px;
     padding: 26px 20px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    .mi-producto__estudio-mercado-item{
+        padding: 10px;
+    }
+}
+
+
 
 .mp-estudio-mercado-item__icon {
     background: #dbe1ed;
