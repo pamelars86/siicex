@@ -2759,3 +2759,271 @@ Visto en redes
 .last-news__category.last-news__category--azul {
   border-left: 3px solid #005cb9;
 }
+
+
+
+
+/* ---------------------------------------------------
+   FORMULARIO DE SUSCRIPCIÓN
+----------------------------------------------------- */
+
+.Site{
+  display: flex;
+  flex-direction: column;
+}
+
+.Site-content{
+  flex: 1;
+}
+
+.subscription-form {
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  margin: auto;
+  padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscription-form {
+
+    width: 700px;  
+  }
+  
+}
+
+
+
+
+.subscription-form__title {
+  margin-bottom: 20px !important;
+  display: inline-block;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #555d61;
+  position: relative;
+  font-family: DINex;
+}
+
+.subscription-form__title::after{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  content: "";
+  width: 15%;
+  height: 2px;
+  background: #d52b1e;
+  margin: 0 auto;
+}
+
+.subscription-form__subtitle{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #879195;
+}
+
+.subscription-form__boletin-switch{
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #595c65;
+  margin: 6px 0px 6px 10px;
+}
+
+
+.subscription-form__input--col {
+  padding: 20px 15px;
+}
+.subscription-form__input {
+  border: 0px !important;
+  border-bottom: 1px solid #979797 !important;
+  border-radius: 1px;
+  padding: 0px !important;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #555d61;
+}
+
+.subscription-form__select-type .custom-control-input:checked~.custom-control-label::before {
+  border-color: #c7ced7;
+  background-color: #f0f1f2;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+}
+
+.subscription-form__select-type .custom-control-label::before {
+  border-radius: 50%;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  top:-2px;
+}
+
+.subscription-form__select-type.custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23d0021b'/%3e%3c/svg%3e");
+}
+
+.subscription-form__select-type .custom-control-label::after {
+  top: -12px;
+  left: -34px;
+  width: 45px;
+  height: 45px;
+}
+
+.subscription-form__type-text {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.subscription-form__switch-section{
+  border-bottom: 1px solid #eff0f4;
+    padding-bottom: 25px;
+}
+
+.subscription-form__custom-switch{
+    display: inline-flex;
+}
+
+
+.sector__tags {
+  line-height: 30px;
+}
+
+.sector__tag {
+  border-radius: 3px;
+  padding: 7px 8px;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.sector__tag--gray {
+  background: #d0d3d9;
+  color: #595c65;
+}
+
+.sector__tag--green {
+  background: #7eba41;
+  color: #fff;
+}
+
+.sector__tag-plus{
+  color: #fff;
+  margin-left: 2px;
+}
+
+.switchToggle input[type=checkbox]{height: 0; width: 0; visibility: hidden; position: absolute; }
+.switchToggle label {cursor: pointer; text-indent: -9999px; width: 70px; max-width: 70px; height: 30px; background: #7eba41; display: block; border-radius: 5px; position: relative; }
+.switchToggle label:after {content: ''; position: absolute; top: 2px; left: 2px; width: 26px; height: 26px; background: #defdbd; border-radius: 3px; transition: 0.3s; }
+.switchToggle input:checked + label, .switchToggle input:checked + input + label  {background: #7eba41; }
+.switchToggle input + label:before, .switchToggle input + input + label:before {content: 'NO'; position: absolute; top: 5px; left: 35px; width: 26px; height: 26px; border-radius: 90px; transition: 0.3s; text-indent: 0; color: #fff; font-size: 13px; font-weight: bold;}
+.switchToggle input:checked + label:before, .switchToggle input:checked + input + label:before {content: 'SÍ'; position: absolute; top: 5px; left: 10px; width: 26px; height: 26px; border-radius: 90px; transition: 0.3s; text-indent: 0; color: #fff; font-size: 13px; font-weight: bold;}
+.switchToggle input:checked + label:after, .switchToggle input:checked + input + label:after {left: calc(100% - 2px); transform: translateX(-100%); }
+.switchToggle label:active:after {width: 60px; } 
+.toggle-switchArea { margin: 10px 0 10px 0; }
+
+.subscription-form__interest-text {
+  font-weight: bold;
+  color: #595c65;
+  margin-bottom: 10px;
+}
+
+.subscription-form__sector-text {
+  color: #252d42;
+  margin-bottom: 0px;
+}
+
+.subscription-form__country-list{
+  height: 200px;
+}
+
+.subscription-form__country-table{
+  overflow-x: hidden;
+}
+
+
+.subscription-form__country-table th{
+  color: #555d61 !important;
+}
+
+.subscription-result__success{
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 0 rgba(135, 145, 149, 0.19);
+  background-color: #ffffff;
+  margin: auto;
+  padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscription-result__success{
+
+    width: 650px;
+    padding: 60px;
+  }
+  
+}
+
+.subscription-result__sucess-text{
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  color: #595c65;
+}
+
+.subscription-result__main-success{
+  font-family: DINex;
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #555d61;
+}
+
+
+.subscription-result__main-success-icon {
+  margin-bottom: 5px;
+  color: #7eba41;
+  font-size: 50px;
+}
+
+
+.subscription-form__item-link-icon{
+  background: #fff;
+  color: #d52b1e;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 2px 5px;
+  margin-left: 5px;
+}
+
+.subscription-form__link-badge.badge {
+  background-color: #595b64;
+  font-family: Roboto;
+  font-size: 14px;
+  padding: 15px;
+  text-shadow: none;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.subscription-form__link-badge.badge:last-child {
+  margin-right: 0px;
+}
