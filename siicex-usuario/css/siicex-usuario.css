@@ -3975,11 +3975,24 @@ p.mercado-main__date {
    PÁGINA: PÁGINA MODAL SEARCH
 ----------------------------------------------------- */
 
+
+
+.modal-search__title{
+    font-family: DINEx;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+}
 .modal-search__title-section{
     background: #454950;
     padding: 15px;
     border-radius: 3px;
-    color: #fff;
+    color: #fff !important;
     text-transform: uppercase;
 }
 
@@ -3987,3 +4000,77 @@ p.mercado-main__date {
    background: #595b64 !important
 }
 
+.modal-search__list{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.modal-search__list-name{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+ @media (min-width: 768px) {
+    .modal-search__list-columns {
+        column-count: 3;
+     }
+}
+
+.modal-search__column-name{
+    font-family: DINex;
+    color: #f7f7f7;
+}
+
+.modal-search__input {
+    height: 75px !important;
+    font-size: 14px !important;
+    border: 0px;
+}
+
+.modal-search__input-icon {
+    background: #fff !important;
+    color: #a2a2a2;
+}
+
+.modal-search__related-terms{
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+.modal-search__related-term{
+    color: #ff9d00;
+}
+
+.modal-search__title-column{
+    color: #fff;
+}
+
+.modal-search__estudio-mercado-item{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-search__estudio-mercado-item-extract {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #f7f7f7;
+}
+
+.modal-search__law-name{  
+    font-size: 14px;
+    font-weight: 900;
+    color: #ff9d00;
+    
+}
+
+.modal-search__badge{
+    background: #fff !important;
+    margin-left: 5px;
+    font-size: 13px !important;
+    border-radius: 8px !important;
+}

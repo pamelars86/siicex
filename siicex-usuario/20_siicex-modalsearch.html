@@ -620,31 +620,271 @@
             </button>
         </div>
         <div class="modal-body modal-subscription__body">
-                <p class="modal-subscription__title">BÚSQUEDAS FRECUENTES<p>
-                 <div class="modal-search__title-section">
-                        <a href="#" class="d-flex bd-highlight">
-                                <span class="bd-highlight event-item__more-info-text">PARTIDAS</span>
-                                <span class="ml-auto bd-highlight event-item__more-info-arrow">
-                                  <i class="fas fa-chevron-right"></i>
-                                </span>
-                              </a>
+                <div class="row">
+                    <div class="col-sm-12">
+                            <div class="input-group m-b-xs input-group-lg">
+                                    <div class="input-group-prepend modal-search__input-icon-wrap">
+                                      <span class="input-group-text modal-search__input-icon" id="modal-search-field"><i class="fa fa-search"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control modal-search__input" placeholder="BUSCAR" aria-label="BUSCAR" aria-describedby="modal-search-field">
+                                  </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="modal-search__related-terms">Relacionados:
+                            <span class="modal-search__related-term">Palta,</span>
+                            <span class="modal-search__related-term">Otro,</span>
+                            <span class="modal-search__related-term">Otro más,</span>
+                            <span class="modal-search__related-term">Otro más todavía</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="modal-search__title-section">
-                       <a href="#" class="d-flex bd-highlight">
-                               <span class="bd-highlight event-item__more-info-text">TOP DE BÚSQUEDAS</span>
-                               <span class="ml-auto bd-highlight event-item__more-info-arrow">
-                                 <i class="fas fa-chevron-right"></i>
-                               </span>
-                             </a>
-               </div>
-               <div class="modal-search__title-section">
-                      <a href="#" class="d-flex bd-highlight">
-                              <span class="bd-highlight event-item__more-info-text">Publicaciones, novedades y regulaciones.</span>
-                              <span class="ml-auto bd-highlight event-item__more-info-arrow">
-                                <i class="fas fa-chevron-right"></i>
-                              </span>
-                            </a>
-              </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="m-b-md">
+                            <p class="modal-search__title">BÚSQUEDAS FRECUENTES</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="modal-search__title-section m-b-md">
+                                <a href="#" class="d-flex bd-highlight">
+                                        <span class="bd-highlight event-item__more-info-text">PARTIDAS</span>
+                                        <span class="ml-auto bd-highlight event-item__more-info-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <ul class="modal-search__list modal-search__list-columns">
+                            <li>078838333 Palta Fresca</li>
+                            <li>078838333 Champú de aguacate</li>
+                            <li>078838333 Palta Fresca</li>
+                            <li>078838333 Champú de aguacate</li>
+                            <li>078838333 Palta Fresca</li>
+                            <li>078838333 Champú de aguacate</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="modal-search__title-section m-b-md">
+                                <a href="#" class="d-flex bd-highlight">
+                                        <span class="bd-highlight event-item__more-info-text">TOP DE BÚSQUEDAS</span>
+                                        <span class="ml-auto bd-highlight event-item__more-info-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="modal-search__list-name">
+                            <li> <p class="modal-search__column-name">País</p></li>
+                        </ul>
+                        <ul class="modal-search__list">
+                            <li>Argelia</li>
+                            <li>Argentina</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="modal-search__list-name">
+                            <li> <p class="modal-search__column-name">Sector</p></li>
+                        </ul>
+                        <ul class="modal-search__list">
+                            <li>Agronegocios</li>
+                            <li>Manufacturas diversas</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                            <ul class="modal-search__list-name">
+                                <li> <p class="modal-search__column-name">Producto</p></li>
+                            </ul>
+                        <ul class="modal-search__list">
+                            <li><strong>Aguacate</strong></li>
+                            <li>Shampoo de <strong>aguacate</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="modal-search__title-section m-b-md">
+                                <a href="#" class="d-flex bd-highlight">
+                                        <span class="bd-highlight event-item__more-info-text">PUBLICACIONES, NOVEDADES Y REGULACIONES</span>
+                                        <span class="ml-auto bd-highlight event-item__more-info-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                            <!-- ini NOTICIAS, TOP EXPORTADORES-->
+                            <div class="row m-b-lg">
+                                   <div class="col-sm-4">
+                                     <div class="row">
+                                       <div class="col-sm-12">
+                                         <ul id="header-title" class="mi-producto__header-title">
+                                                <li class="header-title__subtitle-name modal-search__title-column font-21">
+                                                        <span class="header-title__subtitle-name--pl">ESTUDIOS DE MERCADO
+                                             </span>
+                                           </li>
+                                         </ul>
+                                       </div>
+                                     </div>
+                                     <div class="row no-gutters">
+                                       <div class="col-sm-12">
+                                            <div class="modal-search__estudio-mercado-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-sm-3 col-3 text-left">
+                                                        <span class="mp-estudio-mercado-item__icon">
+                                                        <i class="far fa-file-alt icon-same-size"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-sm-9 col-9">
+                                                        <p class="modal-search__estudio-mercado-item-extract">
+                                                                Nuevo lanzamiento medicinas hechas a base de <strong>palta</strong>.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                     </div>
+                                     <div class="row no-gutters">
+                                       <div class="col-sm-12">
+                                            <div class="modal-search__estudio-mercado-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-sm-3 col-3 text-left">
+                                                        <span class="mp-estudio-mercado-item__icon">
+                                                        <i class="far fa-file-alt icon-same-size"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-sm-9 col-9">
+                                                        <p class="modal-search__estudio-mercado-item-extract">
+                                                                Guía de exportación en E.E.U.U.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                     </div>
+                                     <div class="row no-gutters">
+                                       <div class="col-sm-12">
+                                            <div class="modal-search__estudio-mercado-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-sm-3 col-3 text-left">
+                                                        <span class="mp-estudio-mercado-item__icon">
+                                                        <i class="fas fa-chart-line icon-same-size"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-sm-9 col-9">
+                                                        <p class="modal-search__estudio-mercado-item-extract">
+                                                             Infografía <strong>palta</strong> en Europa
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                     </div>
+                                     <div class="row no-gutters">
+                                       <div class="col-sm-12">
+                                            <div class="modal-search__estudio-mercado-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-sm-3 col-3 text-left">
+                                                        <span class="mp-estudio-mercado-item__icon">
+                                                        <i class="fas fa-film icon-same-size"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-sm-9 col-9">
+                                                        <p class="modal-search__estudio-mercado-item-extract">
+                                                            Webinar Incremento de la demanda de la <strong>palta</strong> en Asia.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                     </div>
+                                   </div>
+     
+                                 <div class="col-sm-4">
+                                   <div class="row">
+                                     <div class="col-sm-12">
+                                             <ul id="header-title" class="mi-producto__header-title">
+                                                    <li class="header-title__subtitle-name modal-search__title-column font-21">
+                                                            <span class="header-title__subtitle-name--pl">NOTICIA
+                                                         </span>
+                                                     </li>
+                                                 </ul>
+                                     </div>
+                                   </div>
+     
+                                   <div class="row">
+                                       <div class="col-sm-12">
+                                            <div class="mi-producto__last-new-item card" style="background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.4)),url(img/miproducto-noticia-item-2.jpg) top left 100% fixed;">
+                                              <div class="card-body last-new__card-body"> 
+                                                <p class="mp-last-new-item__title-v2 m-b-md">
+                                                  Ministra Valencia sostiene que empresas peruanas alcanzarían las 8.000 exportaciones este año.
+                                                </p>
+                                              </div>
+                                              <div class="card-footer last-new__card-footer">
+                                                <p class="mp-last-new-item__more-info d-flex">
+                                                  <span class="mp-last-new-item__more-info-date">12/02/2019</span>
+                                                  <a href="#" class="ml-auto bd-highlight">
+                                                      <span class="mp-last-new-item__more-info-arrow">
+                                                          <i class="fas fa-chevron-right"></i>
+                                                        </span>
+                                                  </a>
+                                                </p>
+                                              </div>
+                                            </div>
+
+     
+                                     </div>
+                                    </div>
+                               </div>
+     
+                                 <div class="col-sm-4">
+                                     <div class="row">
+                                         <div class="col-sm-12">
+                                           <ul id="header-title" class="mi-producto__header-title">
+                                             <li class="header-title__subtitle-name modal-search__title-column font-21">
+                                               <span class="header-title__subtitle-name--pl">REGULACIONES Y TRATADOS
+                                               </span>
+                                             </li>
+                                           </ul>
+                                         </div>
+                                       </div>
+                                   <div class="row no-gutters m-b-sm">
+                                     <div class="col-sm-12"> 
+                                         <div class="modal-search__estudio-mercado-item">
+                                            <div class="row align-items-center">
+                                              <div class="col-sm-3 col-3  text-center">
+                                                  <span class="requisito-item__warning"><i class="fas fa-exclamation-triangle"></i></span>
+                                              </div>
+                                              <div class="col-sm-9 col-9">
+                                                  <p class="modal-search__law-name">
+                                                      Ley 109324.23
+                                                      <span class="modal-search__badge badge badge-pill badge-light">NUEVO</span>
+                                                    </p>
+                                                  
+                                                </div>
+                                            </div>
+                                          </div>
+                                     </div>
+                                   </div>
+                                 </div>
+     
+                               </div>
+                               <!-- FIN NOTICIAS, TOP EXPORTADORES-->
+                       </div>
+                </div>
         </div>
         <div class="modal-footer">
         </div>
