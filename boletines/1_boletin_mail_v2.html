@@ -21,18 +21,6 @@
         src: url("fonts/D-DINExp.otf");
       }
 
-      html,
-      body {
-        margin: 0 auto !important;
-        padding: 0 !important;
-        height: 100% !important;
-        width: 100% !important;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        color: rgba(0, 0, 0, 0.4);
-      }
-
       /* What it does: Stops email clients resizing small text. */
       * {
         -ms-text-size-adjust: 100%;
@@ -134,14 +122,6 @@
       	color: #43434b;
       	margin-top: 0;
       	font-weight: 400;
-      }
-
-      a {
-      	color: #d52b1e;
-      }
-
-      a:hover{
-      	font-weight: bold;
       }
 
       .heading-section p span::after {
@@ -271,10 +251,17 @@
 
   <body
     width="100%"
-    style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f9f9fa;"
+    style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f9f9fa;
+    height: 100% !important;
+    width: 100% !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);"
   >
-    <center style="width: 100%">
-      <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+      <table style="max-width: 600px; margin: 0 auto;" class="email-container">
+        <tr>
+          <td>
         <table
           align="center"
           role="presentation"
@@ -318,7 +305,7 @@
                         processed="true"
                       >
                         <span style="color:#43434b;">No ves el contenido?</span>
-                        <a style="font-weight: bold;" href="#">clic aquí</a>
+                        <a style="font-weight: bold;color: #d52b1e;" href="#">clic aquí</a>
                       </td>
                     </tr>
                   </tbody>
@@ -354,7 +341,7 @@
                           </p>
                           <p style="color:#43434b;margin:5px 0px 15px;">
                             Aquí podras ver un resumen de nuestro
-                            <a style="font-weight: bold;" href="#">
+                            <a style="font-weight: bold;color: #d52b1e;" href="#">
                               boletín de abril
                             </a>
                           </p>
@@ -371,7 +358,7 @@
                                 <ul style="margin-left: -19px;">
                                   <li>
                                     <h3
-                                      style="text-align: left;font-weight: 400;margin-bottom:0px;font-family:DINEx;"
+                                      style="text-align: left;font-weight: 400;margin-bottom:0px;font-family:DINEx;color: #43434b;margin-top: 0;"
                                     >
                                       ÚLTIMAS NOTICIAS
                                     </h3>
@@ -427,7 +414,7 @@
                                       <td>
                                         <a
                                           href="#"
-                                          style="font-weight: bold;padding-right:2px;"
+                                          style="font-weight: bold;padding-right:2px;color: #d52b1e;"
                                           >Más info</a
                                         >
                                       </td>
@@ -504,7 +491,9 @@
                                             >
                                               Las economías de la región buscan
                                               sacudirse en el segundo ...
-                                              <a href="#"><img style="position:absolute; bottom:-10px; right:20px;"src="img/arrow-go.png" /></a>
+                                              <a href="#">
+                                                <img style="position:absolute; bottom:-10px; right:20px;"src="img/arrow-go.png" />
+                                              </a>
                                             </p>
                                           </td>
                                         </tr>
@@ -591,7 +580,7 @@
                                 <ul style="margin-left: -19px;">
                                   <li>
                                     <h3
-                                      style="text-align: left;font-weight: 400;margin-bottom:0px;font-family:DINEx;"
+                                      style="text-align: left;font-weight: 400;margin-bottom:0px;font-family:DINEx;color: #43434b;margin-top: 0;"
                                     >
                                       NUEVAS OPORTUNIDADES DE NEGOCIO
                                     </h3>
@@ -629,7 +618,7 @@
                                               <td>
                                                 <a
                                                   href="#"
-                                                  style="font-weight: bold;padding-right:2px;"
+                                                  style="font-weight: bold;padding-right:2px;color: #d52b1e;"
                                                   >Más info</a
                                                 >
                                               </td>
@@ -675,7 +664,7 @@
                                           <tbody>
                                             <tr>
                                               <td>
-                                                <a href="#" style="font-weight: bold;padding-right:2px;">Más info</a>
+                                                <a href="#" style="font-weight: bold;padding-right:2px;color: #d52b1e;">Más info</a>
                                               </td>
                                               <td style="padding-right: 9px;padding-bottom: 5px;">
                                                 <img src="img/arrow-go.png">
@@ -709,7 +698,7 @@
                                 <ul style="margin-left: -19px;margin-bottom: 0px;">
                                   <li>
                                     <h3
-                                      style="text-align: left;font-weight: 400;margin-bottom:0px;font-family:DINEx;"
+                                      style="text-align: left;font-weight: 400;margin-bottom:0px;font-family:DINEx;color: #43434b;margin-top: 0;"
                                     >
                                       ÚLTIMAS ESTUDIOS ESPECIALIZADOS
                                     </h3>
@@ -1021,7 +1010,7 @@
                                                   <td style="text-align:left">
                                                     <a
                                                       href="#"
-                                                      style="font-weight: bold;padding-right:2px;"
+                                                      style="font-weight: bold;padding-right:2px;color: #d52b1e;"
                                                       >13 de abril, 2019</a
                                                     >
                                                   </td>
@@ -1086,7 +1075,7 @@
                                                   <td style="text-align:left">
                                                     <a
                                                       href="#"
-                                                      style="font-weight: bold;padding-right:2px;"
+                                                      style="font-weight: bold;padding-right:2px;color: #d52b1e;"
                                                       >13 de abril, 2019</a
                                                     >
                                                   </td>
@@ -1247,7 +1236,8 @@
             </tr>
           </tbody>
         </table>
-      </div>
-    </center>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
